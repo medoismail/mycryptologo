@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoLogos - Download Cryptocurrency Logos in SVG and PNG</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="dark-mode">
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>CryptoLogos</h1>
+                </div>
+                <nav class="desktop-nav">
+                    <ul>
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </nav>
+                <div class="theme-toggle">
+                    <button id="theme-toggle-btn" aria-label="Toggle dark/light mode">
+                        <i class="fas fa-sun"></i>
+                    </button>
+                </div>
+                <button class="mobile-menu-btn" aria-label="Open menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <nav class="mobile-nav">
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#faq">FAQ</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Download Cryptocurrency Logos</h2>
+                    <p>High quality SVG and PNG logos for popular cryptocurrencies</p>
+                    <a href="#popular" class="btn primary-btn">Browse Popular Logos</a>
+                </div>
+                <div class="hero-background">
+                    <div class="floating-logo" style="--delay: 0s; --x: 10%; --y: 20%"></div>
+                    <div class="floating-logo" style="--delay: 2s; --x: 80%; --y: 60%"></div>
+                    <div class="floating-logo" style="--delay: 4s; --x: 30%; --y: 70%"></div>
+                    <div class="floating-logo" style="--delay: 6s; --x: 70%; --y: 30%"></div>
+                    <div class="floating-logo" style="--delay: 8s; --x: 20%; --y: 50%"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="popular" class="popular-section">
+            <div class="container">
+                <h2>Popular Cryptocurrencies</h2>
+                <div class="popular-grid" id="popular-grid">
+                    <!-- Popular cryptocurrencies will be dynamically inserted here -->
+                    <div class="loading-container">
+                        <div class="loading-spinner"></div>
+                        <p>Loading popular cryptocurrencies...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="logos" class="logos-section">
+            <div class="container">
+                <h2>All Cryptocurrency Logos</h2>
+                <div class="search-filter-container">
+                    <div class="search-container">
+                        <input type="text" id="search-input" placeholder="Search cryptocurrency...">
+                        <button id="search-btn" aria-label="Search">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                    <div class="filters">
+                        <div class="filter-group">
+                            <label for="format-filter">Format:</label>
+                            <select id="format-filter">
+                                <option value="svg">SVG (Vector)</option>
+                                <option value="png">PNG (Raster)</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="resolution-filter">Resolution:</label>
+                            <select id="resolution-filter">
+                                <option value="128x128">128x128</option>
+                                <option value="32x32">32x32</option>
+                                <option value="16x16">16x16</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="sort-filter">Sort by:</label>
+                            <select id="sort-filter">
+                                <option value="name-asc">Name (A-Z)</option>
+                                <option value="name-desc">Name (Z-A)</option>
+                            </select>
+                        </div>
+                        <button id="clear-filters-btn" class="btn secondary-btn">Clear Filters</button>
+                    </div>
+                </div>
+
+                <div class="logos-grid" id="logos-grid">
+                    <!-- Logos will be dynamically inserted here -->
+                    <div class="loading-container">
+                        <div class="loading-spinner"></div>
+                        <p>Loading cryptocurrency logos...</p>
+                    </div>
+                </div>
+
+                <div class="pagination">
+                    <button id="load-more-btn" class="btn primary-btn">Load More</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2>About CryptoLogos</h2>
+                <p>CryptoLogos provides easy access to high-quality cryptocurrency logos for developers, designers, and crypto enthusiasts. Our collection includes SVG (vector) and PNG (raster) formats for all major cryptocurrencies.</p>
+                <p>All logos are sourced from reputable repositories and are regularly updated to ensure accuracy.</p>
+                <div class="features">
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-vector-square"></i>
+                        </div>
+                        <h3>Vector SVG Format</h3>
+                        <p>Download logos in SVG format for perfect scaling at any size without quality loss.</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-image"></i>
+                        </div>
+                        <h3>Raster PNG Format</h3>
+                        <p>Download logos in PNG format with transparent backgrounds in multiple resolutions.</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3>Easy Search</h3>
+                        <p>Quickly find the cryptocurrency logos you need with our powerful search functionality.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="faq-section">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What's the difference between SVG and PNG formats?</h3>
+                            <button class="faq-toggle" aria-label="Toggle FAQ">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <div class="faq-answer">
+                            <p>SVG (Scalable Vector Graphics) is a vector format that can be scaled to any size without losing quality. It's ideal for responsive designs and print materials. PNG (Portable Network Graphics) is a raster format that has a fixed resolution. We provide PNGs in multiple sizes for different use cases.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Can I use these logos for commercial projects?</h3>
+                            <button class="faq-toggle" aria-label="Toggle FAQ">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Please refer to the original repositories for licensing information. We provide easy access to these logos but do not own the rights to them. Most cryptocurrency logos are subject to their respective trademark policies.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How often are new logos added?</h3>
+                            <button class="faq-toggle" aria-label="Toggle FAQ">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Our logo collection is regularly updated as new cryptocurrencies gain popularity. We prioritize adding logos for projects listed on major exchanges and ranking sites.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>I can't find a specific cryptocurrency logo. What should I do?</h3>
+                            <button class="faq-toggle" aria-label="Toggle FAQ">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <div class="faq-answer">
+                            <p>If you can't find a specific logo, you can contribute to the original repositories by submitting a pull request with the missing logo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>CryptoLogos</h2>
+                    <p>Your source for cryptocurrency logos</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="https://github.com/spothq/cryptocurrency-icons" target="_blank">Source Repository</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect</h3>
+                    <div class="social-icons">
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CryptoLogos. All rights reserved.</p>
+                <p>Logos sourced from <a href="https://github.com/spothq/cryptocurrency-icons" target="_blank">cryptocurrency-icons</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Logo Detail Modal -->
+    <div class="modal" id="logo-modal">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close modal">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body">
+                <div class="logo-preview">
+                    <img src="" alt="Cryptocurrency Logo" id="modal-logo-img">
+                </div>
+                <div class="logo-details">
+                    <h3 id="modal-logo-name">Cryptocurrency Name</h3>
+                    <p id="modal-logo-symbol">Symbol: BTC</p>
+                    <div class="download-options">
+                        <h4>Download Options</h4>
+                        <div class="format-tabs">
+                            <button class="format-tab active" data-format="svg">SVG (Vector)</button>
+                            <button class="format-tab" data-format="png">PNG (Raster)</button>
+                        </div>
+                        <div class="format-content active" id="svg-content">
+                            <a href="#" class="btn primary-btn" id="download-svg" download>
+                                <i class="fas fa-download"></i> Download SVG
+                            </a>
+                        </div>
+                        <div class="format-content" id="png-content">
+                            <div class="download-buttons">
+                                <a href="#" class="btn secondary-btn" id="download-128" download>128x128</a>
+                                <a href="#" class="btn secondary-btn" id="download-32" download>32x32</a>
+                                <a href="#" class="btn secondary-btn" id="download-16" download>16x16</a>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn primary-btn" id="copy-btn">
+                        <i class="fas fa-clipboard"></i> Copy Image URL
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <script src="js/script.js"></script>
+    <script src="js/download.js"></script>
+    <script src="js/search.js"></script>
+</body>
+</html>

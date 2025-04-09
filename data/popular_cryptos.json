@@ -1,0 +1,182 @@
+[
+  {
+    "id": "btc",
+    "name": "Bitcoin",
+    "symbol": "BTC",
+    "rank": 1
+  },
+  {
+    "id": "eth",
+    "name": "Ethereum",
+    "symbol": "ETH",
+    "rank": 2
+  },
+  {
+    "id": "xrp",
+    "name": "XRP",
+    "symbol": "XRP",
+    "rank": 3
+  },
+  {
+    "id": "usdt",
+    "name": "Tether",
+    "symbol": "USDT",
+    "rank": 4
+  },
+  {
+    "id": "sol",
+    "name": "Solana",
+    "symbol": "SOL",
+    "rank": 5
+  },
+  {
+    "id": "bnb",
+    "name": "BNB",
+    "symbol": "BNB",
+    "rank": 6
+  },
+  {
+    "id": "doge",
+    "name": "Dogecoin",
+    "symbol": "DOGE",
+    "rank": 7
+  },
+  {
+    "id": "ada",
+    "name": "Cardano",
+    "symbol": "ADA",
+    "rank": 8
+  },
+  {
+    "id": "usdc",
+    "name": "USD Coin",
+    "symbol": "USDC",
+    "rank": 9
+  },
+  {
+    "id": "trx",
+    "name": "TRON",
+    "symbol": "TRX",
+    "rank": 10
+  },
+  {
+    "id": "avax",
+    "name": "Avalanche",
+    "symbol": "AVAX",
+    "rank": 11
+  },
+  {
+    "id": "shib",
+    "name": "Shiba Inu",
+    "symbol": "SHIB",
+    "rank": 12
+  },
+  {
+    "id": "dot",
+    "name": "Polkadot",
+    "symbol": "DOT",
+    "rank": 13
+  },
+  {
+    "id": "link",
+    "name": "Chainlink",
+    "symbol": "LINK",
+    "rank": 14
+  },
+  {
+    "id": "xlm",
+    "name": "Stellar",
+    "symbol": "XLM",
+    "rank": 15
+  },
+  {
+    "id": "bch",
+    "name": "Bitcoin Cash",
+    "symbol": "BCH",
+    "rank": 16
+  },
+  {
+    "id": "ltc",
+    "name": "Litecoin",
+    "symbol": "LTC",
+    "rank": 17
+  },
+  {
+    "id": "near",
+    "name": "NEAR Protocol",
+    "symbol": "NEAR",
+    "rank": 18
+  },
+  {
+    "id": "uni",
+    "name": "Uniswap",
+    "symbol": "UNI",
+    "rank": 19
+  },
+  {
+    "id": "icp",
+    "name": "Internet Computer",
+    "symbol": "ICP",
+    "rank": 20
+  },
+  {
+    "id": "cro",
+    "name": "Cronos",
+    "symbol": "CRO",
+    "rank": 21
+  },
+  {
+    "id": "vet",
+    "name": "VeChain",
+    "symbol": "VET",
+    "rank": 22
+  },
+  {
+    "id": "etc",
+    "name": "Ethereum Classic",
+    "symbol": "ETC",
+    "rank": 23
+  },
+  {
+    "id": "dai",
+    "name": "Dai",
+    "symbol": "DAI",
+    "rank": 24
+  },
+  {
+    "id": "atom",
+    "name": "Cosmos",
+    "symbol": "ATOM",
+    "rank": 25
+  },
+  {
+    "id": "aave",
+    "name": "Aave",
+    "symbol": "AAVE",
+    "rank": 26
+  },
+  {
+    "id": "xmr",
+    "name": "Monero",
+    "symbol": "XMR",
+    "rank": 27
+  },
+  {
+    "id": "algo",
+    "name": "Algorand",
+    "symbol": "ALGO",
+    "rank": 28
+  },
+  {
+    "id": "fil",
+    "name": "Filecoin",
+    "symbol": "FIL",
+    "rank": 29
+  },
+  {
+    "id": "ftm",
+    "name": "Fantom",
+    "symbol": "FTM",
+    "rank": 30
+  }
+]
