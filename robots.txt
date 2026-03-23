@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
-Sitemap: https://www.cryptologos.xyz/sitemap.xml
+Sitemap: https://cryptologos.xyz/sitemap.xml
 
 # Allow crawling of all content
 Allow: /css/
