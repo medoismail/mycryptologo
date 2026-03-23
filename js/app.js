@@ -150,12 +150,12 @@
     }
 
     function updateBreadcrumb() {
-        const labels = { all: 'All Icons', tokens: 'Tokens', networks: 'Networks', wallets: 'Wallets' };
+        const labels = { all: 'All Icons', tokens: 'Tokens', networks: 'Networks', 'defi-protocol': 'DeFi Protocols', exchanges: 'Exchanges', wallets: 'Wallets' };
         breadcrumb.innerHTML = `<span class="breadcrumb-active">${labels[currentCategory] || 'All Icons'}</span>`;
     }
 
     function updateCounts() {
-        const counts = { all: allData.length, tokens: 0, networks: 0, wallets: 0 };
+        const counts = { all: allData.length, tokens: 0, networks: 0, 'defi-protocol': 0, exchanges: 0, wallets: 0 };
         allData.forEach(t => { if (counts[t.category] !== undefined) counts[t.category]++; });
         for (const [k, v] of Object.entries(counts)) {
             const el = $(`#count-${k}`);
@@ -233,7 +233,12 @@
 
             let badge = '';
             if (t.category === 'networks') badge = '<span class="card-badge badge-network">Net</span>';
+            else if (t.category === 'defi-protocol') badge = '<span class="card-badge badge-defi">DeFi</span>';
+            else if (t.category === 'exchanges') badge = '<span class="card-badge badge-exchange">DEX</span>';
             else if (t.category === 'wallets') badge = '<span class="card-badge badge-wallet">Wallet</span>';
+
+            const isPng = t.path && (t.path.endsWith('.png') || t.path.endsWith('.jpg') || t.path.endsWith('.jpeg'));
+            const formatBadge = isPng ? '<span class="card-badge badge-png" style="opacity:1;top:auto;bottom:5px;right:5px">PNG</span>' : '';
 
             card.innerHTML = `
                 <div class="card-img-wrap">
@@ -242,6 +247,7 @@
                 <span class="card-name" title="${t.name}">${t.name}</span>
                 <span class="card-symbol">${t.symbol}</span>
                 ${badge}
+                ${formatBadge}
             `;
             card.addEventListener('click', () => openModal(t));
             frag.appendChild(card);

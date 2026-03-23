@@ -209,7 +209,6 @@
   <url><loc>https://www.cryptologos.xyz/tokens/ban.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/band.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/bao.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/based.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/bat.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/bax.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/bay.html</loc><lastmod>2026-03-23</lastmod></url>
@@ -577,10 +576,8 @@
   <url><loc>https://www.cryptologos.xyz/tokens/defi.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-aave-horizon-rwa.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-aave-v2.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/defi-aave-v3.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-aera-v3.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-aerodrome-slipstream.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/defi-aerodrome-v1.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-afi-protocol.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-ailayer-farm.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-alphalend.html</loc><lastmod>2026-03-23</lastmod></url>
@@ -596,7 +593,6 @@
   <url><loc>https://www.cryptologos.xyz/tokens/defi-autofinance.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-avalanche-core-bridge.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-avalon-cedefi.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/defi-avalon-usda.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-avant-avusd.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-avantis.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-axelar.html</loc><lastmod>2026-03-23</lastmod></url>
@@ -616,7 +612,6 @@
   <url><loc>https://www.cryptologos.xyz/tokens/defi-binance-staked-sol.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-bingx.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-bitfi-basis.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/defi-bitfi-btc.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-bitfinex.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-bitkub.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-bitlayer-ybtc-family.html</loc><lastmod>2026-03-23</lastmod></url>
@@ -665,11 +660,9 @@
   <url><loc>https://www.cryptologos.xyz/tokens/defi-doppler-finance.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-doublezero-staked-sol.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-drift-staked-sol.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/defi-drift-trade.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-dswap.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-dydx-v4.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-echo-bridge.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/defi-echo-lending.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-edgevana.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-edgex-bridge.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-eigencloud.html</loc><lastmod>2026-03-23</lastmod></url>
@@ -677,7 +670,6 @@
   <url><loc>https://www.cryptologos.xyz/tokens/defi-enzyme-finance.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-ethena-usdtb.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-ether-fi-liquid.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/defi-ether-fi-stake.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-ethereal-dex.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-euler-dao.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-euler-v2.html</loc><lastmod>2026-03-23</lastmod></url>
@@ -714,8 +706,6 @@
   <url><loc>https://www.cryptologos.xyz/tokens/defi-hyperlane.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-hyperlend-pooled.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-hyperliquid-bridge.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/defi-hyperliquid-hlp.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/defi-hyperliquid-spot-orderbook.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-indodax.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-infinifi.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-infrared-finance.html</loc><lastmod>2026-03-23</lastmod></url>
@@ -723,14 +713,12 @@
   <url><loc>https://www.cryptologos.xyz/tokens/defi-jpool.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-jupiter-lend.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-jupiter-perpetual-exchange.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/defi-jupiter-staked-sol.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-jupusd.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-justcryptos.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-justlend.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-k3-capital.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-kaio.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-kamino-lend.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/defi-kamino-liquidity.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-kava-mint.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-kelp.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-kinetic.html</loc><lastmod>2026-03-23</lastmod></url>
@@ -746,12 +734,9 @@
   <url><loc>https://www.cryptologos.xyz/tokens/defi-linea-bridge.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-liquid-collective.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-liquity-v1.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/defi-liquity-v2.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-lista-cdp.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/defi-lista-liquid-staking.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-lofty.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-lombard-btc-b.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/defi-lombard-lbtc.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-loopscale.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-lorenzo-enzobtc.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-lorenzo-susd1.html</loc><lastmod>2026-03-23</lastmod></url>
@@ -763,15 +748,12 @@
   <url><loc>https://www.cryptologos.xyz/tokens/defi-maple.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-marginfi-lending.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-marinade-liquid-staking.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/defi-marinade-native.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-marinade-select.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-matrixdock-stbt.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-matrixdock-xaum.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-mellow-core.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/defi-mellow-restaking.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-merlins-seal.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-meteora-dlmm.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/defi-meteora-vaults.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-meth-protocol.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-mev-capital.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-mexc.html</loc><lastmod>2026-03-23</lastmod></url>
@@ -789,7 +771,6 @@
   <url><loc>https://www.cryptologos.xyz/tokens/defi-obol.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-okx-xbtc.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-ondo-global-markets.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/defi-ondo-yield-assets.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-onre.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-openeden-tbill.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-openeden-usdo.html</loc><lastmod>2026-03-23</lastmod></url>
@@ -838,27 +819,22 @@
   <url><loc>https://www.cryptologos.xyz/tokens/defi-rocket-pool.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-rysk-v12.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-sanctum-infinity.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/defi-sanctum-reserve.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/defi-sanctum-validator-lsts.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-save.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-scroll-bridge.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-sdai.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-securitize-tokenized-aaa-clo-fund.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-sentora.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-sky-lending.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/defi-sky-rwa.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-sodex-bridge.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-solstice-usx.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-solv-basis-trading.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-solv-strategies.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-solvbtc.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/defi-solvbtc-lsts.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-sonic-gateway.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-sophon-bridge.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-sosovalue-indexes.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-spark-liquidity-layer.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-spark-savings.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/defi-sparklend.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-spiko.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-springsui.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-ssv-network.html</loc><lastmod>2026-03-23</lastmod></url>
@@ -880,7 +856,6 @@
   <url><loc>https://www.cryptologos.xyz/tokens/defi-sunswap-v1.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-sunswap-v3.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-superstate-uscc.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/defi-superstate-ustb.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-sushiswap-v3.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-swell-l2-farm.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/defi-symbiotic.html</loc><lastmod>2026-03-23</lastmod></url>
@@ -1133,8 +1108,6 @@
   <url><loc>https://www.cryptologos.xyz/tokens/evmos.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/evx.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/ewt.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/exchange-1inch.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/exchange-aevo.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/exchange-balancer.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/exchange-bancor.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/exchange-binance.html</loc><lastmod>2026-03-23</lastmod></url>
@@ -1315,7 +1288,6 @@
   <url><loc>https://www.cryptologos.xyz/tokens/gnx.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/gny.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/go.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/goat.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/gob.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/goc.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/gods.html</loc><lastmod>2026-03-23</lastmod></url>
@@ -1880,26 +1852,18 @@
   <url><loc>https://www.cryptologos.xyz/tokens/network-aptos.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-arbitrum-nova.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-arbitrum-one.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/network-arc.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-arweave.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-astar.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/network-aurora.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-autonomys.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-avalanche.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-bahamut.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-base.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/network-beam.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-berachain.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-binance-smart-chain.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/network-bitcoin.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-bitkub-chain.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/network-blast.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/network-bob.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/network-boba.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-botanix.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-bouncebit.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-cardano.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/network-celo.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-chiliz.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-citrea.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-clover.html</loc><lastmod>2026-03-23</lastmod></url>
@@ -1911,7 +1875,6 @@
   <url><loc>https://www.cryptologos.xyz/tokens/network-cosmos-hub.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-crab.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-cronos.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/network-cronos-zkevm.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-darwinia.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-diode.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-dogechain.html</loc><lastmod>2026-03-23</lastmod></url>
@@ -1919,19 +1882,15 @@
   <url><loc>https://www.cryptologos.xyz/tokens/network-elastos.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-energy-web.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-enuls.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/network-eos.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-ethereum.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-ethereum-classic.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-etherlink.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-expchain.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-fantom.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-filecoin.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/network-fio.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-flare.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-fluence.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-fraxtal.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/network-fuel.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/network-fuse.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-genesis-l1.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-gnosis.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-gravity.html</loc><lastmod>2026-03-23</lastmod></url>
@@ -1944,20 +1903,14 @@
   <url><loc>https://www.cryptologos.xyz/tokens/network-hyper-evm.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-immutable.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-injective.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/network-ink.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/network-iota-evm.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-iotex.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-japan-open-chain.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/network-juno.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-juris.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/network-kaia.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-kakarot.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-kardia.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-karura.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-katana.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/network-kava.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-kroma.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/network-kucoin.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-kujira.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-l3x.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-lava-network.html</loc><lastmod>2026-03-23</lastmod></url>
@@ -1967,19 +1920,15 @@
   <url><loc>https://www.cryptologos.xyz/tokens/network-lisk.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-litecoin.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-loopring.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/network-lukso.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-lumia.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-lumio.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-lycan.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/network-lyra.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-manta-pacific.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/network-mantle.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-mantra.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-mega-eth.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-meter.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-metis-andromeda.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-milkomeda-a1.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/network-milkomeda-c1.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-minima.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-mint.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-mode.html</loc><lastmod>2026-03-23</lastmod></url>
@@ -2004,7 +1953,6 @@
   <url><loc>https://www.cryptologos.xyz/tokens/network-orderly.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-osmosis.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-ozean.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/network-paradex.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-peaq.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-plasma.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-plume.html</loc><lastmod>2026-03-23</lastmod></url>
@@ -2061,7 +2009,6 @@
   <url><loc>https://www.cryptologos.xyz/tokens/network-vana.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-vanar.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-vara.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/network-vaulta.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-velas.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-viction.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/network-wax.html</loc><lastmod>2026-03-23</lastmod></url>
@@ -2166,7 +2113,6 @@
   <url><loc>https://www.cryptologos.xyz/tokens/ok.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/okb.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/oks.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/okt.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/olt.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/om.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/omax.html</loc><lastmod>2026-03-23</lastmod></url>
@@ -2244,7 +2190,6 @@
   <url><loc>https://www.cryptologos.xyz/tokens/pcx.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/pdex.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/pdt.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/peaq.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/pearl.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/pec.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/peel.html</loc><lastmod>2026-03-23</lastmod></url>
@@ -2308,7 +2253,6 @@
   <url><loc>https://www.cryptologos.xyz/tokens/poa.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/poe.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/pokt.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/pol.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/pola.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/polc.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/polis.html</loc><lastmod>2026-03-23</lastmod></url>
@@ -2346,7 +2290,6 @@
   <url><loc>https://www.cryptologos.xyz/tokens/prl.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/pro.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/prob.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/prom.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/propc.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/props.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/pros.html</loc><lastmod>2026-03-23</lastmod></url>
@@ -2368,7 +2311,6 @@
   <url><loc>https://www.cryptologos.xyz/tokens/pungo.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/pura.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/purse.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/push.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/pussy.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/pwr.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/pxp.html</loc><lastmod>2026-03-23</lastmod></url>
@@ -2412,7 +2354,6 @@
   <url><loc>https://www.cryptologos.xyz/tokens/ramp.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/rap.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/rare.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/rari.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/raven.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/ray.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/razor.html</loc><lastmod>2026-03-23</lastmod></url>
@@ -2429,7 +2370,6 @@
   <url><loc>https://www.cryptologos.xyz/tokens/rdnt.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/rdpx.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/rdt.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/read.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/realm.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/reef.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/ref.html</loc><lastmod>2026-03-23</lastmod></url>
@@ -2671,7 +2611,6 @@
   <url><loc>https://www.cryptologos.xyz/tokens/stc.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/steem.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/stella.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/step.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/steth.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/stfx.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/stg.html</loc><lastmod>2026-03-23</lastmod></url>
@@ -2699,7 +2638,6 @@
   <url><loc>https://www.cryptologos.xyz/tokens/stz.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/sub.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/sudo.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/sui.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/suip.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/suku.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/sumo.html</loc><lastmod>2026-03-23</lastmod></url>
@@ -2715,7 +2653,6 @@
   <url><loc>https://www.cryptologos.xyz/tokens/swap.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/swash.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/sweat.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/swell.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/sweth.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/swftc.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/swise.html</loc><lastmod>2026-03-23</lastmod></url>
@@ -2726,7 +2663,6 @@
   <url><loc>https://www.cryptologos.xyz/tokens/sylo.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/syn.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/sync.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/sys.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/t.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/taas.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/taboo.html</loc><lastmod>2026-03-23</lastmod></url>
@@ -2745,7 +2681,6 @@
   <url><loc>https://www.cryptologos.xyz/tokens/tel.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/tem.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/ten.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/tenet.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/tera.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/tern.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/tet.html</loc><lastmod>2026-03-23</lastmod></url>
@@ -2759,7 +2694,6 @@
   <url><loc>https://www.cryptologos.xyz/tokens/theca.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/thedao.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/theo.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/theta.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/thol.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/thor.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/thr.html</loc><lastmod>2026-03-23</lastmod></url>
@@ -2790,7 +2724,6 @@
   <url><loc>https://www.cryptologos.xyz/tokens/tomb.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/tomi.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/tomo.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/ton.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/tonic.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/top.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/topia.html</loc><lastmod>2026-03-23</lastmod></url>
@@ -2890,7 +2823,6 @@
   <url><loc>https://www.cryptologos.xyz/tokens/vai.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/valor.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/value.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/vara.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/vc.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/vcf.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/vcore.html</loc><lastmod>2026-03-23</lastmod></url>
@@ -2962,10 +2894,8 @@
   <url><loc>https://www.cryptologos.xyz/tokens/wallet-atomic.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/wallet-backpack.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/wallet-bitbox.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/wallet-blue.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/wallet-clave.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/wallet-coin98.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/wallet-coinbase.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/wallet-cypherock.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/wallet-daimo.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/wallet-enkrypt.html</loc><lastmod>2026-03-23</lastmod></url>
@@ -2973,7 +2903,6 @@
   <url><loc>https://www.cryptologos.xyz/tokens/wallet-glow.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/wallet-imtoken.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/wallet-keplr.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/wallet-kraken.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/wallet-kukai.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/wallet-ledger.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/wallet-lit.html</loc><lastmod>2026-03-23</lastmod></url>
@@ -2981,18 +2910,13 @@
   <url><loc>https://www.cryptologos.xyz/tokens/wallet-multis.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/wallet-my-ether-wallet.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/wallet-obvious.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/wallet-okx.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/wallet-phantom.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/wallet-pillar.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/wallet-portal.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/wallet-rabby.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/wallet-rainbow.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/wallet-ronin.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/wallet-safe.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/wallet-sender.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/wallet-sequence.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/wallet-solflare.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/wallet-soul.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/wallet-squads.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/wallet-temple.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/wallet-token-pocket.html</loc><lastmod>2026-03-23</lastmod></url>
@@ -3013,8 +2937,6 @@
   <url><loc>https://www.cryptologos.xyz/tokens/was.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/wassie.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/waves.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/wax.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/waxp.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/wbeth.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/wbt.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/wbtc.html</loc><lastmod>2026-03-23</lastmod></url>
@@ -3026,7 +2948,6 @@
   <url><loc>https://www.cryptologos.xyz/tokens/wefi.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/well.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/welt.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/wemix.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/wen.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/weth.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/wexpoly.html</loc><lastmod>2026-03-23</lastmod></url>
@@ -3073,7 +2994,6 @@
   <url><loc>https://www.cryptologos.xyz/tokens/wxt.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/x.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/x2y2.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/xai.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/xas.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/xaur.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/xaut.html</loc><lastmod>2026-03-23</lastmod></url>
@@ -3091,8 +3011,6 @@
   <url><loc>https://www.cryptologos.xyz/tokens/xcur.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/xdata.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/xdb.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/xdc.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/xdefi.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/xdg.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/xdn.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/xec.html</loc><lastmod>2026-03-23</lastmod></url>
@@ -3138,7 +3056,6 @@
   <url><loc>https://www.cryptologos.xyz/tokens/xpx.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/xrd.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/xrgb.html</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.cryptologos.xyz/tokens/xrp.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/xrt.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/xrune.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://www.cryptologos.xyz/tokens/xsg.html</loc><lastmod>2026-03-23</lastmod></url>

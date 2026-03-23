@@ -1456,12 +1456,6 @@
     "path": "data/svg/bao.svg"
   },
   {
-    "id": "based",
-    "name": "$BASED",
-    "symbol": "$BASED",
-    "category": "token"
-  },
-  {
     "id": "bat",
     "name": "Basic Attention",
     "symbol": "BAT",
@@ -4020,2137 +4014,2325 @@
     "id": "defi-aave-horizon-rwa",
     "name": "Aave Horizon RWA",
     "symbol": "AAVE-HORIZ",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-aave-horizon-rwa.jpg"
   },
   {
     "id": "defi-aave-v2",
     "name": "Aave V2",
     "symbol": "AAVE-V2",
-    "category": "defi-protocol"
-  },
-  {
-    "id": "defi-aave-v3",
-    "name": "Aave V3",
-    "symbol": "AAVE-V3",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-aave-v2.png"
   },
   {
     "id": "defi-aera-v3",
     "name": "Aera V3",
     "symbol": "AERA-V3",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-aera-v3.jpg"
   },
   {
     "id": "defi-aerodrome-slipstream",
     "name": "Aerodrome Slipstream",
     "symbol": "AERODROME-",
-    "category": "defi-protocol"
-  },
-  {
-    "id": "defi-aerodrome-v1",
-    "name": "Aerodrome V1",
-    "symbol": "AERODROME-",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-aerodrome-slipstream.png"
   },
   {
     "id": "defi-afi-protocol",
     "name": "AFI Protocol",
     "symbol": "AFI-PROTOC",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-afi-protocol.jpg"
   },
   {
     "id": "defi-ailayer-farm",
     "name": "AILayer farm",
     "symbol": "AILAYER-FA",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-ailayer-farm.jpg"
   },
   {
     "id": "defi-alphalend",
     "name": "AlphaLend",
     "symbol": "ALPHALEND",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-alphalend.png"
   },
   {
     "id": "defi-anemoy-capital",
     "name": "Anemoy Capital",
     "symbol": "ANEMOY-CAP",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-anemoy-capital.png"
   },
   {
     "id": "defi-ao-bridge",
     "name": "AO Bridge",
     "symbol": "AO-BRIDGE",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-ao-bridge.png"
   },
   {
     "id": "defi-apollo-diversified-credit-securitize-fund",
     "name": "Apollo Diversified Credit Securitize Fund",
     "symbol": "APOLLO-DIV",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-apollo-diversified-credit-securitize-fund.jpg"
   },
   {
     "id": "defi-apx-bridge",
     "name": "APX Bridge",
     "symbol": "APX-BRIDGE",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-apx-bridge.jpg"
   },
   {
     "id": "defi-arbitrum-bridge",
     "name": "Arbitrum Bridge",
     "symbol": "ARBITRUM-B",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-arbitrum-bridge.png"
   },
   {
     "id": "defi-arrakis-modular",
     "name": "Arrakis Modular",
     "symbol": "ARRAKIS-MO",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-arrakis-modular.jpg"
   },
   {
     "id": "defi-aster-asbnb",
     "name": "Aster asBNB",
     "symbol": "ASTER-ASBN",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-aster-asbnb.jpg"
   },
   {
     "id": "defi-aster-bridge",
     "name": "Aster Bridge",
     "symbol": "ASTER-BRID",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-aster-bridge.jpg"
   },
   {
     "id": "defi-aster-usdf",
     "name": "Aster USDF",
     "symbol": "ASTER-USDF",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-aster-usdf.jpg"
   },
   {
     "id": "defi-autofinance",
     "name": "AUTOfinance",
     "symbol": "AUTOFINANC",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-autofinance.jpg"
   },
   {
     "id": "defi-avalanche-core-bridge",
     "name": "Avalanche Core Bridge",
     "symbol": "AVALANCHE-",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-avalanche-core-bridge.jpg"
   },
   {
     "id": "defi-avalon-cedefi",
     "name": "Avalon CeDeFi",
     "symbol": "AVALON-CED",
-    "category": "defi-protocol"
-  },
-  {
-    "id": "defi-avalon-usda",
-    "name": "Avalon USDa",
-    "symbol": "AVALON-USD",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-avalon-cedefi.jpg"
   },
   {
     "id": "defi-avant-avusd",
     "name": "Avant avUSD",
     "symbol": "AVANT-AVUS",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-avant-avusd.jpg"
   },
   {
     "id": "defi-avantis",
     "name": "Avantis",
     "symbol": "AVANTIS",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-avantis.png"
   },
   {
     "id": "defi-axelar",
     "name": "Axelar",
     "symbol": "AXELAR",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-axelar.jpg"
   },
   {
     "id": "defi-b14g",
     "name": "b14g",
     "symbol": "B14G",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-b14g.jpg"
   },
   {
     "id": "defi-b2-buzz",
     "name": "B2 Buzz",
     "symbol": "B2-BUZZ",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-b2-buzz.jpg"
   },
   {
     "id": "defi-babylon-protocol",
     "name": "Babylon Protocol",
     "symbol": "BABYLON-PR",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-babylon-protocol.jpg"
   },
   {
     "id": "defi-balancer-v3",
     "name": "Balancer V3",
     "symbol": "BALANCER-V",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-balancer-v3.jpg"
   },
   {
     "id": "defi-base-bridge",
     "name": "Base Bridge",
     "symbol": "BASE-BRIDG",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-base-bridge.jpg"
   },
   {
     "id": "defi-bedrock-unibtc",
     "name": "Bedrock uniBTC",
     "symbol": "BEDROCK-UN",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-bedrock-unibtc.jpg"
   },
   {
     "id": "defi-beefy",
     "name": "Beefy",
     "symbol": "BEEFY",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-beefy.png"
   },
   {
     "id": "defi-benqi-lending",
     "name": "Benqi Lending",
     "symbol": "BENQI-LEND",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-benqi-lending.jpg"
   },
   {
     "id": "defi-benqi-staked-avax",
     "name": "Benqi Staked Avax",
     "symbol": "BENQI-STAK",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-benqi-staked-avax.png"
   },
   {
     "id": "defi-biconomy-com",
     "name": "Biconomy.com",
     "symbol": "BICONOMY.C",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-biconomy-com.png"
   },
   {
     "id": "defi-binance-bitcoin",
     "name": "Binance Bitcoin",
     "symbol": "BINANCE-BI",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-binance-bitcoin.jpg"
   },
   {
     "id": "defi-binance-cex",
     "name": "Binance CEX",
     "symbol": "BINANCE-CE",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-binance-cex.jpg"
   },
   {
     "id": "defi-binance-staked-eth",
     "name": "Binance staked ETH",
     "symbol": "BINANCE-ST",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-binance-staked-eth.png"
   },
   {
     "id": "defi-binance-staked-sol",
     "name": "Binance Staked SOL",
     "symbol": "BINANCE-ST",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-binance-staked-sol.png"
   },
   {
     "id": "defi-bingx",
     "name": "BingX",
     "symbol": "BINGX",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-bingx.jpg"
   },
   {
     "id": "defi-bitfi-basis",
     "name": "BitFi Basis",
     "symbol": "BITFI-BASI",
-    "category": "defi-protocol"
-  },
-  {
-    "id": "defi-bitfi-btc",
-    "name": "BitFi BTC",
-    "symbol": "BITFI-BTC",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-bitfi-basis.jpg"
   },
   {
     "id": "defi-bitfinex",
     "name": "Bitfinex",
     "symbol": "BITFINEX",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-bitfinex.png"
   },
   {
     "id": "defi-bitkub",
     "name": "Bitkub",
     "symbol": "BITKUB",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-bitkub.jpg"
   },
   {
     "id": "defi-bitlayer-ybtc-family",
     "name": "Bitlayer YBTC Family",
     "symbol": "BITLAYER-Y",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-bitlayer-ybtc-family.jpg"
   },
   {
     "id": "defi-bitmex",
     "name": "Bitmex",
     "symbol": "BITMEX",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-bitmex.jpg"
   },
   {
     "id": "defi-bitrue",
     "name": "Bitrue",
     "symbol": "BITRUE",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-bitrue.jpg"
   },
   {
     "id": "defi-bitunix",
     "name": "Bitunix",
     "symbol": "BITUNIX",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-bitunix.jpg"
   },
   {
     "id": "defi-blackrock-buidl",
     "name": "BlackRock BUIDL",
     "symbol": "BLACKROCK-",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-blackrock-buidl.png"
   },
   {
     "id": "defi-blast-bridge",
     "name": "Blast Bridge",
     "symbol": "BLAST-BRID",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-blast-bridge.jpg"
   },
   {
     "id": "defi-blazestake",
     "name": "BlazeStake",
     "symbol": "BLAZESTAKE",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-blazestake.jpg"
   },
   {
     "id": "defi-blend-pools-v2",
     "name": "Blend Pools V2",
     "symbol": "BLEND-POOL",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-blend-pools-v2.jpg"
   },
   {
     "id": "defi-block-analitica",
     "name": "Block Analitica",
     "symbol": "BLOCK-ANAL",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-block-analitica.jpg"
   },
   {
     "id": "defi-blockchain-capital",
     "name": "Blockchain Capital",
     "symbol": "BLOCKCHAIN",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-blockchain-capital.jpg"
   },
   {
     "id": "defi-blofin",
     "name": "BloFin",
     "symbol": "BLOFIN",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-blofin.jpg"
   },
   {
     "id": "defi-bouncebit-cedefi-yield",
     "name": "BounceBit CeDeFi Yield",
     "symbol": "BOUNCEBIT-",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-bouncebit-cedefi-yield.jpg"
   },
   {
     "id": "defi-buzz-farming",
     "name": "Buzz Farming",
     "symbol": "BUZZ-FARMI",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-buzz-farming.jpg"
   },
   {
     "id": "defi-bwatch",
     "name": "Bwatch",
     "symbol": "BWATCH",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-bwatch.png"
   },
   {
     "id": "defi-bybit-staked-sol",
     "name": "Bybit Staked SOL",
     "symbol": "BYBIT-STAK",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-bybit-staked-sol.jpg"
   },
   {
     "id": "defi-bydfi",
     "name": "BYDFi",
     "symbol": "BYDFI",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-bydfi.jpg"
   },
   {
     "id": "defi-capyfi",
     "name": "Capyfi",
     "symbol": "CAPYFI",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-capyfi.png"
   },
   {
     "id": "defi-centrifuge-protocol",
     "name": "Centrifuge Protocol",
     "symbol": "CENTRIFUGE",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-centrifuge-protocol.jpg"
   },
   {
     "id": "defi-chiliz-governance-staking",
     "name": "Chiliz Governance Staking",
     "symbol": "CHILIZ-GOV",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-chiliz-governance-staking.jpg"
   },
   {
     "id": "defi-cian-yield-layer",
     "name": "CIAN Yield Layer",
     "symbol": "CIAN-YIELD",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-cian-yield-layer.jpg"
   },
   {
     "id": "defi-circle-usyc",
     "name": "Circle USYC",
     "symbol": "CIRCLE-USY",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-circle-usyc.png"
   },
   {
     "id": "defi-clearstar",
     "name": "Clearstar",
     "symbol": "CLEARSTAR",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-clearstar.jpg"
   },
   {
     "id": "defi-coin8",
     "name": "Coin8",
     "symbol": "COIN8",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-coin8.jpg"
   },
   {
     "id": "defi-coinbase-bridge",
     "name": "Coinbase Bridge",
     "symbol": "COINBASE-B",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-coinbase-bridge.jpg"
   },
   {
     "id": "defi-coinbase-wrapped-staked-eth",
     "name": "Coinbase Wrapped Staked ETH",
     "symbol": "COINBASE-W",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-coinbase-wrapped-staked-eth.png"
   },
   {
     "id": "defi-coindcx",
     "name": "CoinDCX",
     "symbol": "COINDCX",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-coindcx.jpg"
   },
   {
     "id": "defi-coinex",
     "name": "CoinEx",
     "symbol": "COINEX",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-coinex.jpg"
   },
   {
     "id": "defi-coinstore",
     "name": "Coinstore",
     "symbol": "COINSTORE",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-coinstore.jpg"
   },
   {
     "id": "defi-compound-v2",
     "name": "Compound V2",
     "symbol": "COMPOUND-V",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-compound-v2.png"
   },
   {
     "id": "defi-compound-v3",
     "name": "Compound V3",
     "symbol": "COMPOUND-V",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-compound-v3.png"
   },
   {
     "id": "defi-concrete",
     "name": "Concrete",
     "symbol": "CONCRETE",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-concrete.png"
   },
   {
     "id": "defi-connext",
     "name": "Connext",
     "symbol": "CONNEXT",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-connext.png"
   },
   {
     "id": "defi-cooler-loans",
     "name": "Cooler Loans",
     "symbol": "COOLER-LOA",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-cooler-loans.jpg"
   },
   {
     "id": "defi-crypto-com",
     "name": "Crypto-com",
     "symbol": "CRYPTO-COM",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-crypto-com.jpg"
   },
   {
     "id": "defi-curvance",
     "name": "Curvance",
     "symbol": "CURVANCE",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-curvance.jpg"
   },
   {
     "id": "defi-curve-dex",
     "name": "Curve DEX",
     "symbol": "CURVE-DEX",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-curve-dex.png"
   },
   {
     "id": "defi-curve-llamalend",
     "name": "Curve LlamaLend",
     "symbol": "CURVE-LLAM",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-curve-llamalend.jpg"
   },
   {
     "id": "defi-defi-saver",
     "name": "Defi Saver",
     "symbol": "DEFI-SAVER",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-defi-saver.jpg"
   },
   {
     "id": "defi-deribit",
     "name": "Deribit",
     "symbol": "DERIBIT",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-deribit.png"
   },
   {
     "id": "defi-derive-v2",
     "name": "Derive V2",
     "symbol": "DERIVE-V2",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-derive-v2.png"
   },
   {
     "id": "defi-dfdv-staked-sol",
     "name": "DFDV Staked SOL",
     "symbol": "DFDV-STAKE",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-dfdv-staked-sol.jpg"
   },
   {
     "id": "defi-digift",
     "name": "DigiFT",
     "symbol": "DIGIFT",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-digift.png"
   },
   {
     "id": "defi-dolomite",
     "name": "Dolomite",
     "symbol": "DOLOMITE",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-dolomite.jpg"
   },
   {
     "id": "defi-doppler-finance",
     "name": "Doppler Finance",
     "symbol": "DOPPLER-FI",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-doppler-finance.png"
   },
   {
     "id": "defi-doublezero-staked-sol",
     "name": "DoubleZero Staked SOL",
     "symbol": "DOUBLEZERO",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-doublezero-staked-sol.jpg"
   },
   {
     "id": "defi-drift-staked-sol",
     "name": "Drift Staked SOL",
     "symbol": "DRIFT-STAK",
-    "category": "defi-protocol"
-  },
-  {
-    "id": "defi-drift-trade",
-    "name": "Drift Trade",
-    "symbol": "DRIFT-TRAD",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-drift-staked-sol.jpg"
   },
   {
     "id": "defi-dswap",
     "name": "Dswap",
     "symbol": "DSWAP",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-dswap.jpg"
   },
   {
     "id": "defi-dydx-v4",
     "name": "dYdX V4",
     "symbol": "DYDX-V4",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-dydx-v4.jpg"
   },
   {
     "id": "defi-echo-bridge",
     "name": "Echo Bridge",
     "symbol": "ECHO-BRIDG",
-    "category": "defi-protocol"
-  },
-  {
-    "id": "defi-echo-lending",
-    "name": "Echo Lending",
-    "symbol": "ECHO-LENDI",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-echo-bridge.jpg"
   },
   {
     "id": "defi-edgevana",
     "name": "Edgevana",
     "symbol": "EDGEVANA",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-edgevana.jpg"
   },
   {
     "id": "defi-edgex-bridge",
     "name": "edgeX Bridge",
     "symbol": "EDGEX-BRID",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-edgex-bridge.jpg"
   },
   {
     "id": "defi-eigencloud",
     "name": "EigenCloud",
     "symbol": "EIGENCLOUD",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-eigencloud.png"
   },
   {
     "id": "defi-ember-protocol",
     "name": "Ember Protocol",
     "symbol": "EMBER-PROT",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-ember-protocol.jpg"
   },
   {
     "id": "defi-enzyme-finance",
     "name": "Enzyme Finance",
     "symbol": "ENZYME-FIN",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-enzyme-finance.jpg"
   },
   {
     "id": "defi-ethena-usdtb",
     "name": "Ethena USDtb",
     "symbol": "ETHENA-USD",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-ethena-usdtb.jpg"
   },
   {
     "id": "defi-ether-fi-liquid",
     "name": "ether.fi Liquid",
     "symbol": "ETHER.FI-L",
-    "category": "defi-protocol"
-  },
-  {
-    "id": "defi-ether-fi-stake",
-    "name": "ether.fi Stake",
-    "symbol": "ETHER.FI-S",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-ether-fi-liquid.jpg"
   },
   {
     "id": "defi-ethereal-dex",
     "name": "Ethereal DEX",
     "symbol": "ETHEREAL-D",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-ethereal-dex.jpg"
   },
   {
     "id": "defi-euler-dao",
     "name": "Euler DAO",
     "symbol": "EULER-DAO",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-euler-dao.jpg"
   },
   {
     "id": "defi-euler-v2",
     "name": "Euler V2",
     "symbol": "EULER-V2",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-euler-v2.png"
   },
   {
     "id": "defi-exod",
     "name": "Exod",
     "symbol": "EXOD",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-exod.jpg"
   },
   {
     "id": "defi-exponent",
     "name": "Exponent",
     "symbol": "EXPONENT",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-exponent.png"
   },
   {
     "id": "defi-exsat-staking-btc",
     "name": "exSat Staking BTC",
     "symbol": "EXSAT-STAK",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-exsat-staking-btc.jpg"
   },
   {
     "id": "defi-extended",
     "name": "Extended",
     "symbol": "EXTENDED",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-extended.jpg"
   },
   {
     "id": "defi-falcon-finance",
     "name": "Falcon Finance",
     "symbol": "FALCON-FIN",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-falcon-finance.jpg"
   },
   {
     "id": "defi-fassets",
     "name": "FAssets",
     "symbol": "FASSETS",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-fassets.jpg"
   },
   {
     "id": "defi-felix-vaults",
     "name": "Felix Vaults",
     "symbol": "FELIX-VAUL",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-felix-vaults.jpg"
   },
   {
     "id": "defi-figure-markets-exchange",
     "name": "Figure Markets Exchange",
     "symbol": "FIGURE-MAR",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-figure-markets-exchange.jpg"
   },
   {
     "id": "defi-fira",
     "name": "Fira",
     "symbol": "FIRA",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-fira.jpg"
   },
   {
     "id": "defi-firelight",
     "name": "Firelight",
     "symbol": "FIRELIGHT",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-firelight.jpg"
   },
   {
     "id": "defi-fluid-lending",
     "name": "Fluid Lending",
     "symbol": "FLUID-LEND",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-fluid-lending.png"
   },
   {
     "id": "defi-fluid-lite",
     "name": "Fluid Lite",
     "symbol": "FLUID-LITE",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-fluid-lite.jpg"
   },
   {
     "id": "defi-frankencoin",
     "name": "Frankencoin",
     "symbol": "FRANKENCOI",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-frankencoin.jpg"
   },
   {
     "id": "defi-frax-ether",
     "name": "Frax Ether",
     "symbol": "FRAX-ETHER",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-frax-ether.jpg"
   },
   {
     "id": "defi-frax-usd",
     "name": "Frax USD",
     "symbol": "FRAX-USD",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-frax-usd.jpg"
   },
   {
     "id": "defi-free-protocol",
     "name": "Free Protocol",
     "symbol": "FREE-PROTO",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-free-protocol.png"
   },
   {
     "id": "defi-function-fbtc",
     "name": "Function FBTC",
     "symbol": "FUNCTION-F",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-function-fbtc.jpg"
   },
   {
     "id": "defi-gaib",
     "name": "GAIB",
     "symbol": "GAIB",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-gaib.jpg"
   },
   {
     "id": "defi-gain",
     "name": "Gain",
     "symbol": "GAIN",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-gain.jpg"
   },
   {
     "id": "defi-gauntlet",
     "name": "Gauntlet",
     "symbol": "GAUNTLET",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-gauntlet.jpg"
   },
   {
     "id": "defi-gearbox",
     "name": "Gearbox",
     "symbol": "GEARBOX",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-gearbox.jpg"
   },
   {
     "id": "defi-gmx-v2-perps",
     "name": "GMX V2 Perps",
     "symbol": "GMX-V2-PER",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-gmx-v2-perps.png"
   },
   {
     "id": "defi-grvt-bridge",
     "name": "Grvt Bridge",
     "symbol": "GRVT-BRIDG",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-grvt-bridge.jpg"
   },
   {
     "id": "defi-hashkey-exchange",
     "name": "HashKey Exchange",
     "symbol": "HASHKEY-EX",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-hashkey-exchange.jpg"
   },
   {
     "id": "defi-hastra",
     "name": "Hastra",
     "symbol": "HASTRA",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-hastra.jpg"
   },
   {
     "id": "defi-helius-staked-sol",
     "name": "Helius Staked SOL",
     "symbol": "HELIUS-STA",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-helius-staked-sol.jpg"
   },
   {
     "id": "defi-homora-v2",
     "name": "Homora V2",
     "symbol": "HOMORA-V2",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-homora-v2.png"
   },
   {
     "id": "defi-htx",
     "name": "HTX",
     "symbol": "HTX",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-htx.png"
   },
   {
     "id": "defi-hyperbeat-earn",
     "name": "Hyperbeat Earn",
     "symbol": "HYPERBEAT-",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-hyperbeat-earn.jpg"
   },
   {
     "id": "defi-hyperithm",
     "name": "Hyperithm",
     "symbol": "HYPERITHM",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-hyperithm.jpg"
   },
   {
     "id": "defi-hyperlane",
     "name": "Hyperlane",
     "symbol": "HYPERLANE",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-hyperlane.jpg"
   },
   {
     "id": "defi-hyperlend-pooled",
     "name": "HyperLend Pooled",
     "symbol": "HYPERLEND-",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-hyperlend-pooled.jpg"
   },
   {
     "id": "defi-hyperliquid-bridge",
     "name": "Hyperliquid Bridge",
     "symbol": "HYPERLIQUI",
-    "category": "defi-protocol"
-  },
-  {
-    "id": "defi-hyperliquid-hlp",
-    "name": "Hyperliquid HLP",
-    "symbol": "HYPERLIQUI",
-    "category": "defi-protocol"
-  },
-  {
-    "id": "defi-hyperliquid-spot-orderbook",
-    "name": "Hyperliquid Spot Orderbook",
-    "symbol": "HYPERLIQUI",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-hyperliquid-bridge.png"
   },
   {
     "id": "defi-indodax",
     "name": "Indodax",
     "symbol": "INDODAX",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-indodax.jpg"
   },
   {
     "id": "defi-infinifi",
     "name": "infiniFi",
     "symbol": "INFINIFI",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-infinifi.jpg"
   },
   {
     "id": "defi-infrared-finance",
     "name": "Infrared Finance",
     "symbol": "INFRARED-F",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-infrared-finance.jpg"
   },
   {
     "id": "defi-jagpool-staked-sol",
     "name": "JagPool Staked SOL",
     "symbol": "JAGPOOL-ST",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-jagpool-staked-sol.jpg"
   },
   {
     "id": "defi-jpool",
     "name": "JPool",
     "symbol": "JPOOL",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-jpool.png"
   },
   {
     "id": "defi-jupiter-lend",
     "name": "Jupiter Lend",
     "symbol": "JUPITER-LE",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-jupiter-lend.jpg"
   },
   {
     "id": "defi-jupiter-perpetual-exchange",
     "name": "Jupiter Perpetual Exchange",
     "symbol": "JUPITER-PE",
-    "category": "defi-protocol"
-  },
-  {
-    "id": "defi-jupiter-staked-sol",
-    "name": "Jupiter Staked SOL",
-    "symbol": "JUPITER-ST",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-jupiter-perpetual-exchange.jpg"
   },
   {
     "id": "defi-jupusd",
     "name": "JupUSD",
     "symbol": "JUPUSD",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-jupusd.jpg"
   },
   {
     "id": "defi-justcryptos",
     "name": "JustCryptos",
     "symbol": "JUSTCRYPTO",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-justcryptos.png"
   },
   {
     "id": "defi-justlend",
     "name": "JustLend",
     "symbol": "JUSTLEND",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-justlend.png"
   },
   {
     "id": "defi-k3-capital",
     "name": "K3 Capital",
     "symbol": "K3-CAPITAL",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-k3-capital.jpg"
   },
   {
     "id": "defi-kaio",
     "name": "KAIO",
     "symbol": "KAIO",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-kaio.jpg"
   },
   {
     "id": "defi-kamino-lend",
     "name": "Kamino Lend",
     "symbol": "KAMINO-LEN",
-    "category": "defi-protocol"
-  },
-  {
-    "id": "defi-kamino-liquidity",
-    "name": "Kamino Liquidity",
-    "symbol": "KAMINO-LIQ",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-kamino-lend.jpg"
   },
   {
     "id": "defi-kava-mint",
     "name": "Kava Mint",
     "symbol": "KAVA-MINT",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-kava-mint.png"
   },
   {
     "id": "defi-kelp",
     "name": "Kelp",
     "symbol": "KELP",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-kelp.jpg"
   },
   {
     "id": "defi-kinetic",
     "name": "Kinetic",
     "symbol": "KINETIC",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-kinetic.png"
   },
   {
     "id": "defi-kinetiq-khype",
     "name": "Kinetiq kHYPE",
     "symbol": "KINETIQ-KH",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-kinetiq-khype.jpg"
   },
   {
     "id": "defi-korbit",
     "name": "Korbit",
     "symbol": "KORBIT",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-korbit.jpg"
   },
   {
     "id": "defi-kpk",
     "name": "kpk",
     "symbol": "KPK",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-kpk.jpg"
   },
   {
     "id": "defi-kraken-bitcoin",
     "name": "Kraken Bitcoin",
     "symbol": "KRAKEN-BIT",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-kraken-bitcoin.jpg"
   },
   {
     "id": "defi-kumbaya",
     "name": "Kumbaya",
     "symbol": "KUMBAYA",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-kumbaya.jpg"
   },
   {
     "id": "defi-lagoon",
     "name": "Lagoon",
     "symbol": "LAGOON",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-lagoon.jpg"
   },
   {
     "id": "defi-lido",
     "name": "Lido",
     "symbol": "LIDO",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-lido.png"
   },
   {
     "id": "defi-lighter-bridge",
     "name": "Lighter Bridge",
     "symbol": "LIGHTER-BR",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-lighter-bridge.jpg"
   },
   {
     "id": "defi-lightning-network",
     "name": "Lightning Network",
     "symbol": "LIGHTNING-",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-lightning-network.png"
   },
   {
     "id": "defi-linea-bridge",
     "name": "Linea Bridge",
     "symbol": "LINEA-BRID",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-linea-bridge.jpg"
   },
   {
     "id": "defi-liquid-collective",
     "name": "Liquid Collective",
     "symbol": "LIQUID-COL",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-liquid-collective.jpg"
   },
   {
     "id": "defi-liquity-v1",
     "name": "Liquity V1",
     "symbol": "LIQUITY-V1",
-    "category": "defi-protocol"
-  },
-  {
-    "id": "defi-liquity-v2",
-    "name": "Liquity V2",
-    "symbol": "LIQUITY-V2",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-liquity-v1.jpg"
   },
   {
     "id": "defi-lista-cdp",
     "name": "Lista CDP",
     "symbol": "LISTA-CDP",
-    "category": "defi-protocol"
-  },
-  {
-    "id": "defi-lista-liquid-staking",
-    "name": "Lista Liquid Staking",
-    "symbol": "LISTA-LIQU",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-lista-cdp.jpg"
   },
   {
     "id": "defi-lofty",
     "name": "Lofty",
     "symbol": "LOFTY",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-lofty.png"
   },
   {
     "id": "defi-lombard-btc-b",
     "name": "Lombard BTC.b",
     "symbol": "LOMBARD-BT",
-    "category": "defi-protocol"
-  },
-  {
-    "id": "defi-lombard-lbtc",
-    "name": "Lombard LBTC",
-    "symbol": "LOMBARD-LB",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-lombard-btc-b.jpg"
   },
   {
     "id": "defi-loopscale",
     "name": "Loopscale",
     "symbol": "LOOPSCALE",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-loopscale.jpg"
   },
   {
     "id": "defi-lorenzo-enzobtc",
     "name": "Lorenzo enzoBTC",
     "symbol": "LORENZO-EN",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-lorenzo-enzobtc.jpg"
   },
   {
     "id": "defi-lorenzo-susd1",
     "name": "Lorenzo sUSD1+",
     "symbol": "LORENZO-SU",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-lorenzo-susd1.jpg"
   },
   {
     "id": "defi-lulo",
     "name": "Lulo",
     "symbol": "LULO",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-lulo.png"
   },
   {
     "id": "defi-m0",
     "name": "M0",
     "symbol": "M0",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-m0.jpg"
   },
   {
     "id": "defi-mantle-bridge",
     "name": "Mantle Bridge",
     "symbol": "MANTLE-BRI",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-mantle-bridge.jpg"
   },
   {
     "id": "defi-mantle-index-four-fund",
     "name": "Mantle Index Four Fund",
     "symbol": "MANTLE-IND",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-mantle-index-four-fund.jpg"
   },
   {
     "id": "defi-mantle-restaking",
     "name": "Mantle Restaking",
     "symbol": "MANTLE-RES",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-mantle-restaking.jpg"
   },
   {
     "id": "defi-maple",
     "name": "Maple",
     "symbol": "MAPLE",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-maple.png"
   },
   {
     "id": "defi-marginfi-lending",
     "name": "marginfi Lending",
     "symbol": "MARGINFI-L",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-marginfi-lending.jpg"
   },
   {
     "id": "defi-marinade-liquid-staking",
     "name": "Marinade Liquid Staking",
     "symbol": "MARINADE-L",
-    "category": "defi-protocol"
-  },
-  {
-    "id": "defi-marinade-native",
-    "name": "Marinade Native",
-    "symbol": "MARINADE-N",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-marinade-liquid-staking.jpg"
   },
   {
     "id": "defi-marinade-select",
     "name": "Marinade Select",
     "symbol": "MARINADE-S",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-marinade-select.jpg"
   },
   {
     "id": "defi-matrixdock-stbt",
     "name": "MatrixDock STBT",
     "symbol": "MATRIXDOCK",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-matrixdock-stbt.jpg"
   },
   {
     "id": "defi-matrixdock-xaum",
     "name": "MatrixDock XAUM",
     "symbol": "MATRIXDOCK",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-matrixdock-xaum.jpg"
   },
   {
     "id": "defi-mellow-core",
     "name": "Mellow Core",
     "symbol": "MELLOW-COR",
-    "category": "defi-protocol"
-  },
-  {
-    "id": "defi-mellow-restaking",
-    "name": "Mellow Restaking",
-    "symbol": "MELLOW-RES",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-mellow-core.jpg"
   },
   {
     "id": "defi-merlins-seal",
     "name": "Merlins Seal",
     "symbol": "MERLINS-SE",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-merlins-seal.png"
   },
   {
     "id": "defi-meteora-dlmm",
     "name": "Meteora DLMM",
     "symbol": "METEORA-DL",
-    "category": "defi-protocol"
-  },
-  {
-    "id": "defi-meteora-vaults",
-    "name": "Meteora vaults",
-    "symbol": "METEORA-VA",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-meteora-dlmm.png"
   },
   {
     "id": "defi-meth-protocol",
     "name": "mETH Protocol",
     "symbol": "METH-PROTO",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-meth-protocol.png"
   },
   {
     "id": "defi-mev-capital",
     "name": "MEV Capital",
     "symbol": "MEV-CAPITA",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-mev-capital.jpg"
   },
   {
     "id": "defi-mexc",
     "name": "MEXC",
     "symbol": "MEXC",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-mexc.jpg"
   },
   {
     "id": "defi-midas-rwa",
     "name": "Midas RWA",
     "symbol": "MIDAS-RWA",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-midas-rwa.png"
   },
   {
     "id": "defi-morpho-v1",
     "name": "Morpho V1",
     "symbol": "MORPHO-V1",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-morpho-v1.png"
   },
   {
     "id": "defi-multipli-fi",
     "name": "Multipli.fi",
     "symbol": "MULTIPLI.F",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-multipli-fi.png"
   },
   {
     "id": "defi-nado-spot",
     "name": "Nado Spot",
     "symbol": "NADO-SPOT",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-nado-spot.jpg"
   },
   {
     "id": "defi-navi-lending",
     "name": "NAVI Lending",
     "symbol": "NAVI-LENDI",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-navi-lending.jpg"
   },
   {
     "id": "defi-near-intents",
     "name": "NEAR Intents",
     "symbol": "NEAR-INTEN",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-near-intents.jpg"
   },
   {
     "id": "defi-neopin-staking",
     "name": "NEOPIN Staking",
     "symbol": "NEOPIN-STA",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-neopin-staking.png"
   },
   {
     "id": "defi-nest-credit",
     "name": "Nest Credit",
     "symbol": "NEST-CREDI",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-nest-credit.png"
   },
   {
     "id": "defi-nexus-btc",
     "name": "Nexus BTC",
     "symbol": "NEXUS-BTC",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-nexus-btc.jpg"
   },
   {
     "id": "defi-nexus-mutual",
     "name": "Nexus Mutual",
     "symbol": "NEXUS-MUTU",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-nexus-mutual.png"
   },
   {
     "id": "defi-noble",
     "name": "Noble",
     "symbol": "NOBLE",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-noble.png"
   },
   {
     "id": "defi-obol",
     "name": "Obol",
     "symbol": "OBOL",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-obol.jpg"
   },
   {
     "id": "defi-okx-xbtc",
     "name": "OKX xBTC",
     "symbol": "OKX-XBTC",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-okx-xbtc.jpg"
   },
   {
     "id": "defi-ondo-global-markets",
     "name": "Ondo Global Markets",
     "symbol": "ONDO-GLOBA",
-    "category": "defi-protocol"
-  },
-  {
-    "id": "defi-ondo-yield-assets",
-    "name": "Ondo Yield Assets",
-    "symbol": "ONDO-YIELD",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-ondo-global-markets.jpg"
   },
   {
     "id": "defi-onre",
     "name": "OnRe",
     "symbol": "ONRE",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-onre.jpg"
   },
   {
     "id": "defi-openeden-tbill",
     "name": "OpenEden TBILL",
     "symbol": "OPENEDEN-T",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-openeden-tbill.jpg"
   },
   {
     "id": "defi-openeden-usdo",
     "name": "OpenEden USDO",
     "symbol": "OPENEDEN-U",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-openeden-usdo.jpg"
   },
   {
     "id": "defi-optimism-bridge",
     "name": "Optimism Bridge",
     "symbol": "OPTIMISM-B",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-optimism-bridge.jpg"
   },
   {
     "id": "defi-orca-dex",
     "name": "Orca DEX",
     "symbol": "ORCA-DEX",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-orca-dex.jpg"
   },
   {
     "id": "defi-origin-ether",
     "name": "Origin Ether",
     "symbol": "ORIGIN-ETH",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-origin-ether.png"
   },
   {
     "id": "defi-origyn",
     "name": "ORIGYN",
     "symbol": "ORIGYN",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-origyn.png"
   },
   {
     "id": "defi-osl",
     "name": "OSL",
     "symbol": "OSL",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-osl.jpg"
   },
   {
     "id": "defi-osl-hk",
     "name": "OSL HK",
     "symbol": "OSL-HK",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-osl-hk.jpg"
   },
   {
     "id": "defi-ostium",
     "name": "Ostium",
     "symbol": "OSTIUM",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-ostium.png"
   },
   {
     "id": "defi-ourbit",
     "name": "Ourbit",
     "symbol": "OURBIT",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-ourbit.jpg"
   },
   {
     "id": "defi-pancakeswap-amm",
     "name": "PancakeSwap AMM",
     "symbol": "PANCAKESWA",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-pancakeswap-amm.jpg"
   },
   {
     "id": "defi-pancakeswap-amm-v3",
     "name": "PancakeSwap AMM V3",
     "symbol": "PANCAKESWA",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-pancakeswap-amm-v3.jpg"
   },
   {
     "id": "defi-pancakeswap-infinity",
     "name": "PancakeSwap Infinity",
     "symbol": "PANCAKESWA",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-pancakeswap-infinity.jpg"
   },
   {
     "id": "defi-paradex-bridge",
     "name": "Paradex Bridge",
     "symbol": "PARADEX-BR",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-paradex-bridge.jpg"
   },
   {
     "id": "defi-pareto-credit",
     "name": "Pareto Credit",
     "symbol": "PARETO-CRE",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-pareto-credit.jpg"
   },
   {
     "id": "defi-paxos-gold",
     "name": "Paxos Gold",
     "symbol": "PAXOS-GOLD",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-paxos-gold.png"
   },
   {
     "id": "defi-phantom-sol",
     "name": "Phantom SOL",
     "symbol": "PHANTOM-SO",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-phantom-sol.jpg"
   },
   {
     "id": "defi-phemex",
     "name": "Phemex",
     "symbol": "PHEMEX",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-phemex.jpg"
   },
   {
     "id": "defi-plasma-saving-vaults",
     "name": "Plasma Saving Vaults",
     "symbol": "PLASMA-SAV",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-plasma-saving-vaults.jpg"
   },
   {
     "id": "defi-pleasing-gold",
     "name": "Pleasing Gold",
     "symbol": "PLEASING-G",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-pleasing-gold.jpg"
   },
   {
     "id": "defi-poloniex",
     "name": "Poloniex",
     "symbol": "POLONIEX",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-poloniex.jpg"
   },
   {
     "id": "defi-polygon-bridge-staking",
     "name": "Polygon Bridge & Staking",
     "symbol": "POLYGON-BR",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-polygon-bridge-staking.jpg"
   },
   {
     "id": "defi-polygon-zkevm-bridge",
     "name": "Polygon zkEVM Bridge",
     "symbol": "POLYGON-ZK",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-polygon-zkevm-bridge.jpg"
   },
   {
     "id": "defi-polymarket",
     "name": "Polymarket",
     "symbol": "POLYMARKET",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-polymarket.jpg"
   },
   {
     "id": "defi-project-0",
     "name": "Project 0",
     "symbol": "PROJECT-0",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-project-0.jpg"
   },
   {
     "id": "defi-puffer-stake",
     "name": "Puffer Stake",
     "symbol": "PUFFER-STA",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-puffer-stake.jpg"
   },
   {
     "id": "defi-pulsechain-bridge",
     "name": "PulseChain Bridge",
     "symbol": "PULSECHAIN",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-pulsechain-bridge.jpg"
   },
   {
     "id": "defi-pumpbtc",
     "name": "PumpBTC",
     "symbol": "PUMPBTC",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-pumpbtc.png"
   },
   {
     "id": "defi-pumpswap",
     "name": "PumpSwap",
     "symbol": "PUMPSWAP",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-pumpswap.jpg"
   },
   {
     "id": "defi-quickswap-dex",
     "name": "Quickswap Dex",
     "symbol": "QUICKSWAP-",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-quickswap-dex.jpg"
   },
   {
     "id": "defi-raac",
     "name": "RAAC",
     "symbol": "RAAC",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-raac.jpg"
   },
   {
     "id": "defi-railgun",
     "name": "Railgun",
     "symbol": "RAILGUN",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-railgun.jpg"
   },
   {
     "id": "defi-raydium-amm",
     "name": "Raydium AMM",
     "symbol": "RAYDIUM-AM",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-raydium-amm.jpg"
   },
   {
     "id": "defi-re",
     "name": "Re",
     "symbol": "RE",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-re.jpg"
   },
   {
     "id": "defi-re7-labs",
     "name": "Re7 Labs",
     "symbol": "RE7-LABS",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-re7-labs.jpg"
   },
   {
     "id": "defi-realt-tokens",
     "name": "RealT Tokens",
     "symbol": "REALT-TOKE",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-realt-tokens.png"
   },
   {
     "id": "defi-renzo",
     "name": "Renzo",
     "symbol": "RENZO",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-renzo.png"
   },
   {
     "id": "defi-reserve-protocol",
     "name": "Reserve Protocol",
     "symbol": "RESERVE-PR",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-reserve-protocol.png"
   },
   {
     "id": "defi-reservoir-protocol",
     "name": "Reservoir Protocol",
     "symbol": "RESERVOIR-",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-reservoir-protocol.jpg"
   },
   {
     "id": "defi-resolv",
     "name": "Resolv",
     "symbol": "RESOLV",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-resolv.jpg"
   },
   {
     "id": "defi-reti-pooling",
     "name": "Reti Pooling",
     "symbol": "RETI-POOLI",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-reti-pooling.png"
   },
   {
     "id": "defi-rhea-lend",
     "name": "Rhea Lend",
     "symbol": "RHEA-LEND",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-rhea-lend.jpg"
   },
   {
     "id": "defi-river-omni-cdp",
     "name": "River Omni-CDP",
     "symbol": "RIVER-OMNI",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-river-omni-cdp.jpg"
   },
   {
     "id": "defi-robinhood",
     "name": "Robinhood",
     "symbol": "ROBINHOOD",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-robinhood.jpg"
   },
   {
     "id": "defi-rocket-pool",
     "name": "Rocket Pool",
     "symbol": "ROCKET-POO",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-rocket-pool.jpg"
   },
   {
     "id": "defi-rysk-v12",
     "name": "Rysk V12",
     "symbol": "RYSK-V12",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-rysk-v12.jpg"
   },
   {
     "id": "defi-sanctum-infinity",
     "name": "Sanctum Infinity",
     "symbol": "SANCTUM-IN",
-    "category": "defi-protocol"
-  },
-  {
-    "id": "defi-sanctum-reserve",
-    "name": "Sanctum Reserve",
-    "symbol": "SANCTUM-RE",
-    "category": "defi-protocol"
-  },
-  {
-    "id": "defi-sanctum-validator-lsts",
-    "name": "Sanctum Validator LSTs",
-    "symbol": "SANCTUM-VA",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-sanctum-infinity.jpg"
   },
   {
     "id": "defi-save",
     "name": "Save",
     "symbol": "SAVE",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-save.jpg"
   },
   {
     "id": "defi-scroll-bridge",
     "name": "Scroll Bridge",
     "symbol": "SCROLL-BRI",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-scroll-bridge.jpg"
   },
   {
     "id": "defi-sdai",
     "name": "sDAI",
     "symbol": "SDAI",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-sdai.jpg"
   },
   {
     "id": "defi-securitize-tokenized-aaa-clo-fund",
     "name": "Securitize Tokenized AAA CLO Fund",
     "symbol": "SECURITIZE",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-securitize-tokenized-aaa-clo-fund.jpg"
   },
   {
     "id": "defi-sentora",
     "name": "Sentora",
     "symbol": "SENTORA",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-sentora.jpg"
   },
   {
     "id": "defi-sky-lending",
     "name": "Sky Lending",
     "symbol": "SKY-LENDIN",
-    "category": "defi-protocol"
-  },
-  {
-    "id": "defi-sky-rwa",
-    "name": "Sky RWA",
-    "symbol": "SKY-RWA",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-sky-lending.jpg"
   },
   {
     "id": "defi-sodex-bridge",
     "name": "SoDEX Bridge",
     "symbol": "SODEX-BRID",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-sodex-bridge.jpg"
   },
   {
     "id": "defi-solstice-usx",
     "name": "Solstice USX",
     "symbol": "SOLSTICE-U",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-solstice-usx.jpg"
   },
   {
     "id": "defi-solv-basis-trading",
     "name": "Solv Basis Trading",
     "symbol": "SOLV-BASIS",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-solv-basis-trading.png"
   },
   {
     "id": "defi-solv-strategies",
     "name": "Solv Strategies",
     "symbol": "SOLV-STRAT",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-solv-strategies.jpg"
   },
   {
     "id": "defi-solvbtc",
     "name": "SolvBTC",
     "symbol": "SOLVBTC",
-    "category": "defi-protocol"
-  },
-  {
-    "id": "defi-solvbtc-lsts",
-    "name": "SolvBTC LSTs",
-    "symbol": "SOLVBTC-LS",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-solvbtc.jpg"
   },
   {
     "id": "defi-sonic-gateway",
     "name": "Sonic Gateway",
     "symbol": "SONIC-GATE",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-sonic-gateway.png"
   },
   {
     "id": "defi-sophon-bridge",
     "name": "Sophon Bridge",
     "symbol": "SOPHON-BRI",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-sophon-bridge.png"
   },
   {
     "id": "defi-sosovalue-indexes",
     "name": "SoSoValue Indexes",
     "symbol": "SOSOVALUE-",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-sosovalue-indexes.png"
   },
   {
     "id": "defi-spark-liquidity-layer",
     "name": "Spark Liquidity Layer",
     "symbol": "SPARK-LIQU",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-spark-liquidity-layer.jpg"
   },
   {
     "id": "defi-spark-savings",
     "name": "Spark Savings",
     "symbol": "SPARK-SAVI",
-    "category": "defi-protocol"
-  },
-  {
-    "id": "defi-sparklend",
-    "name": "SparkLend",
-    "symbol": "SPARKLEND",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-spark-savings.jpg"
   },
   {
     "id": "defi-spiko",
     "name": "Spiko",
     "symbol": "SPIKO",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-spiko.png"
   },
   {
     "id": "defi-springsui",
     "name": "SpringSui",
     "symbol": "SPRINGSUI",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-springsui.png"
   },
   {
     "id": "defi-ssv-network",
     "name": "SSV Network",
     "symbol": "SSV-NETWOR",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-ssv-network.jpg"
   },
   {
     "id": "defi-stacks-sbtc",
     "name": "Stacks sBTC",
     "symbol": "STACKS-SBT",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-stacks-sbtc.jpg"
   },
   {
     "id": "defi-stader",
     "name": "Stader",
     "symbol": "STADER",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-stader.jpg"
   },
   {
     "id": "defi-stake-dao",
     "name": "Stake DAO",
     "symbol": "STAKE-DAO",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-stake-dao.jpg"
   },
   {
     "id": "defi-stake-link-liquid",
     "name": "stake.link liquid",
     "symbol": "STAKE.LINK",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-stake-link-liquid.png"
   },
   {
     "id": "defi-stakewise-v2",
     "name": "StakeWise V2",
     "symbol": "STAKEWISE-",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-stakewise-v2.png"
   },
   {
     "id": "defi-standx-bridge",
     "name": "StandX Bridge",
     "symbol": "STANDX-BRI",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-standx-bridge.jpg"
   },
   {
     "id": "defi-stargate-v2",
     "name": "Stargate V2",
     "symbol": "STARGATE-V",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-stargate-v2.png"
   },
   {
     "id": "defi-starknet-bridge",
     "name": "Starknet Bridge",
     "symbol": "STARKNET-B",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-starknet-bridge.png"
   },
   {
     "id": "defi-steakhouse-financial",
     "name": "Steakhouse Financial",
     "symbol": "STEAKHOUSE",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-steakhouse-financial.jpg"
   },
   {
     "id": "defi-sthype",
     "name": "stHYPE",
     "symbol": "STHYPE",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-sthype.jpg"
   },
   {
     "id": "defi-stkesol-by-sol-strategies",
     "name": "STKESOL by SOL Strategies",
     "symbol": "STKESOL-BY",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-stkesol-by-sol-strategies.jpg"
   },
   {
     "id": "defi-strata-markets",
     "name": "Strata Markets",
     "symbol": "STRATA-MAR",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-strata-markets.png"
   },
   {
     "id": "defi-stusdt",
     "name": "stUSDT",
     "symbol": "STUSDT",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-stusdt.jpg"
   },
   {
     "id": "defi-suibridge",
     "name": "SuiBridge",
     "symbol": "SUIBRIDGE",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-suibridge.jpg"
   },
   {
     "id": "defi-suilend",
     "name": "Suilend",
     "symbol": "SUILEND",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-suilend.png"
   },
   {
     "id": "defi-sunswap-v1",
     "name": "SUNSwap V1",
     "symbol": "SUNSWAP-V1",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-sunswap-v1.jpg"
   },
   {
     "id": "defi-sunswap-v3",
     "name": "SUNSwap V3",
     "symbol": "SUNSWAP-V3",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-sunswap-v3.jpg"
   },
   {
     "id": "defi-superstate-uscc",
     "name": "Superstate USCC",
     "symbol": "SUPERSTATE",
-    "category": "defi-protocol"
-  },
-  {
-    "id": "defi-superstate-ustb",
-    "name": "Superstate USTB",
-    "symbol": "SUPERSTATE",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-superstate-uscc.jpg"
   },
   {
     "id": "defi-sushiswap-v3",
     "name": "SushiSwap V3",
     "symbol": "SUSHISWAP-",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-sushiswap-v3.png"
   },
   {
     "id": "defi-swell-l2-farm",
     "name": "Swell L2 Farm",
     "symbol": "SWELL-L2-F",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-swell-l2-farm.png"
   },
   {
     "id": "defi-symbiotic",
     "name": "Symbiotic",
     "symbol": "SYMBIOTIC",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-symbiotic.png"
   },
   {
     "id": "defi-team-finance",
     "name": "Team Finance",
     "symbol": "TEAM-FINAN",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-team-finance.png"
   },
   {
     "id": "defi-tectonic",
     "name": "Tectonic",
     "symbol": "TECTONIC",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-tectonic.png"
   },
   {
     "id": "defi-telos-consilium",
     "name": "Telos Consilium",
     "symbol": "TELOS-CONS",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-telos-consilium.jpg"
   },
   {
     "id": "defi-termmax",
     "name": "TermMax",
     "symbol": "TERMMAX",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-termmax.jpg"
   },
   {
     "id": "defi-the-vault-liquid-staking",
     "name": "The Vault Liquid Staking",
     "symbol": "THE-VAULT-",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-the-vault-liquid-staking.jpg"
   },
   {
     "id": "defi-theo-network-thbill",
     "name": "Theo Network thBill",
     "symbol": "THEO-NETWO",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-theo-network-thbill.jpg"
   },
   {
     "id": "defi-thorchain-dex",
     "name": "Thorchain DEX",
     "symbol": "THORCHAIN-",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-thorchain-dex.jpg"
   },
   {
     "id": "defi-tonstakers-lsd",
     "name": "Tonstakers LSD",
     "symbol": "TONSTAKERS",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-tonstakers-lsd.jpg"
   },
   {
     "id": "defi-toobit",
     "name": "Toobit",
     "symbol": "TOOBIT",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-toobit.jpg"
   },
   {
     "id": "defi-tornado-cash",
     "name": "Tornado Cash",
     "symbol": "TORNADO-CA",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-tornado-cash.jpg"
   },
   {
     "id": "defi-treehouse-protocol",
     "name": "Treehouse Protocol",
     "symbol": "TREEHOUSE-",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-treehouse-protocol.jpg"
   },
   {
     "id": "defi-tulipa-capital",
     "name": "Tulipa Capital",
     "symbol": "TULIPA-CAP",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-tulipa-capital.jpg"
   },
   {
     "id": "defi-tydro",
     "name": "Tydro",
     "symbol": "TYDRO",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-tydro.jpg"
   },
   {
     "id": "defi-tzbtc",
     "name": "tzBTC",
     "symbol": "TZBTC",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-tzbtc.jpg"
   },
   {
     "id": "defi-ultrayield-by-edge",
     "name": "UltraYield by Edge",
     "symbol": "ULTRAYIELD",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-ultrayield-by-edge.jpg"
   },
   {
     "id": "defi-uncx-network-v2",
     "name": "UNCX Network V2",
     "symbol": "UNCX-NETWO",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-uncx-network-v2.png"
   },
   {
     "id": "defi-unirouter",
     "name": "UniRouter",
     "symbol": "UNIROUTER",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-unirouter.jpg"
   },
   {
     "id": "defi-uniswap-v2",
     "name": "Uniswap V2",
     "symbol": "UNISWAP-V2",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-uniswap-v2.png"
   },
   {
     "id": "defi-uniswap-v3",
     "name": "Uniswap V3",
     "symbol": "UNISWAP-V3",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-uniswap-v3.png"
   },
   {
     "id": "defi-uniswap-v4",
     "name": "Uniswap V4",
     "symbol": "UNISWAP-V4",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-uniswap-v4.png"
   },
   {
     "id": "defi-unit",
     "name": "Unit",
     "symbol": "UNIT",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-unit.jpg"
   },
   {
     "id": "defi-unitas",
     "name": "Unitas",
     "symbol": "UNITAS",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-unitas.jpg"
   },
   {
     "id": "defi-upshift",
     "name": "Upshift",
     "symbol": "UPSHIFT",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-upshift.jpg"
   },
   {
     "id": "defi-usd-ai",
     "name": "USD AI",
     "symbol": "USD-AI",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-usd-ai.jpg"
   },
   {
     "id": "defi-usual-usd0",
     "name": "Usual USD0",
     "symbol": "USUAL-USD0",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-usual-usd0.jpg"
   },
   {
     "id": "defi-valr",
     "name": "VALR",
     "symbol": "VALR",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-valr.jpg"
   },
   {
     "id": "defi-vaneck-treasury-fund",
     "name": "VanEck Treasury Fund",
     "symbol": "VANECK-TRE",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-vaneck-treasury-fund.jpg"
   },
   {
     "id": "defi-vault-bridge",
     "name": "Vault Bridge",
     "symbol": "VAULT-BRID",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-vault-bridge.jpg"
   },
   {
     "id": "defi-veda",
     "name": "Veda",
     "symbol": "VEDA",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-veda.jpg"
   },
   {
     "id": "defi-venus-core-pool",
     "name": "Venus Core Pool",
     "symbol": "VENUS-CORE",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-venus-core-pool.jpg"
   },
   {
     "id": "defi-vishwa",
     "name": "Vishwa",
     "symbol": "VISHWA",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-vishwa.jpg"
   },
   {
     "id": "defi-vvs-standard",
     "name": "VVS Standard",
     "symbol": "VVS-STANDA",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-vvs-standard.jpg"
   },
   {
     "id": "defi-weex",
     "name": "WEEX",
     "symbol": "WEEX",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-weex.jpg"
   },
   {
     "id": "defi-wisdomtree",
     "name": "WisdomTree",
     "symbol": "WISDOMTREE",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-wisdomtree.jpg"
   },
   {
     "id": "defi-world-chain",
     "name": "World Chain",
     "symbol": "WORLD-CHAI",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-world-chain.png"
   },
   {
     "id": "defi-xdai-stake-bridge",
     "name": "xDAI Stake Bridge",
     "symbol": "XDAI-STAKE",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-xdai-stake-bridge.png"
   },
   {
     "id": "defi-xstocks",
     "name": "xStocks",
     "symbol": "XSTOCKS",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-xstocks.jpg"
   },
   {
     "id": "defi-ybtc-b",
     "name": "YBTC.B",
     "symbol": "YBTC.B",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-ybtc-b.jpg"
   },
   {
     "id": "defi-yearn-curating",
     "name": "Yearn Curating",
     "symbol": "YEARN-CURA",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-yearn-curating.jpg"
   },
   {
     "id": "defi-yearn-finance",
     "name": "Yearn Finance",
     "symbol": "YEARN-FINA",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-yearn-finance.jpg"
   },
   {
     "id": "defi-yield-basis",
     "name": "Yield Basis",
     "symbol": "YIELD-BASI",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-yield-basis.jpg"
   },
   {
     "id": "defi-yo-protocol",
     "name": "YO Protocol",
     "symbol": "YO-PROTOCO",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-yo-protocol.png"
   },
   {
     "id": "defi-yuzu-money",
     "name": "Yuzu Money",
     "symbol": "YUZU-MONEY",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-yuzu-money.jpg"
   },
   {
     "id": "defi-zerobase-cedefi",
     "name": "ZEROBASE CeDeFi",
     "symbol": "ZEROBASE-C",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-zerobase-cedefi.jpg"
   },
   {
     "id": "defi-zest-v2",
     "name": "Zest V2",
     "symbol": "ZEST-V2",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-zest-v2.jpg"
   },
   {
     "id": "defi-zircuit-staking",
     "name": "Zircuit Staking",
     "symbol": "ZIRCUIT-ST",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-zircuit-staking.png"
   },
   {
     "id": "defi-zksync-era-txbridge",
     "name": "zkSync Era txBridge",
     "symbol": "ZKSYNC-ERA",
-    "category": "defi-protocol"
+    "category": "defi-protocol",
+    "path": "data/svg/defi-zksync-era-txbridge.jpg"
   },
   {
     "id": "defit",
@@ -7567,166 +7749,179 @@
     "path": "data/svg/ewt.svg"
   },
   {
-    "id": "exchange-1inch",
-    "name": "1Inch",
-    "symbol": "1INCH",
-    "category": "exchange"
-  },
-  {
-    "id": "exchange-aevo",
-    "name": "Aevo",
-    "symbol": "AEVO",
-    "category": "exchange"
-  },
-  {
     "id": "exchange-balancer",
     "name": "Balancer",
     "symbol": "BALANCER",
-    "category": "exchange"
+    "category": "exchanges",
+    "path": "data/svg/exchange-balancer.svg"
   },
   {
     "id": "exchange-bancor",
     "name": "Bancor",
     "symbol": "BANCOR",
-    "category": "exchange"
+    "category": "exchanges",
+    "path": "data/svg/exchange-bancor.svg"
   },
   {
     "id": "exchange-binance",
     "name": "Binance",
     "symbol": "BINANCE",
-    "category": "exchange"
+    "category": "exchanges",
+    "path": "data/svg/exchange-binance.svg"
   },
   {
     "id": "exchange-bitget",
     "name": "Bitget",
     "symbol": "BITGET",
-    "category": "exchange"
+    "category": "exchanges",
+    "path": "data/svg/exchange-bitget.svg"
   },
   {
     "id": "exchange-bithumb",
     "name": "Bithumb",
     "symbol": "BITHUMB",
-    "category": "exchange"
+    "category": "exchanges",
+    "path": "data/svg/exchange-bithumb.svg"
   },
   {
     "id": "exchange-bitstamp",
     "name": "Bitstamp",
     "symbol": "BITSTAMP",
-    "category": "exchange"
+    "category": "exchanges",
+    "path": "data/svg/exchange-bitstamp.svg"
   },
   {
     "id": "exchange-btcturk",
     "name": "Btcturk",
     "symbol": "BTCTURK",
-    "category": "exchange"
+    "category": "exchanges",
+    "path": "data/svg/exchange-btcturk.svg"
   },
   {
     "id": "exchange-bybit",
     "name": "Bybit",
     "symbol": "BYBIT",
-    "category": "exchange"
+    "category": "exchanges",
+    "path": "data/svg/exchange-bybit.svg"
   },
   {
     "id": "exchange-coinbase",
     "name": "Coinbase",
     "symbol": "COINBASE",
-    "category": "exchange"
+    "category": "exchanges",
+    "path": "data/svg/exchange-coinbase.svg"
   },
   {
     "id": "exchange-cowswap",
     "name": "Cowswap",
     "symbol": "COWSWAP",
-    "category": "exchange"
+    "category": "exchanges",
+    "path": "data/svg/exchange-cowswap.svg"
   },
   {
     "id": "exchange-crypto-com",
     "name": "Crypto Com",
     "symbol": "CRYPTO-COM",
-    "category": "exchange"
+    "category": "exchanges",
+    "path": "data/svg/exchange-crypto-com.svg"
   },
   {
     "id": "exchange-gate-io",
     "name": "Gate Io",
     "symbol": "GATE-IO",
-    "category": "exchange"
+    "category": "exchanges",
+    "path": "data/svg/exchange-gate-io.svg"
   },
   {
     "id": "exchange-gemini",
     "name": "Gemini",
     "symbol": "GEMINI",
-    "category": "exchange"
+    "category": "exchanges",
+    "path": "data/svg/exchange-gemini.svg"
   },
   {
     "id": "exchange-kraken",
     "name": "Kraken",
     "symbol": "KRAKEN",
-    "category": "exchange"
+    "category": "exchanges",
+    "path": "data/svg/exchange-kraken.svg"
   },
   {
     "id": "exchange-kucoin",
     "name": "Kucoin",
     "symbol": "KUCOIN",
-    "category": "exchange"
+    "category": "exchanges",
+    "path": "data/svg/exchange-kucoin.svg"
   },
   {
     "id": "exchange-odos",
     "name": "Odos",
     "symbol": "ODOS",
-    "category": "exchange"
+    "category": "exchanges",
+    "path": "data/svg/exchange-odos.svg"
   },
   {
     "id": "exchange-okx",
     "name": "Okx",
     "symbol": "OKX",
-    "category": "exchange"
+    "category": "exchanges",
+    "path": "data/svg/exchange-okx.svg"
   },
   {
     "id": "exchange-pancake-swap",
     "name": "Pancake Swap",
     "symbol": "PANCAKE-SW",
-    "category": "exchange"
+    "category": "exchanges",
+    "path": "data/svg/exchange-pancake-swap.svg"
   },
   {
     "id": "exchange-para-swap",
     "name": "Para Swap",
     "symbol": "PARA-SWAP",
-    "category": "exchange"
+    "category": "exchanges",
+    "path": "data/svg/exchange-para-swap.svg"
   },
   {
     "id": "exchange-paradex",
     "name": "Paradex",
     "symbol": "PARADEX",
-    "category": "exchange"
+    "category": "exchanges",
+    "path": "data/svg/exchange-paradex.svg"
   },
   {
     "id": "exchange-paribu",
     "name": "Paribu",
     "symbol": "PARIBU",
-    "category": "exchange"
+    "category": "exchanges",
+    "path": "data/svg/exchange-paribu.svg"
   },
   {
     "id": "exchange-sushiswap",
     "name": "Sushiswap",
     "symbol": "SUSHISWAP",
-    "category": "exchange"
+    "category": "exchanges",
+    "path": "data/svg/exchange-sushiswap.svg"
   },
   {
     "id": "exchange-swissborg",
     "name": "Swissborg",
     "symbol": "SWISSBORG",
-    "category": "exchange"
+    "category": "exchanges",
+    "path": "data/svg/exchange-swissborg.svg"
   },
   {
     "id": "exchange-uniswap",
     "name": "Uniswap",
     "symbol": "UNISWAP",
-    "category": "exchange"
+    "category": "exchanges",
+    "path": "data/svg/exchange-uniswap.svg"
   },
   {
     "id": "exchange-upbit",
     "name": "Upbit",
     "symbol": "UPBIT",
-    "category": "exchange"
+    "category": "exchanges",
+    "path": "data/svg/exchange-upbit.svg"
   },
   {
     "id": "exd",
@@ -8271,7 +8466,8 @@
     "id": "ftn",
     "name": "FTN",
     "symbol": "FTN",
-    "category": "token"
+    "category": "tokens",
+    "path": "data/svg/ftn.svg"
   },
   {
     "id": "ftt",
@@ -8811,13 +9007,6 @@
     "symbol": "GO",
     "category": "tokens",
     "path": "data/svg/go.svg"
-  },
-  {
-    "id": "goat",
-    "name": "GOAT",
-    "symbol": "GOAT",
-    "category": "tokens",
-    "path": "data/svg/goat.svg"
   },
   {
     "id": "gob",
@@ -12768,13 +12957,6 @@
     "path": "data/svg/networks/arbitrum-one.svg"
   },
   {
-    "id": "network-arc",
-    "name": "ARC",
-    "symbol": "ARC",
-    "category": "networks",
-    "path": "data/svg/networks/arc.svg"
-  },
-  {
     "id": "network-arweave",
     "name": "ARWEAVE",
     "symbol": "ARWEAVE",
@@ -12787,13 +12969,6 @@
     "symbol": "ASTAR",
     "category": "networks",
     "path": "data/svg/networks/astar.svg"
-  },
-  {
-    "id": "network-aurora",
-    "name": "AURORA",
-    "symbol": "AURORA",
-    "category": "networks",
-    "path": "data/svg/networks/aurora.svg"
   },
   {
     "id": "network-autonomys",
@@ -12824,13 +12999,6 @@
     "path": "data/svg/networks/base.svg"
   },
   {
-    "id": "network-beam",
-    "name": "BEAM",
-    "symbol": "BEAM",
-    "category": "networks",
-    "path": "data/svg/networks/beam.svg"
-  },
-  {
     "id": "network-berachain",
     "name": "BERACHAIN",
     "symbol": "BERACHAIN",
@@ -12845,39 +13013,11 @@
     "path": "data/svg/networks/binance-smart-chain.svg"
   },
   {
-    "id": "network-bitcoin",
-    "name": "BITCOIN",
-    "symbol": "BITCOIN",
-    "category": "networks",
-    "path": "data/svg/networks/bitcoin.svg"
-  },
-  {
     "id": "network-bitkub-chain",
     "name": "BITKUB-CHAIN",
     "symbol": "BITKUB-CHAIN",
     "category": "networks",
     "path": "data/svg/networks/bitkub-chain.svg"
-  },
-  {
-    "id": "network-blast",
-    "name": "BLAST",
-    "symbol": "BLAST",
-    "category": "networks",
-    "path": "data/svg/networks/blast.svg"
-  },
-  {
-    "id": "network-bob",
-    "name": "BOB",
-    "symbol": "BOB",
-    "category": "networks",
-    "path": "data/svg/networks/bob.svg"
-  },
-  {
-    "id": "network-boba",
-    "name": "BOBA",
-    "symbol": "BOBA",
-    "category": "networks",
-    "path": "data/svg/networks/boba.svg"
   },
   {
     "id": "network-botanix",
@@ -12899,13 +13039,6 @@
     "symbol": "CARDANO",
     "category": "networks",
     "path": "data/svg/networks/cardano.svg"
-  },
-  {
-    "id": "network-celo",
-    "name": "CELO",
-    "symbol": "CELO",
-    "category": "networks",
-    "path": "data/svg/networks/celo.svg"
   },
   {
     "id": "network-chiliz",
@@ -12985,13 +13118,6 @@
     "path": "data/svg/networks/cronos.svg"
   },
   {
-    "id": "network-cronos-zkevm",
-    "name": "CRONOS-ZKEVM",
-    "symbol": "CRONOS-ZKEVM",
-    "category": "networks",
-    "path": "data/svg/networks/cronos-zkevm.svg"
-  },
-  {
     "id": "network-darwinia",
     "name": "DARWINIA",
     "symbol": "DARWINIA",
@@ -13041,13 +13167,6 @@
     "path": "data/svg/networks/enuls.svg"
   },
   {
-    "id": "network-eos",
-    "name": "EOS",
-    "symbol": "EOS",
-    "category": "networks",
-    "path": "data/svg/networks/eos.svg"
-  },
-  {
     "id": "network-ethereum",
     "name": "ETHEREUM",
     "symbol": "ETHEREUM",
@@ -13090,13 +13209,6 @@
     "path": "data/svg/networks/filecoin.svg"
   },
   {
-    "id": "network-fio",
-    "name": "FIO",
-    "symbol": "FIO",
-    "category": "networks",
-    "path": "data/svg/networks/fio.svg"
-  },
-  {
     "id": "network-flare",
     "name": "FLARE",
     "symbol": "FLARE",
@@ -13116,20 +13228,6 @@
     "symbol": "FRAXTAL",
     "category": "networks",
     "path": "data/svg/networks/fraxtal.svg"
-  },
-  {
-    "id": "network-fuel",
-    "name": "FUEL",
-    "symbol": "FUEL",
-    "category": "networks",
-    "path": "data/svg/networks/fuel.svg"
-  },
-  {
-    "id": "network-fuse",
-    "name": "FUSE",
-    "symbol": "FUSE",
-    "category": "networks",
-    "path": "data/svg/networks/fuse.svg"
   },
   {
     "id": "network-genesis-l1",
@@ -13216,20 +13314,6 @@
     "path": "data/svg/networks/injective.svg"
   },
   {
-    "id": "network-ink",
-    "name": "INK",
-    "symbol": "INK",
-    "category": "networks",
-    "path": "data/svg/networks/ink.svg"
-  },
-  {
-    "id": "network-iota-evm",
-    "name": "IOTA-EVM",
-    "symbol": "IOTA-EVM",
-    "category": "networks",
-    "path": "data/svg/networks/iota-evm.svg"
-  },
-  {
     "id": "network-iotex",
     "name": "IOTEX",
     "symbol": "IOTEX",
@@ -13244,25 +13328,11 @@
     "path": "data/svg/networks/japan-open-chain.svg"
   },
   {
-    "id": "network-juno",
-    "name": "JUNO",
-    "symbol": "JUNO",
-    "category": "networks",
-    "path": "data/svg/networks/juno.svg"
-  },
-  {
     "id": "network-juris",
     "name": "JURIS",
     "symbol": "JURIS",
     "category": "networks",
     "path": "data/svg/networks/juris.svg"
-  },
-  {
-    "id": "network-kaia",
-    "name": "Kaia",
-    "symbol": "KAIA",
-    "category": "networks",
-    "path": "data/svg/networks/kaia.svg"
   },
   {
     "id": "network-kakarot",
@@ -13293,25 +13363,11 @@
     "path": "data/svg/networks/katana.svg"
   },
   {
-    "id": "network-kava",
-    "name": "KAVA",
-    "symbol": "KAVA",
-    "category": "networks",
-    "path": "data/svg/networks/kava.svg"
-  },
-  {
     "id": "network-kroma",
     "name": "KROMA",
     "symbol": "KROMA",
     "category": "networks",
     "path": "data/svg/networks/kroma.svg"
-  },
-  {
-    "id": "network-kucoin",
-    "name": "KUCOIN",
-    "symbol": "KUCOIN",
-    "category": "networks",
-    "path": "data/svg/networks/kucoin.svg"
   },
   {
     "id": "network-kujira",
@@ -13377,13 +13433,6 @@
     "path": "data/svg/networks/loopring.svg"
   },
   {
-    "id": "network-lukso",
-    "name": "LUKSO",
-    "symbol": "LUKSO",
-    "category": "networks",
-    "path": "data/svg/networks/lukso.svg"
-  },
-  {
     "id": "network-lumia",
     "name": "LUMIA",
     "symbol": "LUMIA",
@@ -13405,25 +13454,11 @@
     "path": "data/svg/networks/lycan.svg"
   },
   {
-    "id": "network-lyra",
-    "name": "LYRA",
-    "symbol": "LYRA",
-    "category": "networks",
-    "path": "data/svg/networks/lyra.svg"
-  },
-  {
     "id": "network-manta-pacific",
     "name": "MANTA-PACIFIC",
     "symbol": "MANTA-PACIFIC",
     "category": "networks",
     "path": "data/svg/networks/manta-pacific.svg"
-  },
-  {
-    "id": "network-mantle",
-    "name": "MANTLE",
-    "symbol": "MANTLE",
-    "category": "networks",
-    "path": "data/svg/networks/mantle.svg"
   },
   {
     "id": "network-mantra",
@@ -13459,13 +13494,6 @@
     "symbol": "MILKOMEDA-A1",
     "category": "networks",
     "path": "data/svg/networks/milkomeda-a1.svg"
-  },
-  {
-    "id": "network-milkomeda-c1",
-    "name": "MILKOMEDA-C1",
-    "symbol": "MILKOMEDA-C1",
-    "category": "networks",
-    "path": "data/svg/networks/milkomeda-c1.svg"
   },
   {
     "id": "network-minima",
@@ -13634,13 +13662,6 @@
     "symbol": "OZEAN",
     "category": "networks",
     "path": "data/svg/networks/ozean.svg"
-  },
-  {
-    "id": "network-paradex",
-    "name": "PARADEX",
-    "symbol": "PARADEX",
-    "category": "networks",
-    "path": "data/svg/networks/paradex.svg"
   },
   {
     "id": "network-peaq",
@@ -14033,13 +14054,6 @@
     "symbol": "VARA",
     "category": "networks",
     "path": "data/svg/networks/vara.svg"
-  },
-  {
-    "id": "network-vaulta",
-    "name": "VAULTA",
-    "symbol": "VAULTA",
-    "category": "networks",
-    "path": "data/svg/networks/vaulta.svg"
   },
   {
     "id": "network-velas",
@@ -14770,13 +14784,6 @@
     "path": "data/svg/oks.svg"
   },
   {
-    "id": "okt",
-    "name": "OKT",
-    "symbol": "OKT",
-    "category": "tokens",
-    "path": "data/svg/okt.svg"
-  },
-  {
     "id": "olt",
     "name": "OLT",
     "symbol": "OLT",
@@ -15316,13 +15323,6 @@
     "path": "data/svg/pdt.svg"
   },
   {
-    "id": "peaq",
-    "name": "PEAQ",
-    "symbol": "PEAQ",
-    "category": "tokens",
-    "path": "data/svg/peaq.svg"
-  },
-  {
     "id": "pearl",
     "name": "PEARL",
     "symbol": "PEARL",
@@ -15764,13 +15764,6 @@
     "path": "data/svg/pokt.svg"
   },
   {
-    "id": "pol",
-    "name": "POL (ex-MATIC)",
-    "symbol": "POL",
-    "category": "tokens",
-    "path": "data/svg/pol.svg"
-  },
-  {
     "id": "pola",
     "name": "POLA",
     "symbol": "POLA",
@@ -16030,13 +16023,6 @@
     "path": "data/svg/prob.svg"
   },
   {
-    "id": "prom",
-    "name": "PROM",
-    "symbol": "PROM",
-    "category": "tokens",
-    "path": "data/svg/prom.svg"
-  },
-  {
     "id": "propc",
     "name": "PROPC",
     "symbol": "PROPC",
@@ -16182,13 +16168,6 @@
     "symbol": "PURSE",
     "category": "tokens",
     "path": "data/svg/purse.svg"
-  },
-  {
-    "id": "push",
-    "name": "PUSH",
-    "symbol": "PUSH",
-    "category": "tokens",
-    "path": "data/svg/push.svg"
   },
   {
     "id": "pussy",
@@ -16492,13 +16471,6 @@
     "path": "data/svg/rare.svg"
   },
   {
-    "id": "rari",
-    "name": "RARI",
-    "symbol": "RARI",
-    "category": "tokens",
-    "path": "data/svg/rari.svg"
-  },
-  {
     "id": "raven",
     "name": "RAVEN",
     "symbol": "RAVEN",
@@ -16609,12 +16581,6 @@
     "symbol": "RDT",
     "category": "tokens",
     "path": "data/svg/rdt.svg"
-  },
-  {
-    "id": "read",
-    "name": "$READ",
-    "symbol": "$READ",
-    "category": "token"
   },
   {
     "id": "realm",
@@ -17663,7 +17629,8 @@
     "id": "sis",
     "name": "SIS",
     "symbol": "SIS",
-    "category": "token"
+    "category": "tokens",
+    "path": "data/svg/sis.svg"
   },
   {
     "id": "six",
@@ -18303,13 +18270,6 @@
     "path": "data/svg/stella.svg"
   },
   {
-    "id": "step",
-    "name": "STEP",
-    "symbol": "STEP",
-    "category": "tokens",
-    "path": "data/svg/step.svg"
-  },
-  {
     "id": "steth",
     "name": "STETH",
     "symbol": "STETH",
@@ -18499,13 +18459,6 @@
     "path": "data/svg/sudo.svg"
   },
   {
-    "id": "sui",
-    "name": "Sui",
-    "symbol": "SUI",
-    "category": "tokens",
-    "path": "data/svg/sui.svg"
-  },
-  {
     "id": "suip",
     "name": "SUIP",
     "symbol": "SUIP",
@@ -18611,13 +18564,6 @@
     "path": "data/svg/sweat.svg"
   },
   {
-    "id": "swell",
-    "name": "SWELL",
-    "symbol": "SWELL",
-    "category": "tokens",
-    "path": "data/svg/swell.svg"
-  },
-  {
     "id": "sweth",
     "name": "SWETH",
     "symbol": "SWETH",
@@ -18686,13 +18632,6 @@
     "symbol": "SYNC",
     "category": "tokens",
     "path": "data/svg/sync.svg"
-  },
-  {
-    "id": "sys",
-    "name": "SYS",
-    "symbol": "SYS",
-    "category": "tokens",
-    "path": "data/svg/sys.svg"
   },
   {
     "id": "t",
@@ -18821,13 +18760,6 @@
     "path": "data/svg/ten.svg"
   },
   {
-    "id": "tenet",
-    "name": "TENET",
-    "symbol": "TENET",
-    "category": "tokens",
-    "path": "data/svg/tenet.svg"
-  },
-  {
     "id": "tera",
     "name": "TERA",
     "symbol": "TERA",
@@ -18917,13 +18849,6 @@
     "symbol": "THEO",
     "category": "tokens",
     "path": "data/svg/theo.svg"
-  },
-  {
-    "id": "theta",
-    "name": "Theta Network",
-    "symbol": "THETA",
-    "category": "tokens",
-    "path": "data/svg/theta.svg"
   },
   {
     "id": "thol",
@@ -19134,13 +19059,6 @@
     "symbol": "TOMO",
     "category": "tokens",
     "path": "data/svg/tomo.svg"
-  },
-  {
-    "id": "ton",
-    "name": "Toncoin",
-    "symbol": "TON",
-    "category": "tokens",
-    "path": "data/svg/ton.svg"
   },
   {
     "id": "tonic",
@@ -19836,13 +19754,6 @@
     "path": "data/svg/value.svg"
   },
   {
-    "id": "vara",
-    "name": "VARA",
-    "symbol": "VARA",
-    "category": "tokens",
-    "path": "data/svg/vara.svg"
-  },
-  {
     "id": "vc",
     "name": "VC",
     "symbol": "VC",
@@ -20340,13 +20251,6 @@
     "path": "data/svg/wallets/bitbox.svg"
   },
   {
-    "id": "wallet-blue",
-    "name": "Blue",
-    "symbol": "BLUE",
-    "category": "wallets",
-    "path": "data/svg/wallets/blue.svg"
-  },
-  {
     "id": "wallet-clave",
     "name": "Clave",
     "symbol": "CLAVE",
@@ -20359,13 +20263,6 @@
     "symbol": "COIN98",
     "category": "wallets",
     "path": "data/svg/wallets/coin98.svg"
-  },
-  {
-    "id": "wallet-coinbase",
-    "name": "Coinbase",
-    "symbol": "COINBASE",
-    "category": "wallets",
-    "path": "data/svg/wallets/coinbase.svg"
   },
   {
     "id": "wallet-cypherock",
@@ -20417,13 +20314,6 @@
     "path": "data/svg/wallets/keplr.svg"
   },
   {
-    "id": "wallet-kraken",
-    "name": "Kraken",
-    "symbol": "KRAKEN",
-    "category": "wallets",
-    "path": "data/svg/wallets/kraken.svg"
-  },
-  {
     "id": "wallet-kukai",
     "name": "Kukai",
     "symbol": "KUKAI",
@@ -20473,13 +20363,6 @@
     "path": "data/svg/wallets/obvious.svg"
   },
   {
-    "id": "wallet-okx",
-    "name": "Okx",
-    "symbol": "OKX",
-    "category": "wallets",
-    "path": "data/svg/wallets/okx.svg"
-  },
-  {
     "id": "wallet-phantom",
     "name": "Phantom",
     "symbol": "PHANTOM",
@@ -20494,13 +20377,6 @@
     "path": "data/svg/wallets/pillar.svg"
   },
   {
-    "id": "wallet-portal",
-    "name": "Portal",
-    "symbol": "PORTAL",
-    "category": "wallets",
-    "path": "data/svg/wallets/portal.svg"
-  },
-  {
     "id": "wallet-rabby",
     "name": "Rabby",
     "symbol": "RABBY",
@@ -20513,20 +20389,6 @@
     "symbol": "RAINBOW",
     "category": "wallets",
     "path": "data/svg/wallets/rainbow.svg"
-  },
-  {
-    "id": "wallet-ronin",
-    "name": "Ronin",
-    "symbol": "RONIN",
-    "category": "wallets",
-    "path": "data/svg/wallets/ronin.svg"
-  },
-  {
-    "id": "wallet-safe",
-    "name": "Safe",
-    "symbol": "SAFE",
-    "category": "wallets",
-    "path": "data/svg/wallets/safe.svg"
   },
   {
     "id": "wallet-sender",
@@ -20548,13 +20410,6 @@
     "symbol": "SOLFLARE",
     "category": "wallets",
     "path": "data/svg/wallets/solflare.svg"
-  },
-  {
-    "id": "wallet-soul",
-    "name": "Soul",
-    "symbol": "SOUL",
-    "category": "wallets",
-    "path": "data/svg/wallets/soul.svg"
   },
   {
     "id": "wallet-squads",
@@ -20697,20 +20552,6 @@
     "path": "data/svg/waves.svg"
   },
   {
-    "id": "wax",
-    "name": "WAX",
-    "symbol": "WAX",
-    "category": "tokens",
-    "path": "data/svg/wax.svg"
-  },
-  {
-    "id": "waxp",
-    "name": "WAXP",
-    "symbol": "WAXP",
-    "category": "tokens",
-    "path": "data/svg/waxp.svg"
-  },
-  {
     "id": "wbeth",
     "name": "WBETH",
     "symbol": "WBETH",
@@ -20786,13 +20627,6 @@
     "symbol": "WELT",
     "category": "tokens",
     "path": "data/svg/welt.svg"
-  },
-  {
-    "id": "wemix",
-    "name": "WEMIX",
-    "symbol": "WEMIX",
-    "category": "tokens",
-    "path": "data/svg/wemix.svg"
   },
   {
     "id": "wen",
@@ -21117,13 +20951,6 @@
     "path": "data/svg/x2y2.svg"
   },
   {
-    "id": "xai",
-    "name": "XAI",
-    "symbol": "XAI",
-    "category": "tokens",
-    "path": "data/svg/xai.svg"
-  },
-  {
     "id": "xas",
     "name": "XAS",
     "symbol": "XAS",
@@ -21241,20 +21068,6 @@
     "symbol": "XDB",
     "category": "tokens",
     "path": "data/svg/xdb.svg"
-  },
-  {
-    "id": "xdc",
-    "name": "XDC Network",
-    "symbol": "XDC",
-    "category": "tokens",
-    "path": "data/svg/xdc.svg"
-  },
-  {
-    "id": "xdefi",
-    "name": "XDEFI",
-    "symbol": "XDEFI",
-    "category": "tokens",
-    "path": "data/svg/xdefi.svg"
   },
   {
     "id": "xdg",
@@ -21570,13 +21383,6 @@
     "symbol": "XRGB",
     "category": "tokens",
     "path": "data/svg/xrgb.svg"
-  },
-  {
-    "id": "xrp",
-    "name": "XRP",
-    "symbol": "XRP",
-    "category": "tokens",
-    "path": "data/svg/xrp.svg"
   },
   {
     "id": "xrt",

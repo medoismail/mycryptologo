@@ -148,16 +148,16 @@ a:hover{text-decoration:underline}
 .icon-card:hover{background:var(--bg-card-hover);border-color:var(--border-light);transform:translateY(-2px);box-shadow:var(--shadow-md)}
 .icon-card:active{transform:translateY(0)}
 .icon-card .card-img-wrap{width:var(--img-size,48px);height:var(--img-size,48px);flex-shrink:0;margin-bottom:8px;transition:width 0.15s,height 0.15s}
-.icon-card .card-img-wrap img{width:100%;height:100%;object-fit:contain;display:block;border-radius:8px;background:var(--bg-tertiary);padding:4px}
-/* White/light SVG icons get a dark background in light mode for visibility */
-[data-theme="light"] .icon-card .card-img-wrap img{background:#1a1a2e;border-radius:10px;padding:6px}
-[data-theme="light"] .modal-preview img{background:#1a1a2e;border-radius:12px;padding:10px}
+.icon-card .card-img-wrap img{width:100%;height:100%;object-fit:contain;display:block;border-radius:8px}
 .icon-card .card-name{font-size:11px;font-weight:600;color:var(--text-primary);text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;width:100%;padding:0 4px;line-height:1.3}
 .icon-card .card-symbol{font-size:10px;color:var(--text-muted);font-family:var(--font-mono);margin-top:2px}
 .icon-card .card-badge{position:absolute;top:5px;right:5px;font-size:8px;font-weight:700;text-transform:uppercase;padding:1px 5px;border-radius:3px;opacity:0;transition:opacity var(--transition)}
 .icon-card:hover .card-badge{opacity:1}
 .badge-network{background:var(--green-bg);color:var(--green)}
+.badge-defi{background:rgba(108,92,231,0.15);color:var(--accent)}
+.badge-exchange{background:rgba(59,130,246,0.15);color:#3b82f6}
 .badge-wallet{background:rgba(240,160,48,0.15);color:var(--orange)}
+.badge-png{background:rgba(255,107,107,0.15);color:var(--red);font-size:8px;padding:1px 5px;border-radius:3px}
 
 /* List view */
 .icons-grid.list-view{grid-template-columns:1fr;gap:2px;padding:8px 20px}
