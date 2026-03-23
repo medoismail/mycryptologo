@@ -1,16 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 27.7.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_1_);}
-</style>
-<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="250" y1="499.8898" x2="250" y2="-0.1102" gradientTransform="matrix(1 0 0 -1 0 499.8898)">
-	<stop  offset="0" style="stop-color:#5CC6F6"/>
-	<stop  offset="1" style="stop-color:#007AFF"/>
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.125 3H10.8749V4.68749H5.8125V6.93749H6.93749V18.75H5.8125V21H10.3124V18.75H9.18747V14.8125H10.8749V16.5H13.125V14.8125C15.9263 14.7899 18.1874 12.5175 18.1874 9.74995C18.18 8.40959 17.6443 7.12622 16.6966 6.17842C15.7488 5.23061 14.4653 4.69488 13.125 4.68749V3ZM9.18747 12.5625V6.93749H13.0969C13.4682 6.93526 13.8362 7.00629 14.1801 7.14649C14.5238 7.2867 14.8366 7.49334 15.1005 7.75458C15.3644 8.01582 15.5741 8.32652 15.7176 8.66892C15.8613 9.01133 15.936 9.37863 15.9375 9.74995C15.9375 11.3025 14.6663 12.5625 13.0969 12.5625H9.18747Z" fill="url(#paint0_linear_328_55302)"/>
+<defs>
+<linearGradient id="paint0_linear_328_55302" x1="12" y1="3" x2="12" y2="21" gradientUnits="userSpaceOnUse">
+<stop stop-color="#5BC5F7"/>
+<stop offset="1" stop-color="#057EFF"/>
 </linearGradient>
-<path class="st0" d="M250,0C44.9,0,0.9,44.1,0.9,250s44,250,249.1,250c205.1,0,249.1-44.1,249.1-250S455.1,0,250,0z M278.2,122.5
-	c15.3,1.6,30.1,6.5,43.4,14.3c20.9,12.9,35.4,34.8,35.4,66.6c0,31.8-14.4,54.3-34.8,68.3c-13.2,8.8-28.3,14.5-44,16.7v28.3h-39
-	v-26.9h-27.3v65.9h19.2v39.1H154v-39.1h19.2V160.4H154v-39.1h85.4V96.8h38.9L278.2,122.5z M258.8,250.7h-46.7v-90.3h46.7
-	c16,0,31.6,2.9,42.5,9.7c9.6,5.9,16.8,15.3,16.8,33.3c0,18-7.3,29-17.8,36C287.9,247.1,273.4,251.1,258.8,250.7z"/>
+</defs>
 </svg>

@@ -1,14 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 24.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="HUSD" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#1A61F0;}
-	.st1{fill:#FFFFFF;}
-</style>
-<circle class="st0" cx="249.61" cy="250" r="245.39"/>
-<path class="st1" d="M324.89,350.97h-38v-64.02c0-9.91-8.04-17.95-17.95-17.95h-55.77c-21.45,0-38.83-17.39-38.83-38.83v-82.81h38
-	v65.7c0,9.91,8.04,17.95,17.95,17.95h55.77c21.45,0,38.83,17.39,38.83,38.83V350.97z"/>
-<path class="st1" d="M324.89,210.28L324.89,210.28c-20.99,0-38-17.01-38-38v-24.93h38V210.28z"/>
-<path class="st1" d="M212.33,350.97h-38v-61.39h0c20.99,0,38,17.01,38,38V350.97z"/>
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18.7499 21H15.375V15.3074C15.375 14.3952 14.5549 13.6874 13.6093 13.6874H8.67788C6.78562 13.6874 5.25 12.1744 5.25 10.3491V3.00168H8.62499V8.69585C8.62499 9.60766 9.44511 10.3125 10.3906 10.3125H15.3204C17.2133 10.3142 18.7467 11.8289 18.7483 13.6542L18.7499 21ZM8.62499 21H5.25V15.3749C7.1428 15.3749 8.62499 16.9275 8.62499 18.754V21ZM15.375 3H18.7499V8.62497C16.8554 8.62497 15.375 7.07417 15.375 5.24942V3Z" fill="#1A61F0"/>
 </svg>
