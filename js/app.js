@@ -274,9 +274,14 @@
 
     // ─── Size Slider ────────────────────────
     function initSizeSlider() {
-        sizeSlider.addEventListener('input', () => {
-            grid.style.setProperty('--card-size', sizeSlider.value + 'px');
-        });
+        const applySize = () => {
+            const v = parseInt(sizeSlider.value);
+            grid.style.setProperty('--card-size', v + 'px');
+            const imgSize = Math.max(24, Math.round(v * 0.42));
+            grid.style.setProperty('--img-size', imgSize + 'px');
+        };
+        sizeSlider.addEventListener('input', applySize);
+        applySize();
     }
 
     // ─── Modal ──────────────────────────────

@@ -123,6 +123,8 @@ a:hover{text-decoration:underline}
 .social-row{display:flex;gap:10px;margin-bottom:8px}
 .social-row a{color:var(--text-muted);transition:color var(--transition);display:flex}
 .social-row a:hover{color:var(--accent)}
+.creator{font-size:11px;color:var(--text-secondary);margin-bottom:4px}
+.creator a{color:var(--accent);font-weight:600}
 .copyright{font-size:11px;color:var(--text-muted)}
 
 /* ===== Content ===== */
@@ -145,8 +147,8 @@ a:hover{text-decoration:underline}
 .icon-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-md);display:flex;flex-direction:column;align-items:center;padding:14px 8px 10px;cursor:pointer;transition:all var(--transition);position:relative}
 .icon-card:hover{background:var(--bg-card-hover);border-color:var(--border-light);transform:translateY(-2px);box-shadow:var(--shadow-md)}
 .icon-card:active{transform:translateY(0)}
-.icon-card .card-img-wrap{width:48px;height:48px;flex-shrink:0;margin-bottom:8px}
-.icon-card .card-img-wrap img{width:48px;height:48px;object-fit:contain;display:block;border-radius:8px}
+.icon-card .card-img-wrap{width:var(--img-size,48px);height:var(--img-size,48px);flex-shrink:0;margin-bottom:8px;transition:width 0.15s,height 0.15s}
+.icon-card .card-img-wrap img{width:100%;height:100%;object-fit:contain;display:block;border-radius:8px}
 .icon-card .card-name{font-size:11px;font-weight:600;color:var(--text-primary);text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;width:100%;padding:0 4px;line-height:1.3}
 .icon-card .card-symbol{font-size:10px;color:var(--text-muted);font-family:var(--font-mono);margin-top:2px}
 .icon-card .card-badge{position:absolute;top:5px;right:5px;font-size:8px;font-weight:700;text-transform:uppercase;padding:1px 5px;border-radius:3px;opacity:0;transition:opacity var(--transition)}

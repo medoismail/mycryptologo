@@ -6,4 +6,8 @@ Sitemap: https://www.cryptologos.xyz/sitemap.xml
 Allow: /css/
 Allow: /js/
 Allow: /data/
-Allow: /images/ 
+Allow: /data/svg/
+Allow: /tokens/
+
+# Disallow internal/build
+Disallow: /.claude/
