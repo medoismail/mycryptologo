@@ -325,9 +325,41 @@
         modalSymbol.textContent = token.symbol;
         modalCategory.textContent = token.category;
 
+        const isSvg = token.path && token.path.endsWith('.svg');
+        const ext = token.path ? token.path.split('.').pop().toUpperCase() : 'SVG';
+
         // Download link
         modalDownload.href = token.path;
-        modalDownload.download = `${token.id}.svg`;
+        modalDownload.download = `${token.id}.${ext.toLowerCase()}`;
+        modalDownload.innerHTML = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg> Download ${ext}`;
+
+        // SVG-only buttons: Copy SVG code, SVG code block
+        modalCopySvg.style.display = isSvg ? '' : 'none';
+        $('#svg-code-container').style.display = isSvg ? '' : 'none';
+
+        // PNG size options
+        let pngSizes = $('#modal-png-sizes');
+        if (!pngSizes) {
+            pngSizes = document.createElement('div');
+            pngSizes.id = 'modal-png-sizes';
+            pngSizes.className = 'png-sizes';
+            modalDownload.parentNode.insertBefore(pngSizes, modalCopyUrl);
+        }
+
+        if (!isSvg) {
+            // Check which PNG sizes exist for this token
+            const baseName = token.id;
+            const sizes = ['16x16', '32x32', '128x128'];
+            let sizeHtml = '<span class="png-sizes-label">Available sizes:</span>';
+            sizes.forEach(s => {
+                const path = `data/coins/${s}/${baseName}.png`;
+                sizeHtml += `<a class="action-btn size-btn" href="${path}" download="${baseName}-${s}.png" title="Download ${s}"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg> ${s}</a>`;
+            });
+            pngSizes.innerHTML = sizeHtml;
+            pngSizes.style.display = 'flex';
+        } else {
+            pngSizes.style.display = 'none';
+        }
 
         // Path
         modalPathText.textContent = token.path;
@@ -335,18 +367,20 @@
         // API hint
         modalApiUrl.textContent = `${BASE}/${token.path}`;
 
-        // Fetch and show SVG code
+        // Fetch and show SVG code (only for SVGs)
         currentSvgCode = '';
-        svgCodePre.textContent = 'Loading SVG code...';
-        fetch(token.path)
-            .then(r => r.text())
-            .then(code => {
-                currentSvgCode = code;
-                svgCodePre.textContent = code.length > 3000 ? code.substring(0, 3000) + '\n... (truncated)' : code;
-            })
-            .catch(() => {
-                svgCodePre.textContent = 'Could not load SVG code';
-            });
+        if (isSvg) {
+            svgCodePre.textContent = 'Loading SVG code...';
+            fetch(token.path)
+                .then(r => r.text())
+                .then(code => {
+                    currentSvgCode = code;
+                    svgCodePre.textContent = code.length > 3000 ? code.substring(0, 3000) + '\n... (truncated)' : code;
+                })
+                .catch(() => {
+                    svgCodePre.textContent = 'Could not load SVG code';
+                });
+        }
 
         modalOverlay.classList.add('active');
         document.body.style.overflow = 'hidden';

@@ -202,6 +202,10 @@ a:hover{text-decoration:underline}
 .action-btn.primary:hover{background:var(--accent-hover)}
 .action-btn.copied{background:var(--green)!important;border-color:var(--green)!important;color:white!important}
 
+.png-sizes{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.png-sizes-label{font-size:12px;color:var(--text-muted);margin-right:2px}
+.size-btn{padding:5px 10px!important;font-size:12px!important;gap:4px!important}
+
 .svg-code-container{margin-bottom:12px;background:var(--bg-primary);border:1px solid var(--border);border-radius:var(--radius-sm);overflow:hidden}
 .svg-code-header{display:flex;align-items:center;justify-content:space-between;padding:6px 12px;background:var(--bg-tertiary);border-bottom:1px solid var(--border)}
 .svg-code-header span{font-size:11px;font-weight:600;color:var(--text-muted);font-family:var(--font-mono)}
