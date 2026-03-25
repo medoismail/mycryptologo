@@ -347,16 +347,47 @@
         }
 
         if (!isSvg) {
-            // Check which PNG sizes exist for this token
-            const baseName = token.id;
-            const sizes = ['16x16', '32x32', '128x128'];
-            let sizeHtml = '<span class="png-sizes-label">Available sizes:</span>';
+            const sizes = [16, 32, 64, 128, 256, 512];
+            let sizeHtml = '<span class="png-sizes-label">Download PNG:</span>';
             sizes.forEach(s => {
-                const path = `data/coins/${s}/${baseName}.png`;
-                sizeHtml += `<a class="action-btn size-btn" href="${path}" download="${baseName}-${s}.png" title="Download ${s}"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg> ${s}</a>`;
+                sizeHtml += `<button class="action-btn size-btn" data-size="${s}" data-src="${token.path}" data-name="${token.id}" title="Download ${s}x${s} PNG"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg> ${s}x${s}</button>`;
             });
             pngSizes.innerHTML = sizeHtml;
             pngSizes.style.display = 'flex';
+            // Attach click handlers for client-side resize
+            pngSizes.querySelectorAll('.size-btn').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const size = parseInt(btn.dataset.size);
+                    const src = btn.dataset.src;
+                    const name = btn.dataset.name;
+                    const img = new Image();
+                    img.crossOrigin = 'anonymous';
+                    img.onload = () => {
+                        const canvas = document.createElement('canvas');
+                        canvas.width = size;
+                        canvas.height = size;
+                        const ctx = canvas.getContext('2d');
+                        ctx.imageSmoothingEnabled = true;
+                        ctx.imageSmoothingQuality = 'high';
+                        ctx.drawImage(img, 0, 0, size, size);
+                        canvas.toBlob((blob) => {
+                            const url = URL.createObjectURL(blob);
+                            const a = document.createElement('a');
+                            a.href = url;
+                            a.download = `${name}-${size}x${size}.png`;
+                            document.body.appendChild(a);
+                            a.click();
+                            document.body.removeChild(a);
+                            URL.revokeObjectURL(url);
+                        }, 'image/png');
+                    };
+                    img.onerror = () => {
+                        alert('Could not load image for resizing');
+                    };
+                    img.src = src;
+                });
+            });
         } else {
             pngSizes.style.display = 'none';
         }
