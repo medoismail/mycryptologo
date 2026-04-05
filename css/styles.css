@@ -262,12 +262,23 @@ a:hover{text-decoration:underline}
 .grid__empty p{font-size:13px}
 
 /* ===== Footer ===== */
-.footer{padding:32px 0;border-top:1px solid var(--border);margin-top:16px;text-align:center}
-.footer__links{display:flex;gap:16px;justify-content:center;margin-bottom:8px}
-.footer__links a{color:var(--text-4);font-size:13px;font-weight:500;text-decoration:none;transition:color 0.1s ease}
-.footer__links a:hover{color:var(--text-1)}
-.footer__credit{font-size:11px;color:var(--text-4)}
-.footer__credit a{color:var(--accent);font-weight:600}
+/* Connect — portfolio-style footer */
+.connect{margin-top:40px;padding-bottom:40px}
+.connect__heading{font-size:16px;font-weight:600;letter-spacing:-0.02em;color:var(--text-1);margin-bottom:12px}
+.connect__links{display:flex;flex-wrap:wrap;gap:16px 20px;margin-bottom:0}
+.connect__links a{
+    font-size:13px;color:var(--text-3);
+    text-decoration:underline;text-underline-offset:3px;
+    text-decoration-color:var(--bg-4);
+    transition:color 0.2s ease,text-decoration-color 0.2s ease;
+}
+.connect__links a:hover{color:var(--text-1);text-decoration-color:var(--text-3)}
+.connect__copy{
+    margin-top:40px;padding-top:16px;
+    border-top:1px solid oklch(0.27 0.005 285 / 0.5);
+    font-size:11px;color:var(--text-4);
+}
+[data-theme="light"] .connect__copy{border-top-color:oklch(0 0 0 / 0.06)}
 
 /* ===== Panel — slides in, page shifts right but keeps its width ===== */
 .page{
