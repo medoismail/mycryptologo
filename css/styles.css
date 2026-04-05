@@ -70,7 +70,12 @@
 }
 [data-theme="light"] .bg-mesh .orb{opacity:0}
 [data-theme="light"] .panel{box-shadow:-2px 0 8px oklch(0 0 0 / 0.04)}
-/* Light mode uses same drop-shadow — picks up icon colors naturally */
+/* Light mode Apple glass — brighter, more saturated */
+[data-theme="light"] .card:hover::before{
+    backdrop-filter:blur(40px) saturate(2) brightness(1.05);
+    -webkit-backdrop-filter:blur(40px) saturate(2) brightness(1.05);
+    background:oklch(1 0 0 / 0.5);
+}
 
 /* Reset */
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
@@ -185,12 +190,12 @@ a:hover{text-decoration:underline}
     opacity:0;animation:cardIn 0.7s var(--ease) forwards;
     overflow:hidden;
 }
-/* Frosted glass backdrop */
+/* Apple-style frosted glass */
 .card::before{
     content:'';position:absolute;inset:0;border-radius:inherit;
     background:transparent;
-    backdrop-filter:blur(0);-webkit-backdrop-filter:blur(0);
-    transition:backdrop-filter 0.35s var(--ease),-webkit-backdrop-filter 0.35s var(--ease),background-color 0.35s var(--ease);
+    backdrop-filter:blur(0) saturate(1);-webkit-backdrop-filter:blur(0) saturate(1);
+    transition:backdrop-filter 0.4s var(--ease),-webkit-backdrop-filter 0.4s var(--ease),background-color 0.4s var(--ease);
     z-index:0;
 }
 @media(hover:hover){
@@ -200,9 +205,9 @@ a:hover{text-decoration:underline}
         border-color:var(--border-hover);
     }
     .card:hover::before{
-        backdrop-filter:blur(20px) saturate(1.5);
-        -webkit-backdrop-filter:blur(20px) saturate(1.5);
-        background:oklch(1 0 0 / 0.04);
+        backdrop-filter:blur(40px) saturate(1.8) brightness(1.1);
+        -webkit-backdrop-filter:blur(40px) saturate(1.8) brightness(1.1);
+        background:oklch(1 0 0 / 0.03);
     }
     .card:hover .card__img img{
         transform:scale(1.08);
