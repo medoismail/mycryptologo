@@ -63,10 +63,10 @@
     --text-2: oklch(0.45 0.01 285);
     --text-3: oklch(0.62 0.01 285);
     --text-4: oklch(0.76 0.008 285);
-    /* Light shadows — much subtler */
-    --shadow-card: 0 0 0 1px oklch(0 0 0 / 0.04), 0 1px 2px oklch(0 0 0 / 0.03);
-    --shadow-card-hover: 0 0 0 1px oklch(0 0 0 / 0.06), 0 4px 12px oklch(0 0 0 / 0.05);
-    --shadow-lg: 0 8px 32px oklch(0 0 0 / 0.08);
+    /* Light shadows — barely visible, border-like */
+    --shadow-card: none;
+    --shadow-card-hover: 0 2px 8px oklch(0 0 0 / 0.03);
+    --shadow-lg: 0 8px 24px oklch(0 0 0 / 0.06);
 }
 [data-theme="light"] .bg-mesh .orb{opacity:0}
 
