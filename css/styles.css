@@ -433,6 +433,102 @@ body.panel-open .panel{
 .toast svg{color:var(--green);flex-shrink:0}
 .toast.is-visible{transform:translateY(0);opacity:1}
 
+/* ===== Basket — batch download collector ===== */
+.basket{
+    position:fixed;bottom:0;left:0;right:0;z-index:300;
+    pointer-events:none;
+    transform:translateY(100%);
+    transition:transform 0.5s var(--ease);
+}
+body.is-dragging .basket{
+    transform:translateY(0);
+    pointer-events:auto;
+}
+body.has-basket .basket{
+    transform:translateY(0);
+    pointer-events:auto;
+}
+
+/* Drop zone — shown during drag */
+.basket__drop{
+    display:flex;align-items:center;justify-content:center;gap:8px;
+    padding:18px;
+    background:var(--accent);
+    color:#fff;font-size:14px;font-weight:600;
+    transition:background-color 0.15s ease,padding 0.15s ease;
+}
+.basket__drop.is-over{
+    background:oklch(0.48 0.22 264);
+    padding:24px;
+}
+body.has-basket .basket__drop{display:none}
+
+/* Bar — shown when items collected */
+.basket__bar{
+    display:flex;align-items:center;gap:12px;
+    padding:10px 16px;
+    background:var(--bg-1);
+    border-top:1px solid var(--border);
+    backdrop-filter:blur(20px) saturate(1.2);-webkit-backdrop-filter:blur(20px) saturate(1.2);
+}
+
+/* Collected icons strip */
+.basket__items{
+    display:flex;gap:4px;flex:1;overflow-x:auto;padding:4px 0;
+    scrollbar-width:none;
+}
+.basket__items::-webkit-scrollbar{display:none}
+
+.basket__item{
+    width:36px;height:36px;flex-shrink:0;
+    border-radius:var(--r);
+    background:var(--bg-2);
+    border:1px solid var(--border);
+    display:flex;align-items:center;justify-content:center;
+    position:relative;cursor:pointer;
+    animation:basketItemIn 0.35s var(--spring) forwards;
+    transition:transform 0.15s ease,border-color 0.15s ease;
+}
+.basket__item:hover{
+    transform:scale(1.1);
+    border-color:var(--border-hover);
+}
+.basket__item img{width:22px;height:22px;object-fit:contain;border-radius:4px}
+
+/* Remove X on hover */
+.basket__item::after{
+    content:'';position:absolute;inset:0;border-radius:inherit;
+    background:oklch(0.7 0.18 25 / 0.8);
+    opacity:0;transition:opacity 0.12s ease;
+    display:flex;align-items:center;justify-content:center;
+}
+.basket__item:hover::after{opacity:1}
+
+@keyframes basketItemIn{
+    from{opacity:0;transform:scale(0.5) translateY(8px)}
+    to{opacity:1;transform:scale(1) translateY(0)}
+}
+
+.basket__actions{display:flex;align-items:center;gap:8px;flex-shrink:0}
+.basket__count{font-size:12px;color:var(--text-3);font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+.basket__download{font-size:12px;padding:6px 14px}
+.basket__clear{
+    background:none;border:1px solid var(--border);color:var(--text-3);
+    width:28px;height:28px;border-radius:var(--r-pill);cursor:pointer;
+    display:flex;align-items:center;justify-content:center;
+    transition:color 0.12s ease,border-color 0.12s ease;
+}
+.basket__clear:hover{color:var(--red);border-color:var(--red)}
+
+/* Card dragging state */
+.card.is-dragging{
+    opacity:0.4;
+    transform:scale(0.95);
+}
+/* Center = pointer (click), edges = grab (drag) */
+.card{cursor:pointer}
+.card__img{cursor:pointer}
+
 /* Reduced motion */
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:0.01ms!important;transition-duration:0.01ms!important}}
 

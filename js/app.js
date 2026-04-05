@@ -30,7 +30,7 @@
         theme(); events();
         try { data = await (await fetch('data/crypto-logos-data.json')).json(); }
         catch (e) { console.error(e); data = []; }
-        counts(); apply();
+        counts(); apply(); initBasket();
     }
 
     /* Theme */
@@ -144,7 +144,8 @@
             const png = isPng ? '<span class="card__badge badge--png" style="opacity:1;top:6px;left:6px;right:auto">PNG</span>' : '';
 
             el.innerHTML = `<div class="card__img"><img src="${t.path}" alt="${t.name}" loading="lazy" onerror="this.style.opacity='0.12'"></div><span class="card__name" title="${t.name}">${t.name}</span><span class="card__sym">${t.symbol}</span>${badge}${png}`;
-            el.addEventListener('click', () => openPanel(t));
+            el.addEventListener('click', (e) => { if (!e.defaultPrevented) openPanel(t); });
+            setupCardDrag(el, t);
             grid.appendChild(el);
         });
 
@@ -218,6 +219,157 @@
 
     let toastT;
     function showToast(msg) { clearTimeout(toastT); toastMsg.textContent = msg; toast.classList.add('is-visible'); toastT = setTimeout(() => toast.classList.remove('is-visible'), 2400); }
+
+    /* ===== Basket — drag to collect, batch download ===== */
+    const basket = [];
+    const basketEl = $('#basket');
+    const basketDrop = $('#basketDrop');
+    const basketBar = $('#basketBar');
+    const basketItems = $('#basketItems');
+    const basketCount = $('#basketCount');
+    const basketDownloadBtn = $('#basketDownload');
+    const basketClearBtn = $('#basketClear');
+    let dragToken = null;
+
+    function initBasket() {
+        /* Drop zone events */
+        basketDrop.addEventListener('dragover', e => { e.preventDefault(); basketDrop.classList.add('is-over'); });
+        basketDrop.addEventListener('dragleave', () => basketDrop.classList.remove('is-over'));
+        basketDrop.addEventListener('drop', e => {
+            e.preventDefault();
+            basketDrop.classList.remove('is-over');
+            if (dragToken && !basket.find(b => b.id === dragToken.id)) {
+                basket.push(dragToken);
+                renderBasket();
+            }
+            dragToken = null;
+            document.body.classList.remove('is-dragging');
+        });
+
+        /* Also allow drop on the bar itself */
+        basketBar.addEventListener('dragover', e => e.preventDefault());
+        basketBar.addEventListener('drop', e => {
+            e.preventDefault();
+            if (dragToken && !basket.find(b => b.id === dragToken.id)) {
+                basket.push(dragToken);
+                renderBasket();
+            }
+            dragToken = null;
+            document.body.classList.remove('is-dragging');
+        });
+
+        /* Download all */
+        basketDownloadBtn.addEventListener('click', downloadBasket);
+
+        /* Clear */
+        basketClearBtn.addEventListener('click', () => {
+            basket.length = 0;
+            renderBasket();
+        });
+
+        /* End drag anywhere */
+        document.addEventListener('dragend', () => {
+            document.body.classList.remove('is-dragging');
+            dragToken = null;
+        });
+    }
+
+    function setupCardDrag(el, token) {
+        el.setAttribute('draggable', 'true');
+
+        el.addEventListener('dragstart', e => {
+            dragToken = token;
+            document.body.classList.add('is-dragging');
+            el.classList.add('is-dragging');
+            /* Ghost image */
+            const ghost = el.cloneNode(true);
+            ghost.style.cssText = 'position:absolute;top:-1000px;width:80px;opacity:0.9';
+            document.body.appendChild(ghost);
+            e.dataTransfer.setDragImage(ghost, 40, 40);
+            setTimeout(() => ghost.remove(), 0);
+            e.dataTransfer.effectAllowed = 'copy';
+        });
+
+        el.addEventListener('dragend', () => {
+            el.classList.remove('is-dragging');
+            document.body.classList.remove('is-dragging');
+        });
+    }
+
+    function renderBasket() {
+        if (basket.length === 0) {
+            document.body.classList.remove('has-basket');
+            basketBar.style.display = 'none';
+            return;
+        }
+        document.body.classList.add('has-basket');
+        basketBar.style.display = 'flex';
+
+        basketItems.innerHTML = '';
+        basket.forEach((t, i) => {
+            const item = document.createElement('div');
+            item.className = 'basket__item';
+            item.style.animationDelay = (i * 40) + 'ms';
+            item.title = t.name + ' — click to remove';
+            item.innerHTML = `<img src="${t.path}" alt="${t.name}">`;
+            item.addEventListener('click', () => {
+                basket.splice(i, 1);
+                renderBasket();
+            });
+            basketItems.appendChild(item);
+        });
+
+        basketCount.textContent = basket.length + (basket.length === 1 ? ' icon' : ' icons');
+        /* Scroll to end to show latest */
+        basketItems.scrollLeft = basketItems.scrollWidth;
+    }
+
+    async function downloadBasket() {
+        if (!basket.length) return;
+
+        showToast('Preparing download...');
+
+        /* If single icon, just download directly */
+        if (basket.length === 1) {
+            const a = document.createElement('a');
+            a.href = basket[0].path;
+            a.download = basket[0].id + '.' + basket[0].path.split('.').pop();
+            a.click();
+            return;
+        }
+
+        /* Multiple: fetch all and create zip using JSZip if available, otherwise download individually */
+        try {
+            /* Try dynamic import of JSZip from CDN */
+            const JSZip = (await import('https://cdn.jsdelivr.net/npm/jszip@3.10.1/+esm')).default;
+            const zip = new JSZip();
+
+            await Promise.all(basket.map(async t => {
+                const res = await fetch(t.path);
+                const blob = await res.blob();
+                const ext = t.path.split('.').pop();
+                zip.file(`${t.id}.${ext}`, blob);
+            }));
+
+            const content = await zip.generateAsync({ type: 'blob' });
+            const url = URL.createObjectURL(content);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `cryptologos-${basket.length}-icons.zip`;
+            a.click();
+            URL.revokeObjectURL(url);
+            showToast(`Downloaded ${basket.length} icons as ZIP`);
+        } catch {
+            /* Fallback: download one by one */
+            basket.forEach(t => {
+                const a = document.createElement('a');
+                a.href = t.path;
+                a.download = t.id + '.' + t.path.split('.').pop();
+                a.click();
+            });
+            showToast(`Downloaded ${basket.length} icons`);
+        }
+    }
 
     document.readyState === 'loading' ? document.addEventListener('DOMContentLoaded', init) : init();
 })();
