@@ -152,8 +152,7 @@
 
             el.innerHTML = `<div class="card__img"><img src="${t.path}" alt="${t.name}" loading="lazy" onerror="this.style.opacity='0.12'"></div><span class="card__name" title="${t.name}">${t.name}</span><span class="card__sym">${t.symbol}</span>${badge}${png}`;
             el.style.setProperty('--i', String(i));
-            el.addEventListener('click', (e) => { if (!e.defaultPrevented) openPanel(t); });
-            setupCardDrag(el, t);
+            setupCardDrag(el, t, () => openPanel(t));
             grid.appendChild(el);
         });
 
@@ -252,84 +251,77 @@
     }
 
     /* Custom pointer-based drag — feels like picking up a real card */
-    let ghost = null, startX = 0, startY = 0, isDragging = false, dragThreshold = 6;
+    let ghost = null, isDragging = false;
+    const DRAG_THRESHOLD = 8;
 
-    function setupCardDrag(el, token) {
-        let moved = false;
+    function setupCardDrag(el, token, onClick) {
+        let sx, sy, moved;
 
         el.addEventListener('pointerdown', e => {
             if (e.button !== 0) return;
-            startX = e.clientX; startY = e.clientY;
-            moved = false;
+            sx = e.clientX; sy = e.clientY; moved = false;
             dragToken = token;
+            el.setPointerCapture(e.pointerId);
 
-            const onMove = (e2) => {
-                const dx = e2.clientX - startX, dy = e2.clientY - startY;
-                if (!moved && Math.abs(dx) + Math.abs(dy) < dragThreshold) return;
+            const onMove = e2 => {
+                const dx = e2.clientX - sx, dy = e2.clientY - sy;
+                if (!moved && Math.hypot(dx, dy) < DRAG_THRESHOLD) return;
 
                 if (!moved) {
-                    moved = true; isDragging = true;
+                    moved = true;
                     el.classList.add('is-dragging');
                     document.body.classList.add('is-dragging');
 
-                    /* Create floating ghost card */
                     ghost = el.cloneNode(true);
                     ghost.className = 'card card--ghost';
-                    ghost.style.cssText = `position:fixed;z-index:9999;width:${el.offsetWidth}px;pointer-events:none;will-change:transform;transition:box-shadow 0.2s ease;`;
+                    ghost.style.cssText = `position:fixed;z-index:9999;width:${el.offsetWidth}px;pointer-events:none;will-change:transform;`;
                     document.body.appendChild(ghost);
                 }
 
-                /* Follow cursor with slight tilt based on velocity */
-                const tiltX = Math.max(-12, Math.min(12, dx * 0.04));
-                const tiltY = Math.max(-8, Math.min(8, dy * 0.02));
+                const tilt = Math.max(-15, Math.min(15, (e2.clientX - sx) * 0.05));
                 ghost.style.left = (e2.clientX - el.offsetWidth / 2) + 'px';
                 ghost.style.top = (e2.clientY - el.offsetHeight / 2) + 'px';
-                ghost.style.transform = `rotate(${tiltX}deg) scale(1.05)`;
-                ghost.style.boxShadow = '0 20px 60px rgba(0,0,0,0.35), 0 4px 12px rgba(0,0,0,0.2)';
+                ghost.style.transform = `rotate(${tilt}deg) scale(1.06)`;
 
-                /* Check if over basket */
-                const basketRect = basketDrop.getBoundingClientRect();
-                const barRect = basketBar.getBoundingClientRect();
-                const overBasket = (e2.clientY > basketRect.top && e2.clientY < basketRect.bottom) ||
-                                   (basketBar.style.display !== 'none' && e2.clientY > barRect.top);
-                basketDrop.classList.toggle('is-over', overBasket);
+                /* Over basket? */
+                const bRect = basketEl.getBoundingClientRect();
+                const over = e2.clientY > bRect.top;
+                basketDrop.classList.toggle('is-over', over);
             };
 
-            const onUp = (e2) => {
-                document.removeEventListener('pointermove', onMove);
-                document.removeEventListener('pointerup', onUp);
+            const onUp = e2 => {
+                el.removeEventListener('pointermove', onMove);
+                el.removeEventListener('pointerup', onUp);
+                el.removeEventListener('lostpointercapture', onUp);
 
-                if (moved && ghost) {
-                    /* Check if dropped on basket */
-                    const basketRect = basketDrop.getBoundingClientRect();
-                    const barRect = basketBar.getBoundingClientRect();
-                    const overBasket = (e2.clientY > basketRect.top && e2.clientY < basketRect.bottom) ||
-                                       (basketBar.style.display !== 'none' && e2.clientY > barRect.top);
+                if (!moved) {
+                    /* It was a click, not a drag */
+                    onClick();
+                } else if (ghost) {
+                    const bRect = basketEl.getBoundingClientRect();
+                    const over = e2.clientY > bRect.top;
 
-                    if (overBasket && dragToken && !basket.find(b => b.id === dragToken.id)) {
-                        /* Animate ghost flying into basket */
-                        ghost.style.transition = 'all 0.3s cubic-bezier(0.22, 1, 0.36, 1)';
-                        ghost.style.left = (window.innerWidth / 2 - 20) + 'px';
-                        ghost.style.top = (window.innerHeight - 40) + 'px';
-                        ghost.style.transform = 'scale(0.3) rotate(0deg)';
+                    if (over && dragToken && !basket.find(b => b.id === dragToken.id)) {
+                        /* Fly into basket */
+                        ghost.style.transition = 'all 0.3s var(--ease)';
+                        ghost.style.left = (window.innerWidth / 2) + 'px';
+                        ghost.style.top = window.innerHeight + 'px';
+                        ghost.style.transform = 'scale(0.2) rotate(0)';
                         ghost.style.opacity = '0';
-                        setTimeout(() => { ghost.remove(); ghost = null; }, 300);
-
+                        setTimeout(() => { if (ghost) { ghost.remove(); ghost = null; } }, 300);
                         basket.push(dragToken);
                         renderBasket();
-                        showToast(`${dragToken.name} added to basket`);
+                        showToast(`${dragToken.name} collected`);
                     } else {
-                        /* Snap back animation */
-                        const rect = el.getBoundingClientRect();
-                        ghost.style.transition = 'all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1)';
-                        ghost.style.left = rect.left + 'px';
-                        ghost.style.top = rect.top + 'px';
-                        ghost.style.transform = 'scale(1) rotate(0deg)';
-                        ghost.style.boxShadow = 'none';
-                        ghost.style.opacity = '0.5';
-                        setTimeout(() => { ghost.remove(); ghost = null; }, 350);
+                        /* Snap back */
+                        const r = el.getBoundingClientRect();
+                        ghost.style.transition = 'all 0.4s var(--spring)';
+                        ghost.style.left = r.left + 'px';
+                        ghost.style.top = r.top + 'px';
+                        ghost.style.transform = 'scale(1) rotate(0)';
+                        ghost.style.opacity = '0';
+                        setTimeout(() => { if (ghost) { ghost.remove(); ghost = null; } }, 400);
                     }
-
                     basketDrop.classList.remove('is-over');
                 }
 
@@ -339,17 +331,12 @@
                 dragToken = null;
             };
 
-            document.addEventListener('pointermove', onMove);
-            document.addEventListener('pointerup', onUp);
+            el.addEventListener('pointermove', onMove);
+            el.addEventListener('pointerup', onUp);
+            el.addEventListener('lostpointercapture', onUp);
         });
 
-        /* Prevent native drag */
         el.addEventListener('dragstart', e => e.preventDefault());
-
-        /* Only open panel if not dragged */
-        el.addEventListener('click', e => {
-            if (moved) { e.preventDefault(); e.stopPropagation(); moved = false; return; }
-        });
     }
 
     function renderBasket() {
