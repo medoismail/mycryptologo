@@ -542,10 +542,24 @@ body.has-basket .basket__drop{display:none}
     border:1px solid oklch(0 0 0 / 0.08) !important;
 }
 
-/* Cursor */
-.card{cursor:grab}
+/* Cursor + drag hint */
+.card{cursor:grab;touch-action:none}
 .card:active{cursor:grabbing}
 .card__img,.card__name{cursor:pointer}
+
+/* Drag hint on first few cards */
+.card:nth-child(-n+5)::after{
+    content:'Drag to collect';
+    position:absolute;bottom:-6px;left:50%;transform:translateX(-50%) translateY(4px);
+    font-size:9px;font-weight:500;color:var(--text-4);
+    background:var(--bg-2);border:1px solid var(--border);
+    padding:2px 8px;border-radius:var(--r-pill);white-space:nowrap;
+    opacity:0;transition:opacity 0.2s ease,transform 0.2s ease;
+    pointer-events:none;z-index:5;
+}
+.card:nth-child(-n+5):hover::after{
+    opacity:1;transform:translateX(-50%) translateY(0);
+}
 
 /* Reduced motion */
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:0.01ms!important;transition-duration:0.01ms!important}}

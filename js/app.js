@@ -261,7 +261,7 @@
             if (e.button !== 0) return;
             sx = e.clientX; sy = e.clientY; moved = false;
             dragToken = token;
-            el.setPointerCapture(e.pointerId);
+            const pid = e.pointerId;
 
             const onMove = e2 => {
                 const dx = e2.clientX - sx, dy = e2.clientY - sy;
@@ -269,8 +269,11 @@
 
                 if (!moved) {
                     moved = true;
+                    /* Capture only after threshold — so scrolling still works */
+                    try { el.setPointerCapture(pid); } catch {}
                     el.classList.add('is-dragging');
                     document.body.classList.add('is-dragging');
+                    document.body.style.overflow = 'hidden';
 
                     ghost = el.cloneNode(true);
                     ghost.className = 'card card--ghost';
@@ -290,9 +293,7 @@
             };
 
             const onUp = e2 => {
-                el.removeEventListener('pointermove', onMove);
-                el.removeEventListener('pointerup', onUp);
-                el.removeEventListener('lostpointercapture', onUp);
+                document.removeEventListener('pointermove', onMove);
 
                 if (!moved) {
                     /* It was a click, not a drag */
@@ -327,13 +328,13 @@
 
                 el.classList.remove('is-dragging');
                 document.body.classList.remove('is-dragging');
+                document.body.style.overflow = '';
                 isDragging = false;
                 dragToken = null;
             };
 
-            el.addEventListener('pointermove', onMove);
-            el.addEventListener('pointerup', onUp);
-            el.addEventListener('lostpointercapture', onUp);
+            document.addEventListener('pointermove', onMove);
+            document.addEventListener('pointerup', onUp, { once: true });
         });
 
         el.addEventListener('dragstart', e => e.preventDefault());
