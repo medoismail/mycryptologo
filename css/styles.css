@@ -65,11 +65,12 @@
     --text-4: oklch(0.76 0.008 285);
     /* Light shadows — barely visible, border-like */
     --shadow-card: none;
-    --shadow-card-hover: 0 2px 8px oklch(0 0 0 / 0.03);
+    --shadow-card-hover: none;
     --shadow-lg: 0 8px 24px oklch(0 0 0 / 0.06);
 }
 [data-theme="light"] .bg-mesh .orb{opacity:0}
 [data-theme="light"] .panel{box-shadow:-2px 0 8px oklch(0 0 0 / 0.04)}
+/* Light mode uses same drop-shadow — picks up icon colors naturally */
 
 /* Reset */
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
@@ -205,7 +206,7 @@ a:hover{text-decoration:underline}
     }
     .card:hover .card__img img{
         transform:scale(1.08);
-        filter:drop-shadow(0 2px 10px oklch(0 0 0 / 0.5));
+        filter:drop-shadow(0 6px 12px oklch(0 0 0 / 0.12));
     }
 }
 .card:active{transform:translateY(0);transition-duration:0.06s}
