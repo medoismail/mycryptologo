@@ -263,7 +263,8 @@ a:hover{text-decoration:underline}
 
 /* ===== Footer ===== */
 /* Connect — portfolio-style footer */
-.connect{margin-top:40px;padding-bottom:40px}
+.connect{margin-top:40px;padding-bottom:40px;opacity:0;animation:fadeUp 0.6s var(--ease) 0.3s forwards}
+@keyframes fadeUp{from{opacity:0;transform:translateY(14px);filter:blur(4px)}to{opacity:1;transform:translateY(0);filter:blur(0)}}
 .connect__heading{font-size:16px;font-weight:600;letter-spacing:-0.02em;color:var(--text-1);margin-bottom:12px}
 .connect__links{display:flex;flex-wrap:wrap;gap:16px 20px;margin-bottom:0}
 .connect__links a{
@@ -271,7 +272,13 @@ a:hover{text-decoration:underline}
     text-decoration:underline;text-underline-offset:3px;
     text-decoration-color:var(--bg-4);
     transition:color 0.2s ease,text-decoration-color 0.2s ease;
+    opacity:0;animation:fadeUp 0.5s var(--ease) forwards;
 }
+.connect__links a:nth-child(1){animation-delay:0.4s}
+.connect__links a:nth-child(2){animation-delay:0.46s}
+.connect__links a:nth-child(3){animation-delay:0.52s}
+.connect__links a:nth-child(4){animation-delay:0.58s}
+.connect__links a:nth-child(5){animation-delay:0.64s}
 .connect__links a:hover{color:var(--text-1);text-decoration-color:var(--text-3)}
 .connect__copy{
     margin-top:40px;padding-top:16px;
