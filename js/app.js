@@ -240,32 +240,6 @@
     let dragToken = null;
 
     function initBasket() {
-        /* Drop zone events */
-        basketDrop.addEventListener('dragover', e => { e.preventDefault(); basketDrop.classList.add('is-over'); });
-        basketDrop.addEventListener('dragleave', () => basketDrop.classList.remove('is-over'));
-        basketDrop.addEventListener('drop', e => {
-            e.preventDefault();
-            basketDrop.classList.remove('is-over');
-            if (dragToken && !basket.find(b => b.id === dragToken.id)) {
-                basket.push(dragToken);
-                renderBasket();
-            }
-            dragToken = null;
-            document.body.classList.remove('is-dragging');
-        });
-
-        /* Also allow drop on the bar itself */
-        basketBar.addEventListener('dragover', e => e.preventDefault());
-        basketBar.addEventListener('drop', e => {
-            e.preventDefault();
-            if (dragToken && !basket.find(b => b.id === dragToken.id)) {
-                basket.push(dragToken);
-                renderBasket();
-            }
-            dragToken = null;
-            document.body.classList.remove('is-dragging');
-        });
-
         /* Download all */
         basketDownloadBtn.addEventListener('click', downloadBasket);
 
@@ -273,35 +247,108 @@
         basketClearBtn.addEventListener('click', () => {
             basket.length = 0;
             renderBasket();
-        });
-
-        /* End drag anywhere */
-        document.addEventListener('dragend', () => {
-            document.body.classList.remove('is-dragging');
-            dragToken = null;
+            showToast('Basket cleared');
         });
     }
 
+    /* Custom pointer-based drag — feels like picking up a real card */
+    let ghost = null, startX = 0, startY = 0, isDragging = false, dragThreshold = 6;
+
     function setupCardDrag(el, token) {
-        el.setAttribute('draggable', 'true');
+        let moved = false;
 
-        el.addEventListener('dragstart', e => {
+        el.addEventListener('pointerdown', e => {
+            if (e.button !== 0) return;
+            startX = e.clientX; startY = e.clientY;
+            moved = false;
             dragToken = token;
-            document.body.classList.add('is-dragging');
-            el.classList.add('is-dragging');
 
-            /* Ghost — tilted, scaled-up card clone */
-            const ghost = el.cloneNode(true);
-            ghost.style.cssText = 'position:absolute;top:-2000px;left:-2000px;width:100px;padding:12px;border-radius:14px;background:var(--bg-2);opacity:0.95;transform:rotate(-4deg) scale(1.1);box-shadow:0 12px 40px rgba(0,0,0,0.4);pointer-events:none';
-            document.body.appendChild(ghost);
-            e.dataTransfer.setDragImage(ghost, 50, 50);
-            requestAnimationFrame(() => setTimeout(() => ghost.remove(), 100));
-            e.dataTransfer.effectAllowed = 'copy';
+            const onMove = (e2) => {
+                const dx = e2.clientX - startX, dy = e2.clientY - startY;
+                if (!moved && Math.abs(dx) + Math.abs(dy) < dragThreshold) return;
+
+                if (!moved) {
+                    moved = true; isDragging = true;
+                    el.classList.add('is-dragging');
+                    document.body.classList.add('is-dragging');
+
+                    /* Create floating ghost card */
+                    ghost = el.cloneNode(true);
+                    ghost.className = 'card card--ghost';
+                    ghost.style.cssText = `position:fixed;z-index:9999;width:${el.offsetWidth}px;pointer-events:none;will-change:transform;transition:box-shadow 0.2s ease;`;
+                    document.body.appendChild(ghost);
+                }
+
+                /* Follow cursor with slight tilt based on velocity */
+                const tiltX = Math.max(-12, Math.min(12, dx * 0.04));
+                const tiltY = Math.max(-8, Math.min(8, dy * 0.02));
+                ghost.style.left = (e2.clientX - el.offsetWidth / 2) + 'px';
+                ghost.style.top = (e2.clientY - el.offsetHeight / 2) + 'px';
+                ghost.style.transform = `rotate(${tiltX}deg) scale(1.05)`;
+                ghost.style.boxShadow = '0 20px 60px rgba(0,0,0,0.35), 0 4px 12px rgba(0,0,0,0.2)';
+
+                /* Check if over basket */
+                const basketRect = basketDrop.getBoundingClientRect();
+                const barRect = basketBar.getBoundingClientRect();
+                const overBasket = (e2.clientY > basketRect.top && e2.clientY < basketRect.bottom) ||
+                                   (basketBar.style.display !== 'none' && e2.clientY > barRect.top);
+                basketDrop.classList.toggle('is-over', overBasket);
+            };
+
+            const onUp = (e2) => {
+                document.removeEventListener('pointermove', onMove);
+                document.removeEventListener('pointerup', onUp);
+
+                if (moved && ghost) {
+                    /* Check if dropped on basket */
+                    const basketRect = basketDrop.getBoundingClientRect();
+                    const barRect = basketBar.getBoundingClientRect();
+                    const overBasket = (e2.clientY > basketRect.top && e2.clientY < basketRect.bottom) ||
+                                       (basketBar.style.display !== 'none' && e2.clientY > barRect.top);
+
+                    if (overBasket && dragToken && !basket.find(b => b.id === dragToken.id)) {
+                        /* Animate ghost flying into basket */
+                        ghost.style.transition = 'all 0.3s cubic-bezier(0.22, 1, 0.36, 1)';
+                        ghost.style.left = (window.innerWidth / 2 - 20) + 'px';
+                        ghost.style.top = (window.innerHeight - 40) + 'px';
+                        ghost.style.transform = 'scale(0.3) rotate(0deg)';
+                        ghost.style.opacity = '0';
+                        setTimeout(() => { ghost.remove(); ghost = null; }, 300);
+
+                        basket.push(dragToken);
+                        renderBasket();
+                        showToast(`${dragToken.name} added to basket`);
+                    } else {
+                        /* Snap back animation */
+                        const rect = el.getBoundingClientRect();
+                        ghost.style.transition = 'all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1)';
+                        ghost.style.left = rect.left + 'px';
+                        ghost.style.top = rect.top + 'px';
+                        ghost.style.transform = 'scale(1) rotate(0deg)';
+                        ghost.style.boxShadow = 'none';
+                        ghost.style.opacity = '0.5';
+                        setTimeout(() => { ghost.remove(); ghost = null; }, 350);
+                    }
+
+                    basketDrop.classList.remove('is-over');
+                }
+
+                el.classList.remove('is-dragging');
+                document.body.classList.remove('is-dragging');
+                isDragging = false;
+                dragToken = null;
+            };
+
+            document.addEventListener('pointermove', onMove);
+            document.addEventListener('pointerup', onUp);
         });
 
-        el.addEventListener('dragend', () => {
-            el.classList.remove('is-dragging');
-            document.body.classList.remove('is-dragging');
+        /* Prevent native drag */
+        el.addEventListener('dragstart', e => e.preventDefault());
+
+        /* Only open panel if not dragged */
+        el.addEventListener('click', e => {
+            if (moved) { e.preventDefault(); e.stopPropagation(); moved = false; return; }
         });
     }
 

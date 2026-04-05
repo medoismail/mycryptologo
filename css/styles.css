@@ -520,19 +520,26 @@ body.has-basket .basket__drop{display:none}
 }
 .basket__clear:hover{color:var(--red);border-color:var(--red)}
 
-/* Card dragging state — physics shake */
+/* Card dragging state */
 .card.is-dragging{
-    opacity:0.3;
-    transform:scale(0.9) rotate(-2deg);
-    transition:opacity 0.2s ease,transform 0.2s var(--spring);
-    animation:cardShake 0.4s ease-in-out infinite alternate;
+    opacity:0.2;
+    transform:scale(0.95);
+    transition:opacity 0.25s ease,transform 0.25s var(--spring);
 }
-@keyframes cardShake{
-    0%{transform:scale(0.9) rotate(-1.5deg)}
-    25%{transform:scale(0.88) rotate(1deg)}
-    50%{transform:scale(0.9) rotate(-0.5deg)}
-    75%{transform:scale(0.89) rotate(1.5deg)}
-    100%{transform:scale(0.9) rotate(-1deg)}
+
+/* Floating ghost card — Apple glass effect */
+.card--ghost{
+    backdrop-filter:blur(32px) saturate(1.8) brightness(1.1);
+    -webkit-backdrop-filter:blur(32px) saturate(1.8) brightness(1.1);
+    background:oklch(1 0 0 / 0.06) !important;
+    border:1px solid oklch(1 0 0 / 0.15) !important;
+    box-shadow:0 20px 60px oklch(0 0 0 / 0.35),0 4px 12px oklch(0 0 0 / 0.2);
+}
+[data-theme="light"] .card--ghost{
+    background:oklch(1 0 0 / 0.55) !important;
+    border:1px solid oklch(1 0 0 / 0.6) !important;
+    backdrop-filter:blur(32px) saturate(2) brightness(1.05);
+    -webkit-backdrop-filter:blur(32px) saturate(2) brightness(1.05);
 }
 
 /* Cursor: edges = grab, center = pointer */
