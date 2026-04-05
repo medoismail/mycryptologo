@@ -303,7 +303,7 @@
 
                     if (over && dragToken && !basket.find(b => b.id === dragToken.id)) {
                         /* Fly into basket */
-                        ghost.style.transition = 'all 0.3s var(--ease)';
+                        ghost.style.transition = 'all 0.3s cubic-bezier(0.22,1,0.36,1)';
                         ghost.style.left = (window.innerWidth / 2) + 'px';
                         ghost.style.top = window.innerHeight + 'px';
                         ghost.style.transform = 'scale(0.2) rotate(0)';
@@ -315,7 +315,7 @@
                     } else {
                         /* Snap back */
                         const r = el.getBoundingClientRect();
-                        ghost.style.transition = 'all 0.4s var(--spring)';
+                        ghost.style.transition = 'all 0.4s cubic-bezier(0.34,1.56,0.64,1)';
                         ghost.style.left = r.left + 'px';
                         ghost.style.top = r.top + 'px';
                         ghost.style.transform = 'scale(1) rotate(0)';

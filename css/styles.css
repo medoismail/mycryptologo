@@ -520,43 +520,32 @@ body.has-basket .basket__drop{display:none}
 }
 .basket__clear:hover{color:var(--red);border-color:var(--red)}
 
-/* Card dragging state */
+/* Card being dragged — just dims slightly */
 .card.is-dragging{
-    opacity:0.2;
-    transform:scale(0.95);
-    transition:opacity 0.25s ease,transform 0.25s var(--spring);
+    opacity:0.35 !important;
+    transform:scale(0.96) !important;
+    animation:none !important;
 }
 
-/* Floating ghost card — Apple glass effect */
+/* Floating ghost — Apple frosted glass */
 .card--ghost{
-    backdrop-filter:blur(32px) saturate(1.8) brightness(1.1);
-    -webkit-backdrop-filter:blur(32px) saturate(1.8) brightness(1.1);
+    backdrop-filter:blur(32px) saturate(1.8) brightness(1.1) !important;
+    -webkit-backdrop-filter:blur(32px) saturate(1.8) brightness(1.1) !important;
     background:oklch(1 0 0 / 0.06) !important;
     border:1px solid oklch(1 0 0 / 0.15) !important;
-    box-shadow:0 20px 60px oklch(0 0 0 / 0.35),0 4px 12px oklch(0 0 0 / 0.2);
+    box-shadow:0 20px 60px oklch(0 0 0 / 0.3),0 4px 12px oklch(0 0 0 / 0.15) !important;
+    animation:none !important;
+    opacity:1 !important;
 }
 [data-theme="light"] .card--ghost{
-    background:oklch(1 0 0 / 0.55) !important;
-    border:1px solid oklch(1 0 0 / 0.6) !important;
-    backdrop-filter:blur(32px) saturate(2) brightness(1.05);
-    -webkit-backdrop-filter:blur(32px) saturate(2) brightness(1.05);
+    background:oklch(1 0 0 / 0.5) !important;
+    border:1px solid oklch(0 0 0 / 0.08) !important;
 }
 
-/* Cursor: edges = grab, center = pointer */
+/* Cursor */
 .card{cursor:grab}
 .card:active{cursor:grabbing}
 .card__img,.card__name{cursor:pointer}
-
-/* All cards wobble slightly when one is being dragged */
-body.is-dragging .card:not(.is-dragging){
-    animation:cardWobble 1.5s ease-in-out infinite;
-    animation-delay:calc(var(--i, 0) * 60ms);
-}
-@keyframes cardWobble{
-    0%,100%{transform:translateY(0) rotate(0)}
-    25%{transform:translateY(-1px) rotate(0.3deg)}
-    75%{transform:translateY(1px) rotate(-0.3deg)}
-}
 
 /* Reduced motion */
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:0.01ms!important;transition-duration:0.01ms!important}}
