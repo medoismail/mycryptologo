@@ -141,7 +141,7 @@
             else if (t.category === 'exchanges') badge = '<span class="card__badge badge--dex">DEX</span>';
             else if (t.category === 'wallets') badge = '<span class="card__badge badge--wall">Wallet</span>';
             const isPng = t.path && /\.(png|jpe?g)$/i.test(t.path);
-            const png = isPng ? '<span class="card__badge badge--png" style="opacity:1;top:auto;bottom:5px;right:5px">PNG</span>' : '';
+            const png = isPng ? '<span class="card__badge badge--png" style="opacity:1;top:6px;left:6px;right:auto">PNG</span>' : '';
 
             el.innerHTML = `<div class="card__img"><img src="${t.path}" alt="${t.name}" loading="lazy" onerror="this.style.opacity='0.12'"></div><span class="card__name" title="${t.name}">${t.name}</span><span class="card__sym">${t.symbol}</span>${badge}${png}`;
             el.addEventListener('click', () => openPanel(t));
