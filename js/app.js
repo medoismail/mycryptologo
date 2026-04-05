@@ -110,7 +110,12 @@
         filtered = data;
         if (cat !== 'all') filtered = filtered.filter(t => t.category === cat);
         if (query) filtered = filtered.filter(t => t.name.toLowerCase().includes(query) || t.symbol.toLowerCase().includes(query) || t.id.toLowerCase().includes(query));
+        /* Popular tokens always first, then alphabetical */
+        const pop = new Set(['btc','eth','sol','usdt','xrp','bnb','usdc','doge','ada','avax','link','dot','uni','ltc','matic']);
         filtered.sort((a, b) => {
+            const aP = pop.has(a.id) ? 0 : 1;
+            const bP = pop.has(b.id) ? 0 : 1;
+            if (aP !== bP) return aP - bP;
             const va = (a.name || a.id).toLowerCase(), vb = (b.name || b.id).toLowerCase();
             return va.localeCompare(vb);
         });
