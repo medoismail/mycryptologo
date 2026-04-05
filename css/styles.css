@@ -525,9 +525,10 @@ body.has-basket .basket__drop{display:none}
     opacity:0.4;
     transform:scale(0.95);
 }
-/* Center = pointer (click), edges = grab (drag) */
-.card{cursor:pointer}
-.card__img{cursor:pointer}
+/* Edges = grab (drag), center image = pointer (click) */
+.card{cursor:grab}
+.card:active{cursor:grabbing}
+.card__img,.card__name{cursor:pointer}
 
 /* Reduced motion */
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:0.01ms!important;transition-duration:0.01ms!important}}
