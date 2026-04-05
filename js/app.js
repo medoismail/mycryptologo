@@ -76,6 +76,13 @@
         aClose.addEventListener('click', () => aOverlay.classList.remove('is-open'));
         aOverlay.addEventListener('click', e => { if (e.target === aOverlay) aOverlay.classList.remove('is-open'); });
 
+        /* Click outside panel to close */
+        document.addEventListener('click', e => {
+            if (document.body.classList.contains('panel-open') && !panel.contains(e.target) && !e.target.closest('.card')) {
+                closePanel();
+            }
+        });
+
         /* Keyboard */
         document.addEventListener('keydown', e => {
             if (e.key === '/' && document.activeElement !== search) { e.preventDefault(); search.focus(); }
@@ -144,6 +151,7 @@
             const png = isPng ? '<span class="card__badge badge--png" style="opacity:1;top:6px;left:6px;right:auto">PNG</span>' : '';
 
             el.innerHTML = `<div class="card__img"><img src="${t.path}" alt="${t.name}" loading="lazy" onerror="this.style.opacity='0.12'"></div><span class="card__name" title="${t.name}">${t.name}</span><span class="card__sym">${t.symbol}</span>${badge}${png}`;
+            el.style.setProperty('--i', String(i));
             el.addEventListener('click', (e) => { if (!e.defaultPrevented) openPanel(t); });
             setupCardDrag(el, t);
             grid.appendChild(el);
@@ -281,12 +289,13 @@
             dragToken = token;
             document.body.classList.add('is-dragging');
             el.classList.add('is-dragging');
-            /* Ghost image */
+
+            /* Ghost — tilted, scaled-up card clone */
             const ghost = el.cloneNode(true);
-            ghost.style.cssText = 'position:absolute;top:-1000px;width:80px;opacity:0.9';
+            ghost.style.cssText = 'position:absolute;top:-2000px;left:-2000px;width:100px;padding:12px;border-radius:14px;background:var(--bg-2);opacity:0.95;transform:rotate(-4deg) scale(1.1);box-shadow:0 12px 40px rgba(0,0,0,0.4);pointer-events:none';
             document.body.appendChild(ghost);
-            e.dataTransfer.setDragImage(ghost, 40, 40);
-            setTimeout(() => ghost.remove(), 0);
+            e.dataTransfer.setDragImage(ghost, 50, 50);
+            requestAnimationFrame(() => setTimeout(() => ghost.remove(), 100));
             e.dataTransfer.effectAllowed = 'copy';
         });
 
