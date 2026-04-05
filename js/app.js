@@ -1,539 +1,215 @@
-/* ========================================
-   CryptoLogos v2 — App Controller
-   ======================================== */
+/* CryptoLogos v3 — Slide panel interaction */
 (function () {
     'use strict';
 
-    // ─── State ──────────────────────────────
-    let allData = [];
-    let filtered = [];
-    let currentCategory = 'all';
-    let currentSort = 'name-asc';
-    let searchQuery = '';
-    let page = 1;
-    const perPage = 80;
-    let currentView = 'grid';
-    let currentSvgCode = '';
-
-    const POPULAR_IDS = ['btc','eth','sol','xrp','bnb','usdt','doge','ada','avax','link','dot','uni','ltc','matic'];
+    let data = [], filtered = [], cat = 'all', sort = 'name-asc', query = '', page = 1, svgCode = '';
+    const PER = 80;
     const BASE = location.origin + location.pathname.replace(/\/[^/]*$/, '');
 
-    // ─── DOM refs ───────────────────────────
-    const $ = (s) => document.querySelector(s);
-    const $$ = (s) => document.querySelectorAll(s);
+    const $ = s => document.querySelector(s);
+    const $$ = s => document.querySelectorAll(s);
 
-    const grid = $('#icons-grid');
-    const searchInput = $('#search-input');
-    const sortSelect = $('#sort-select');
-    const sizeSlider = $('#size-slider');
-    const loadMoreWrap = $('#load-more-wrap');
-    const loadMoreBtn = $('#load-more-btn');
-    const loadMoreInfo = $('#load-more-info');
-    const emptyState = $('#empty-state');
-    const resultCount = $('#result-count');
-    const breadcrumb = $('#breadcrumb');
-    const themeBtn = $('#theme-toggle');
-    const apiBtn = $('#api-btn');
+    const grid = $('#grid'), search = $('#searchInput'), sortSel = document.getElementById('sortSelect');
+    const moreWrap = $('#loadMoreWrap'), moreBtn = $('#loadMoreBtn'), moreInfo = $('#loadMoreInfo');
+    const empty = $('#emptyState'), countEl = $('#resultCount'), themeBtn = $('#themeToggle'), apiBtn = $('#apiBtn');
+    const toast = $('#toast'), toastMsg = $('#toastMsg');
 
-    // Modal
-    const modalOverlay = $('#modal-overlay');
-    const modalClose = $('#modal-close');
-    const modalImg = $('#modal-img');
-    const modalName = $('#modal-name');
-    const modalSymbol = $('#modal-symbol');
-    const modalCategory = $('#modal-category');
-    const modalCopySvg = $('#modal-copy-svg');
-    const modalDownload = $('#modal-download-svg');
-    const modalCopyUrl = $('#modal-copy-url');
-    const svgCodePre = $('#svg-code-pre');
-    const svgCodeCopyBtn = $('#svg-code-copy-btn');
-    const modalPathText = $('#modal-path-text');
-    const modalApiUrl = $('#modal-api-url');
+    /* Panel */
+    const panel = $('#panel'), panelClose = $('#panelClose');
+    const pImg = $('#panelImg'), pName = $('#panelName'), pSym = $('#panelSymbol'), pCat = $('#panelCat');
+    const pCopy = $('#copySvgBtn'), pDl = $('#downloadBtn'), pUrl = $('#copyUrlBtn');
+    const pCode = $('#codeBlock'), pPre = $('#codePre'), pCodeCopy = $('#codeCopyBtn');
+    const pPath = $('#panelPath'), pApi = $('#panelApiUrl');
 
-    // API modal
-    const apiOverlay = $('#api-overlay');
-    const apiClose = $('#api-close');
+    /* API modal */
+    const aOverlay = $('#apiOverlay'), aClose = $('#apiClose');
 
-    // Toast
-    const toast = $('#toast');
-    const toastMsg = $('#toast-msg');
+    let activeToken = null;
 
-    // ─── Init ───────────────────────────────
     async function init() {
-        initTheme();
-        initSearch();
-        initSidebar();
-        initViewToggle();
-        initSizeSlider();
-        initModal();
-        initApiModal();
-        initWalletCopy();
-        initKeyboard();
-
-        try {
-            const res = await fetch('data/crypto-logos-data.json');
-            allData = await res.json();
-        } catch (e) {
-            console.error('Failed to load data:', e);
-            allData = [];
-        }
-
-        updateCounts();
-        renderPopular();
-        applyFilters();
-        updateApiCounts();
+        theme(); events();
+        try { data = await (await fetch('data/crypto-logos-data.json')).json(); }
+        catch (e) { console.error(e); data = []; }
+        counts(); apply();
     }
 
-    // ─── Theme ──────────────────────────────
-    function initTheme() {
-        const saved = localStorage.getItem('cl-theme');
-        if (saved === 'light') document.documentElement.setAttribute('data-theme', 'light');
-        updateThemeIcon();
-
+    /* Theme */
+    function theme() {
+        if (localStorage.getItem('cl-theme') === 'light') document.documentElement.setAttribute('data-theme', 'light');
+        syncIcon();
         themeBtn.addEventListener('click', () => {
-            const isLight = document.documentElement.getAttribute('data-theme') === 'light';
-            if (isLight) {
-                document.documentElement.removeAttribute('data-theme');
-                localStorage.setItem('cl-theme', 'dark');
-            } else {
-                document.documentElement.setAttribute('data-theme', 'light');
-                localStorage.setItem('cl-theme', 'light');
+            const l = document.documentElement.getAttribute('data-theme') === 'light';
+            l ? document.documentElement.removeAttribute('data-theme') : document.documentElement.setAttribute('data-theme', 'light');
+            localStorage.setItem('cl-theme', l ? 'dark' : 'light');
+            syncIcon();
+        });
+    }
+    function syncIcon() {
+        const l = document.documentElement.getAttribute('data-theme') === 'light';
+        themeBtn.querySelector('.icon--sun').style.display = l ? 'none' : '';
+        themeBtn.querySelector('.icon--moon').style.display = l ? '' : 'none';
+    }
+
+    /* Events */
+    function events() {
+        let db;
+        search.addEventListener('input', () => { clearTimeout(db); db = setTimeout(() => { query = search.value.trim().toLowerCase(); page = 1; apply(); }, 200); });
+
+        $$('.filter').forEach(btn => btn.addEventListener('click', () => {
+            $$('.filter').forEach(b => b.classList.remove('is-active'));
+            btn.classList.add('is-active');
+            cat = btn.dataset.cat; search.value = ''; query = ''; page = 1; apply();
+        }));
+
+        moreBtn.addEventListener('click', () => { page++; render(false); });
+
+        /* Panel close */
+        panelClose.addEventListener('click', closePanel);
+
+        /* Panel buttons */
+        pCopy.addEventListener('click', async () => { if (!svgCode) return; await clip(svgCode, 'SVG copied!'); flash(pCopy); });
+        pCodeCopy.addEventListener('click', async () => { if (!svgCode) return; await clip(svgCode, 'SVG copied!'); flash(pCodeCopy); });
+        pUrl.addEventListener('click', async () => { await clip(pDl.href, 'URL copied!'); flash(pUrl); });
+
+        /* API modal */
+        apiBtn.addEventListener('click', () => { aOverlay.classList.add('is-open'); $('#apiExampleUrl').textContent = `${BASE}/data/svg/btc.svg`; });
+        aClose.addEventListener('click', () => aOverlay.classList.remove('is-open'));
+        aOverlay.addEventListener('click', e => { if (e.target === aOverlay) aOverlay.classList.remove('is-open'); });
+
+        /* Keyboard */
+        document.addEventListener('keydown', e => {
+            if (e.key === '/' && document.activeElement !== search) { e.preventDefault(); search.focus(); }
+            if (e.key === 'Escape') {
+                if (document.body.classList.contains('panel-open')) closePanel();
+                else if (aOverlay.classList.contains('is-open')) aOverlay.classList.remove('is-open');
+                else if (document.activeElement === search) search.blur();
             }
-            updateThemeIcon();
         });
     }
 
-    function updateThemeIcon() {
-        const isLight = document.documentElement.getAttribute('data-theme') === 'light';
-        themeBtn.querySelector('.icon-sun').style.display = isLight ? 'none' : '';
-        themeBtn.querySelector('.icon-moon').style.display = isLight ? '' : 'none';
+    /* Counts */
+    function counts() {
+        const c = { all: data.length, tokens: 0, networks: 0, 'defi-protocol': 0, exchanges: 0, wallets: 0 };
+        data.forEach(t => { if (c[t.category] !== undefined) c[t.category]++; });
+        anim($('#cAll'), c.all);
+        anim($('#totalCount'), data.length);
+    }
+    function anim(el, to) {
+        if (!el) return;
+        const dur = 500, start = performance.now();
+        const tick = now => {
+            const p = Math.min((now - start) / dur, 1);
+            el.textContent = Math.round(to * (1 - Math.pow(1 - p, 3))).toLocaleString();
+            if (p < 1) requestAnimationFrame(tick);
+        };
+        requestAnimationFrame(tick);
     }
 
-    // ─── Search ─────────────────────────────
-    function initSearch() {
-        let debounce;
-        searchInput.addEventListener('input', () => {
-            clearTimeout(debounce);
-            debounce = setTimeout(() => {
-                searchQuery = searchInput.value.trim().toLowerCase();
-                page = 1;
-                applyFilters();
-            }, 200);
-        });
-
-        sortSelect.addEventListener('change', () => {
-            currentSort = sortSelect.value;
-            page = 1;
-            applyFilters();
-        });
-    }
-
-    // ─── Sidebar ────────────────────────────
-    function initSidebar() {
-        $$('.nav-item').forEach(btn => {
-            btn.addEventListener('click', () => {
-                $$('.nav-item').forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                currentCategory = btn.dataset.category;
-                searchInput.value = '';
-                searchQuery = '';
-                page = 1;
-                applyFilters();
-                updateBreadcrumb();
-            });
-        });
-
-        loadMoreBtn.addEventListener('click', () => {
-            page++;
-            renderPage(false);
-        });
-    }
-
-    function updateBreadcrumb() {
-        const labels = { all: 'All Icons', tokens: 'Tokens', networks: 'Networks', 'defi-protocol': 'DeFi Protocols', exchanges: 'Exchanges', wallets: 'Wallets' };
-        breadcrumb.innerHTML = `<span class="breadcrumb-active">${labels[currentCategory] || 'All Icons'}</span>`;
-    }
-
-    function updateCounts() {
-        const counts = { all: allData.length, tokens: 0, networks: 0, 'defi-protocol': 0, exchanges: 0, wallets: 0 };
-        allData.forEach(t => { if (counts[t.category] !== undefined) counts[t.category]++; });
-        for (const [k, v] of Object.entries(counts)) {
-            const el = $(`#count-${k}`);
-            if (el) el.textContent = v.toLocaleString();
-        }
-        $('#total-count').textContent = allData.length.toLocaleString();
-    }
-
-    // ─── Popular ────────────────────────────
-    function renderPopular() {
-        const list = $('#popular-list');
-        list.innerHTML = '';
-        POPULAR_IDS.forEach(id => {
-            const t = allData.find(d => d.id === id);
-            if (!t) return;
-            const btn = document.createElement('button');
-            btn.className = 'popular-item';
-            btn.innerHTML = `<img src="${t.path}" alt="${t.name}" loading="lazy"><span class="pop-name">${t.name}</span><span class="pop-symbol">${t.symbol}</span>`;
-            btn.addEventListener('click', () => openModal(t));
-            list.appendChild(btn);
-        });
-    }
-
-    // ─── Filter & Sort ──────────────────────
-    function applyFilters() {
-        filtered = allData;
-
-        if (currentCategory !== 'all') {
-            filtered = filtered.filter(t => t.category === currentCategory);
-        }
-
-        if (searchQuery) {
-            filtered = filtered.filter(t =>
-                t.name.toLowerCase().includes(searchQuery) ||
-                t.symbol.toLowerCase().includes(searchQuery) ||
-                t.id.toLowerCase().includes(searchQuery)
-            );
-        }
-
-        sortData();
-        page = 1;
-        renderPage(true);
-    }
-
-    function sortData() {
-        const [key, dir] = currentSort.split('-');
+    /* Filter + Render */
+    function apply() {
+        filtered = data;
+        if (cat !== 'all') filtered = filtered.filter(t => t.category === cat);
+        if (query) filtered = filtered.filter(t => t.name.toLowerCase().includes(query) || t.symbol.toLowerCase().includes(query) || t.id.toLowerCase().includes(query));
         filtered.sort((a, b) => {
-            const va = (a[key] || a.id).toLowerCase();
-            const vb = (b[key] || b.id).toLowerCase();
-            return dir === 'asc' ? va.localeCompare(vb) : vb.localeCompare(va);
+            const va = (a.name || a.id).toLowerCase(), vb = (b.name || b.id).toLowerCase();
+            return va.localeCompare(vb);
         });
+        page = 1; render(true);
     }
 
-    // ─── Render ─────────────────────────────
-    function renderPage(reset) {
+    function render(reset) {
         if (reset) grid.innerHTML = '';
+        const s = (page - 1) * PER, e = Math.min(s + PER, filtered.length);
+        if (!filtered.length) { empty.style.display = 'flex'; moreWrap.style.display = 'none'; countEl.textContent = '0 results'; return; }
+        empty.style.display = 'none';
 
-        const start = (page - 1) * perPage;
-        const end = Math.min(start + perPage, filtered.length);
-        const slice = filtered.slice(start, end);
-
-        if (filtered.length === 0) {
-            emptyState.style.display = 'flex';
-            loadMoreWrap.style.display = 'none';
-            resultCount.textContent = 'No results';
-            return;
-        }
-
-        emptyState.style.display = 'none';
-
-        const frag = document.createDocumentFragment();
-        slice.forEach(t => {
-            const card = document.createElement('div');
-            card.className = 'icon-card';
+        const slice = filtered.slice(s, e);
+        /* Render cards with sequential animation via JS */
+        slice.forEach((t, i) => {
+            const el = document.createElement('div');
+            el.className = 'card';
+            el.style.animationDelay = (i * 30) + 'ms';
 
             let badge = '';
-            if (t.category === 'networks') badge = '<span class="card-badge badge-network">Net</span>';
-            else if (t.category === 'defi-protocol') badge = '<span class="card-badge badge-defi">DeFi</span>';
-            else if (t.category === 'exchanges') badge = '<span class="card-badge badge-exchange">DEX</span>';
-            else if (t.category === 'wallets') badge = '<span class="card-badge badge-wallet">Wallet</span>';
+            if (t.category === 'networks') badge = '<span class="card__badge badge--net">Net</span>';
+            else if (t.category === 'defi-protocol') badge = '<span class="card__badge badge--defi">DeFi</span>';
+            else if (t.category === 'exchanges') badge = '<span class="card__badge badge--dex">DEX</span>';
+            else if (t.category === 'wallets') badge = '<span class="card__badge badge--wall">Wallet</span>';
+            const isPng = t.path && /\.(png|jpe?g)$/i.test(t.path);
+            const png = isPng ? '<span class="card__badge badge--png" style="opacity:1;top:auto;bottom:5px;right:5px">PNG</span>' : '';
 
-            const isPng = t.path && (t.path.endsWith('.png') || t.path.endsWith('.jpg') || t.path.endsWith('.jpeg'));
-            const formatBadge = isPng ? '<span class="card-badge badge-png" style="opacity:1;top:auto;bottom:5px;right:5px">PNG</span>' : '';
-
-            card.innerHTML = `
-                <div class="card-img-wrap">
-                    <img src="${t.path}" alt="${t.name}" loading="lazy" onerror="this.style.opacity='0.15'">
-                </div>
-                <span class="card-name" title="${t.name}">${t.name}</span>
-                <span class="card-symbol">${t.symbol}</span>
-                ${badge}
-                ${formatBadge}
-            `;
-            card.addEventListener('click', () => openModal(t));
-            frag.appendChild(card);
+            el.innerHTML = `<div class="card__img"><img src="${t.path}" alt="${t.name}" loading="lazy" onerror="this.style.opacity='0.12'"></div><span class="card__name" title="${t.name}">${t.name}</span><span class="card__sym">${t.symbol}</span>${badge}${png}`;
+            el.addEventListener('click', () => openPanel(t));
+            grid.appendChild(el);
         });
-        grid.appendChild(frag);
 
-        // Update info
-        const shown = Math.min(end, filtered.length);
-        resultCount.textContent = `Showing ${shown.toLocaleString()} of ${filtered.length.toLocaleString()}`;
+        const shown = Math.min(e, filtered.length);
+        countEl.textContent = `${shown} of ${filtered.length.toLocaleString()}`;
+        if (e < filtered.length) { moreWrap.style.display = ''; moreInfo.textContent = `${filtered.length - e} more`; }
+        else moreWrap.style.display = 'none';
+    }
 
-        if (end < filtered.length) {
-            loadMoreWrap.style.display = '';
-            loadMoreInfo.textContent = `${filtered.length - end} more`;
-        } else {
-            loadMoreWrap.style.display = 'none';
+    /* Panel — slide in from left */
+    function openPanel(t) {
+        /* If clicking the same token again, close */
+        if (activeToken && activeToken.id === t.id && document.body.classList.contains('panel-open')) {
+            closePanel();
+            return;
         }
-    }
+        activeToken = t;
 
-    // ─── View Toggle ────────────────────────
-    function initViewToggle() {
-        $$('.view-btn').forEach(btn => {
-            btn.addEventListener('click', () => {
-                $$('.view-btn').forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                currentView = btn.dataset.view;
-                grid.classList.toggle('list-view', currentView === 'list');
-            });
-        });
-    }
+        pImg.src = t.path;
+        pName.textContent = t.name;
+        pSym.textContent = t.symbol;
+        pCat.textContent = t.category;
 
-    // ─── Size Slider ────────────────────────
-    function initSizeSlider() {
-        const applySize = () => {
-            const v = parseInt(sizeSlider.value);
-            grid.style.setProperty('--card-size', v + 'px');
-            const imgSize = Math.max(24, Math.round(v * 0.42));
-            grid.style.setProperty('--img-size', imgSize + 'px');
-        };
-        sizeSlider.addEventListener('input', applySize);
-        applySize();
-    }
+        const isSvg = t.path && t.path.endsWith('.svg');
+        const ext = t.path ? t.path.split('.').pop().toUpperCase() : 'SVG';
+        pDl.href = t.path;
+        pDl.download = `${t.id}.${ext.toLowerCase()}`;
 
-    // ─── Modal ──────────────────────────────
-    function initModal() {
-        modalClose.addEventListener('click', closeModal);
-        modalOverlay.addEventListener('click', (e) => {
-            if (e.target === modalOverlay) closeModal();
-        });
+        pCopy.style.display = isSvg ? '' : 'none';
+        pCode.style.display = isSvg ? '' : 'none';
+        pPath.innerHTML = `<code>${t.path}</code>`;
+        pApi.textContent = `${BASE}/${t.path}`;
 
-        // Copy SVG Code (main button)
-        modalCopySvg.addEventListener('click', async () => {
-            if (!currentSvgCode) return;
-            await copyToClipboard(currentSvgCode, 'SVG code copied! Paste in Figma or anywhere.');
-            flashCopied(modalCopySvg);
-        });
-
-        // Copy SVG Code (code block button)
-        svgCodeCopyBtn.addEventListener('click', async () => {
-            if (!currentSvgCode) return;
-            await copyToClipboard(currentSvgCode, 'SVG code copied!');
-            flashCopied(svgCodeCopyBtn);
-        });
-
-        // Copy URL
-        modalCopyUrl.addEventListener('click', async () => {
-            const url = modalDownload.href;
-            await copyToClipboard(url, 'URL copied to clipboard!');
-            flashCopied(modalCopyUrl);
-        });
-    }
-
-    function openModal(token) {
-        modalImg.src = token.path;
-        modalName.textContent = token.name;
-        modalSymbol.textContent = token.symbol;
-        modalCategory.textContent = token.category;
-
-        const isSvg = token.path && token.path.endsWith('.svg');
-        const ext = token.path ? token.path.split('.').pop().toUpperCase() : 'SVG';
-
-        // Download link
-        modalDownload.href = token.path;
-        modalDownload.download = `${token.id}.${ext.toLowerCase()}`;
-        modalDownload.innerHTML = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg> Download ${ext}`;
-
-        // SVG-only buttons: Copy SVG code, SVG code block
-        modalCopySvg.style.display = isSvg ? '' : 'none';
-        $('#svg-code-container').style.display = isSvg ? '' : 'none';
-
-        // PNG size options
-        let pngSizes = $('#modal-png-sizes');
-        if (!pngSizes) {
-            pngSizes = document.createElement('div');
-            pngSizes.id = 'modal-png-sizes';
-            pngSizes.className = 'png-sizes';
-            modalDownload.parentNode.insertBefore(pngSizes, modalCopyUrl);
-        }
-
-        if (!isSvg) {
-            const sizes = [16, 32, 64, 128, 256, 512];
-            let sizeHtml = '<span class="png-sizes-label">Download PNG:</span>';
-            sizes.forEach(s => {
-                sizeHtml += `<button class="action-btn size-btn" data-size="${s}" data-src="${token.path}" data-name="${token.id}" title="Download ${s}x${s} PNG"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg> ${s}x${s}</button>`;
-            });
-            pngSizes.innerHTML = sizeHtml;
-            pngSizes.style.display = 'flex';
-            // Attach click handlers for client-side resize
-            pngSizes.querySelectorAll('.size-btn').forEach(btn => {
-                btn.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    const size = parseInt(btn.dataset.size);
-                    const src = btn.dataset.src;
-                    const name = btn.dataset.name;
-                    const img = new Image();
-                    img.crossOrigin = 'anonymous';
-                    img.onload = () => {
-                        const canvas = document.createElement('canvas');
-                        canvas.width = size;
-                        canvas.height = size;
-                        const ctx = canvas.getContext('2d');
-                        ctx.imageSmoothingEnabled = true;
-                        ctx.imageSmoothingQuality = 'high';
-                        ctx.drawImage(img, 0, 0, size, size);
-                        canvas.toBlob((blob) => {
-                            const url = URL.createObjectURL(blob);
-                            const a = document.createElement('a');
-                            a.href = url;
-                            a.download = `${name}-${size}x${size}.png`;
-                            document.body.appendChild(a);
-                            a.click();
-                            document.body.removeChild(a);
-                            URL.revokeObjectURL(url);
-                        }, 'image/png');
-                    };
-                    img.onerror = () => {
-                        alert('Could not load image for resizing');
-                    };
-                    img.src = src;
-                });
-            });
-        } else {
-            pngSizes.style.display = 'none';
-        }
-
-        // Path
-        modalPathText.textContent = token.path;
-
-        // API hint
-        modalApiUrl.textContent = `${BASE}/${token.path}`;
-
-        // Fetch and show SVG code (only for SVGs)
-        currentSvgCode = '';
+        svgCode = '';
         if (isSvg) {
-            svgCodePre.textContent = 'Loading SVG code...';
-            fetch(token.path)
-                .then(r => r.text())
-                .then(code => {
-                    currentSvgCode = code;
-                    svgCodePre.textContent = code.length > 3000 ? code.substring(0, 3000) + '\n... (truncated)' : code;
-                })
-                .catch(() => {
-                    svgCodePre.textContent = 'Could not load SVG code';
-                });
+            pPre.textContent = 'Loading...';
+            fetch(t.path).then(r => r.text()).then(c => { svgCode = c; pPre.textContent = c.length > 400 ? c.slice(0, 400) + '...' : c; }).catch(() => pPre.textContent = 'Failed');
         }
 
-        modalOverlay.classList.add('active');
-        document.body.style.overflow = 'hidden';
+        document.body.classList.add('panel-open');
     }
 
-    function closeModal() {
-        modalOverlay.classList.remove('active');
-        document.body.style.overflow = '';
+    function closePanel() {
+        document.body.classList.remove('panel-open');
+        activeToken = null;
     }
 
-    // ─── API Modal ──────────────────────────
-    function initApiModal() {
-        apiBtn.addEventListener('click', () => {
-            apiOverlay.classList.add('active');
-            document.body.style.overflow = 'hidden';
-            $('#api-example-url').textContent = `${BASE}/data/svg/btc.svg`;
-        });
-
-        apiClose.addEventListener('click', () => {
-            apiOverlay.classList.remove('active');
-            document.body.style.overflow = '';
-        });
-
-        apiOverlay.addEventListener('click', (e) => {
-            if (e.target === apiOverlay) {
-                apiOverlay.classList.remove('active');
-                document.body.style.overflow = '';
-            }
-        });
-    }
-
-    function updateApiCounts() {
-        const root = allData.filter(t => t.category === 'tokens' && t.path.startsWith('data/svg/') && !t.path.includes('/tokens/')).length;
-        const branded = allData.filter(t => t.path.includes('/tokens/')).length;
-        const nets = allData.filter(t => t.category === 'networks').length;
-        const wallets = allData.filter(t => t.category === 'wallets').length;
-        const el = (id, v) => { const e = $(id); if (e) e.textContent = v; };
-        el('#api-count-tokens', root);
-        el('#api-count-branded', branded);
-        el('#api-count-networks', nets);
-        el('#api-count-wallets', wallets);
-    }
-
-    // ─── Wallet Copy ────────────────────────
-    function initWalletCopy() {
-        const btn = $('#copy-wallet-btn');
-        if (!btn) return;
-        btn.addEventListener('click', () => {
-            copyToClipboard('0xBeD17aa3E1c99ea86e19e7B38356C54007BB6CDe', 'Wallet address copied!');
-        });
-    }
-
-    // ─── Keyboard ───────────────────────────
-    function initKeyboard() {
-        document.addEventListener('keydown', (e) => {
-            // "/" to focus search
-            if (e.key === '/' && document.activeElement !== searchInput) {
-                e.preventDefault();
-                searchInput.focus();
-            }
-            // Escape to close modals
-            if (e.key === 'Escape') {
-                if (modalOverlay.classList.contains('active')) closeModal();
-                if (apiOverlay.classList.contains('active')) {
-                    apiOverlay.classList.remove('active');
-                    document.body.style.overflow = '';
-                }
-                if (document.activeElement === searchInput) searchInput.blur();
-            }
-        });
-    }
-
-    // ─── Utilities ──────────────────────────
-    async function copyToClipboard(text, message) {
-        try {
-            await navigator.clipboard.writeText(text);
-            showToast(message || 'Copied!');
-        } catch {
-            // Fallback
-            const ta = document.createElement('textarea');
-            ta.value = text;
-            ta.style.position = 'fixed';
-            ta.style.opacity = '0';
-            document.body.appendChild(ta);
-            ta.select();
-            document.execCommand('copy');
-            document.body.removeChild(ta);
-            showToast(message || 'Copied!');
+    /* Clipboard */
+    async function clip(text, msg) {
+        try { await navigator.clipboard.writeText(text); } catch {
+            const t = document.createElement('textarea'); t.value = text; t.style.cssText = 'position:fixed;opacity:0';
+            document.body.appendChild(t); t.select(); document.execCommand('copy'); document.body.removeChild(t);
         }
+        showToast(msg || 'Copied!');
     }
 
-    function flashCopied(btn) {
-        btn.classList.add('copied');
+    function flash(btn) {
+        btn.classList.add('is-copied');
         const orig = btn.textContent;
-        if (btn.tagName === 'BUTTON' && !btn.classList.contains('svg-code-copy-btn')) {
-            const svgHtml = btn.querySelector('svg')?.outerHTML || '';
-            btn.innerHTML = svgHtml + ' Copied!';
-            setTimeout(() => {
-                btn.innerHTML = svgHtml + ' ' + orig.replace('Copied!', '').trim();
-                btn.classList.remove('copied');
-            }, 1500);
+        if (btn.classList.contains('panel__code-copy')) {
+            btn.textContent = 'Copied!';
+            setTimeout(() => { btn.textContent = 'Copy'; btn.classList.remove('is-copied'); }, 1400);
         } else {
             btn.textContent = 'Copied!';
-            setTimeout(() => {
-                btn.textContent = orig.includes('Copied') ? 'Copy' : orig;
-                btn.classList.remove('copied');
-            }, 1500);
+            setTimeout(() => { btn.textContent = orig; btn.classList.remove('is-copied'); }, 1400);
         }
     }
 
-    let toastTimer;
-    function showToast(msg) {
-        clearTimeout(toastTimer);
-        toastMsg.textContent = msg;
-        toast.classList.add('show');
-        toastTimer = setTimeout(() => toast.classList.remove('show'), 2500);
-    }
+    let toastT;
+    function showToast(msg) { clearTimeout(toastT); toastMsg.textContent = msg; toast.classList.add('is-visible'); toastT = setTimeout(() => toast.classList.remove('is-visible'), 2400); }
 
-    // ─── Boot ───────────────────────────────
-    if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', init);
-    } else {
-        init();
-    }
+    document.readyState === 'loading' ? document.addEventListener('DOMContentLoaded', init) : init();
 })();
