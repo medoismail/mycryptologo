@@ -69,6 +69,7 @@
     --shadow-lg: 0 8px 24px oklch(0 0 0 / 0.06);
 }
 [data-theme="light"] .bg-mesh .orb{opacity:0}
+[data-theme="light"] .panel{box-shadow:-2px 0 8px oklch(0 0 0 / 0.04)}
 
 /* Reset */
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
@@ -279,7 +280,7 @@ body.panel-open .page{
     transition:transform 0.55s var(--ease);
     display:flex;flex-direction:column;
     overflow-y:auto;
-    box-shadow:-8px 0 32px oklch(0 0 0 / 0.3);
+    box-shadow:-4px 0 16px oklch(0 0 0 / 0.08);
 }
 body.panel-open .panel{
     transform:translateX(0);

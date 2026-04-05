@@ -175,6 +175,9 @@
 
         pCopy.style.display = isSvg ? '' : 'none';
         pCode.style.display = isSvg ? '' : 'none';
+        /* Download becomes primary when no Copy SVG */
+        if (isSvg) { pDl.classList.remove('btn--primary'); }
+        else { pDl.classList.add('btn--primary'); }
         pPath.innerHTML = `<code>${t.path}</code>`;
         pApi.textContent = `${BASE}/${t.path}`;
 
