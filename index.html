@@ -64,6 +64,29 @@
                 </div>
             </section>
 
+            <!-- AI Demo Mock -->
+            <div class="skill-demo" id="skillDemo">
+                <canvas class="skill-demo__canvas" id="skillCanvas"></canvas>
+                <div class="skill-demo__viewport">
+                    <div class="skill-demo__track" id="skillDemoTrack">
+                        <div class="skill-demo__slide">
+                            <span class="skill-demo__caret">&gt;</span>
+                            <span class="skill-demo__dynamic" id="skillDemoText"></span>
+                            <span class="skill-demo__cursor"></span>
+                        </div>
+                        <div class="skill-demo__slide">
+                            <span class="skill-demo__dot"></span>
+                            <span class="skill-demo__dot"></span>
+                            <span class="skill-demo__dot"></span>
+                        </div>
+                        <div class="skill-demo__slide" id="skillDemoLogos"></div>
+                    </div>
+                </div>
+                <button class="skill-demo__copy" id="skillDemoCopy">
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+                </button>
+            </div>
+
             <!-- Controls — all in one row -->
             <div class="controls">
                 <div class="search">
@@ -126,6 +149,32 @@
             <div class="modal__codeblock"><code id="apiExampleUrl"></code></div>
             <h3>All tokens JSON</h3>
             <div class="modal__codeblock"><code>GET /data/crypto-logos-data.json</code></div>
+        </div>
+    </div>
+</div>
+
+<!-- AI Skill Modal -->
+<div class="overlay" id="skillOverlay">
+    <div class="modal modal--wide">
+        <button class="modal__close" id="skillClose" aria-label="Close">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+        <div class="modal__body skill-modal">
+            <h2 class="skill-modal__title">AI Skill</h2>
+            <div class="skill-prompt-box">
+                <div class="skill-prompt-box__inner">
+                    <span class="skill-prompt-box__caret">&gt;</span>
+                    <span class="skill-prompt-box__text" id="skillPromptText">Read cryptologos.xyz/skill.md and get me the Bitcoin logo</span>
+                </div>
+                <button class="skill-prompt-box__copy" id="skillPromptCopy" aria-label="Copy">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+                </button>
+            </div>
+            <div class="skill-compat__list">
+                <span class="skill-compat__item">Claude Code</span>
+                <span class="skill-compat__item">Cursor</span>
+                <span class="skill-compat__item">Windsurf</span>
+            </div>
         </div>
     </div>
 </div>

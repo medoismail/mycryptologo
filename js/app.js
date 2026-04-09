@@ -415,5 +415,268 @@
         }
     }
 
+    /* ===== Skill modal + demo animation ===== */
+    const SKILL_PREFIX = 'Read cryptologos.xyz/skill.md and get me';
+
+    function initSkillSection() {
+        /* Skill modal */
+        const sOverlay = $('#skillOverlay'), sClose = $('#skillClose');
+
+        /* Open modal from the modal prompt copy btn */
+        const skillPromptCopy = document.getElementById('skillPromptCopy');
+        const skillPromptText = document.getElementById('skillPromptText');
+        if (skillPromptCopy && skillPromptText) {
+            skillPromptCopy.addEventListener('click', async () => {
+                await clip(skillPromptText.textContent, 'Prompt copied!');
+                skillPromptCopy.classList.add('is-copied');
+                setTimeout(() => skillPromptCopy.classList.remove('is-copied'), 1200);
+            });
+        }
+
+        if (sOverlay && sClose) {
+            sClose.addEventListener('click', () => sOverlay.classList.remove('is-open'));
+            sOverlay.addEventListener('click', e => { if (e.target === sOverlay) sOverlay.classList.remove('is-open'); });
+            document.addEventListener('keydown', e => {
+                if (e.key === 'Escape' && sOverlay.classList.contains('is-open')) sOverlay.classList.remove('is-open');
+            });
+        }
+
+        /* High-quality rendered glow — paint small, blur up, composite */
+        const demoBox = document.getElementById('skillDemo');
+        const canvas = document.getElementById('skillCanvas');
+        const demoCopy = document.getElementById('skillDemoCopy');
+        const demoText = document.getElementById('skillDemoText');
+
+        if (demoBox && canvas && demoCopy) {
+            const ctx = canvas.getContext('2d');
+            /* Offscreen canvas at 1/4 res for cheap gaussian blur */
+            const off = document.createElement('canvas');
+            const octx = off.getContext('2d');
+            let mx = 0, my = 0, tx = 0, ty = 0;
+            let isHovering = false, burstT = 0, bx = 0, by = 0;
+            const SCALE = 0.25; /* render small, scale up = natural blur */
+
+            function resize() {
+                const r = demoBox.getBoundingClientRect();
+                canvas.width = r.width;
+                canvas.height = r.height;
+                off.width = Math.ceil(r.width * SCALE);
+                off.height = Math.ceil(r.height * SCALE);
+            }
+            resize();
+            window.addEventListener('resize', resize);
+
+            let isInsideBox = false;
+            demoBox.addEventListener('mouseenter', () => { isHovering = true; isInsideBox = true; });
+            demoBox.addEventListener('mouseleave', () => { isHovering = false; isInsideBox = false; });
+            demoBox.addEventListener('mousemove', e => {
+                const r = demoBox.getBoundingClientRect();
+                tx = e.clientX - r.left;
+                ty = e.clientY - r.top;
+            });
+
+            /* Track mouse globally for button beacon outside box */
+            document.addEventListener('mousemove', e => {
+                if (!isInsideBox) {
+                    const r = demoBox.getBoundingClientRect();
+                    tx = e.clientX - r.left;
+                    ty = e.clientY - r.top;
+                    isHovering = true;
+                }
+            });
+
+            function btnCenter() {
+                const cr = demoCopy.getBoundingClientRect();
+                const br = demoBox.getBoundingClientRect();
+                return { x: cr.left - br.left + cr.width / 2, y: cr.top - br.top + cr.height / 2 };
+            }
+
+            function draw() {
+                const w = canvas.width, h = canvas.height;
+                const sw = off.width, sh = off.height;
+
+                /* Clear both */
+                ctx.clearRect(0, 0, w, h);
+                octx.clearRect(0, 0, sw, sh);
+
+                /* Smooth lerp */
+                mx += (tx - mx) * 0.1;
+                my += (ty - my) * 0.1;
+
+                const btn = btnCenter();
+                const dist = Math.hypot(mx - btn.x, my - btn.y);
+                const prox = Math.max(0, 1 - dist / 300);
+
+                if (isHovering) {
+                    const smx = mx * SCALE, smy = my * SCALE;
+                    const sbx = btn.x * SCALE, sby = btn.y * SCALE;
+                    /* Intensity: 100% inside box, 10% outside */
+                    const intensity = isInsideBox ? 1 : 0.1;
+
+                    /* Full-surface glow — fills the whole box from mouse center */
+                    if (isInsideBox) {
+                        const maxR = Math.max(
+                            Math.hypot(smx, smy),
+                            Math.hypot(sw - smx, smy),
+                            Math.hypot(smx, sh - smy),
+                            Math.hypot(sw - smx, sh - smy)
+                        );
+                        const g1 = octx.createRadialGradient(smx, smy, 0, smx, smy, maxR);
+                        g1.addColorStop(0, `rgba(120, 140, 255, ${0.1 + prox * 0.06})`);
+                        g1.addColorStop(0.25, `rgba(110, 130, 255, ${0.04 + prox * 0.02})`);
+                        g1.addColorStop(0.6, `rgba(100, 120, 255, ${0.015})`);
+                        g1.addColorStop(1, `rgba(100, 120, 255, ${0.005})`);
+                        octx.fillStyle = g1;
+                        octx.fillRect(0, 0, sw, sh);
+                    }
+
+                    /* Button beacon — always active, scales with intensity */
+                    if (prox > 0.02) {
+                        const beaconProx = prox * intensity;
+                        const r2 = 10 + beaconProx * 8;
+                        const g2 = octx.createRadialGradient(sbx, sby, 0, sbx, sby, r2);
+                        g2.addColorStop(0, `rgba(130, 150, 255, ${beaconProx * 0.4})`);
+                        g2.addColorStop(0.5, `rgba(110, 130, 255, ${beaconProx * 0.1})`);
+                        g2.addColorStop(1, 'rgba(100, 120, 255, 0)');
+                        octx.beginPath();
+                        octx.arc(sbx, sby, r2, 0, Math.PI * 2);
+                        octx.fillStyle = g2;
+                        octx.fill();
+                    }
+                }
+
+                /* Burst — shockwave rings expanding from button */
+                if (burstT > 0 && burstT < 1) {
+                    burstT += 0.012;
+                    const sbx2 = bx * SCALE, sby2 = by * SCALE;
+                    const a = 1 - burstT;
+                    const ease = 1 - Math.pow(1 - burstT, 3); /* ease-out cubic */
+
+                    /* Inner flash — bright core */
+                    if (burstT < 0.3) {
+                        const flashA = (1 - burstT / 0.3) * 0.5;
+                        const fr = ease * 15;
+                        const fg = octx.createRadialGradient(sbx2, sby2, 0, sbx2, sby2, fr);
+                        fg.addColorStop(0, `rgba(160, 175, 255, ${flashA})`);
+                        fg.addColorStop(0.5, `rgba(130, 150, 255, ${flashA * 0.3})`);
+                        fg.addColorStop(1, 'rgba(120, 140, 255, 0)');
+                        octx.fillStyle = fg;
+                        octx.fillRect(0, 0, sw, sh);
+                    }
+
+                    /* Ring 1 — soft wide shockwave (thick = blurry feel at 1/4 res) */
+                    const r1 = ease * 45;
+                    octx.beginPath();
+                    octx.arc(sbx2, sby2, Math.max(0, r1), 0, Math.PI * 2);
+                    octx.strokeStyle = `rgba(130, 150, 255, ${a * 0.2})`;
+                    octx.lineWidth = 4 + (1 - a) * 6;
+                    octx.stroke();
+
+                    /* Soft fill glow behind rings */
+                    const gfill = octx.createRadialGradient(sbx2, sby2, r1 * 0.3, sbx2, sby2, r1);
+                    gfill.addColorStop(0, `rgba(120, 140, 255, ${a * 0.15})`);
+                    gfill.addColorStop(1, 'rgba(120, 140, 255, 0)');
+                    octx.fillStyle = gfill;
+                    octx.fillRect(0, 0, sw, sh);
+
+                    if (burstT >= 1) burstT = 0;
+                }
+
+                /* Scale up small canvas → big canvas = natural soft blur */
+                ctx.imageSmoothingEnabled = true;
+                ctx.imageSmoothingQuality = 'high';
+                ctx.drawImage(off, 0, 0, sw, sh, 0, 0, w, h);
+
+                requestAnimationFrame(draw);
+            }
+            requestAnimationFrame(draw);
+
+            /* Copy click */
+            demoCopy.addEventListener('click', async () => {
+                const full = demoText ? demoText.textContent : '';
+                await clip(full, 'Copied!');
+
+                const btn = btnCenter();
+                bx = btn.x; by = btn.y;
+                burstT = 0.01;
+
+                demoCopy.classList.add('is-copied');
+                demoCopy.style.transform = 'scale(1.2)';
+                setTimeout(() => { demoCopy.style.transform = 'scale(0.9)'; }, 120);
+                setTimeout(() => { demoCopy.style.transform = ''; }, 250);
+                setTimeout(() => demoCopy.classList.remove('is-copied'), 1400);
+            });
+        }
+
+        /* Demo animation: type → slide to loader → slide to logos → reset */
+        const demoTrack = document.getElementById('skillDemoTrack');
+        const demoLogos = document.getElementById('skillDemoLogos');
+        if (!demoText || !demoTrack || !demoLogos) return;
+
+        const SLIDE_H = 22; /* matches slide height */
+
+        const demos = [
+            { text: 'Read /skill.md and get me the BTC logo', logos: ['btc'] },
+            { text: 'Read /skill.md and get me ETH and SOL icons', logos: ['eth', 'sol'] },
+            { text: 'Read /skill.md and get me top DeFi logos', logos: ['aave', 'uni', 'link'] },
+            { text: 'Read /skill.md and get me L2 chain logos', logos: ['networks/arbitrum-one', 'networks/optimism', 'networks/polygon'] },
+            { text: 'Read /skill.md and get me top 5 crypto logos', logos: ['btc', 'eth', 'sol', 'usdt', 'xrp'] },
+        ];
+
+        let demoIdx = 0;
+
+        function slideTo(step) {
+            demoTrack.style.transform = `translateY(-${step * SLIDE_H}px)`;
+        }
+
+        function runDemo() {
+            const demo = demos[demoIdx % demos.length];
+            demoIdx++;
+            demoText.textContent = '';
+            demoLogos.innerHTML = '';
+            slideTo(0);
+
+            /* 1. Type */
+            let i = 0;
+            const typeInterval = setInterval(() => {
+                if (i < demo.text.length) {
+                    demoText.textContent += demo.text[i];
+                    i++;
+                } else {
+                    clearInterval(typeInterval);
+
+                    /* 2. Slide up to loader */
+                    setTimeout(() => {
+                        slideTo(1);
+
+                        /* 3. Slide up to logos */
+                        setTimeout(() => {
+                            demo.logos.forEach((id, j) => {
+                                const img = document.createElement('img');
+                                img.src = `data/svg/${id}.svg`;
+                                img.alt = id;
+                                demoLogos.appendChild(img);
+                                setTimeout(() => img.classList.add('is-visible'), j * 120);
+                            });
+                            slideTo(2);
+
+                            /* 4. Reset → next */
+                            setTimeout(runDemo, 3200);
+                        }, 900);
+                    }, 600);
+                }
+            }, 60);
+        }
+
+        setTimeout(runDemo, 800);
+    }
+
+    /* Patch init to include skill section */
+    const _origInit = init;
+    init = async function() {
+        await _origInit();
+        initSkillSection();
+    };
+
     document.readyState === 'loading' ? document.addEventListener('DOMContentLoaded', init) : init();
 })();
