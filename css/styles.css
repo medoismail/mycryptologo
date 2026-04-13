@@ -274,6 +274,8 @@ a:hover{text-decoration:underline}
     opacity:0;animation:fadeUp 0.5s var(--ease) 0.2s forwards;
     box-shadow:0 0 20px oklch(0.55 0.22 264 / 0.04),inset 0 1px 0 oklch(1 0 0 / 0.03);
     position:relative;overflow:hidden;
+    background-image:radial-gradient(oklch(1 0 0 / 0.03) 1px, transparent 1px);
+    background-size:12px 12px;
     --glow-pos:50%;
     border-image:linear-gradient(90deg,
         oklch(0.55 0.22 264 / 0.06) 0%,

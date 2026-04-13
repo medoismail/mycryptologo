@@ -416,7 +416,7 @@
     }
 
     /* ===== Skill modal + demo animation ===== */
-    const SKILL_PREFIX = 'Read cryptologos.xyz/skill.md and get me';
+    const SKILL_PREFIX = 'Read https://www.cryptologos.xyz/skill.md and get me';
 
     function initSkillSection() {
         /* Skill modal */
@@ -427,7 +427,7 @@
         const skillPromptText = document.getElementById('skillPromptText');
         if (skillPromptCopy && skillPromptText) {
             skillPromptCopy.addEventListener('click', async () => {
-                await clip(skillPromptText.textContent, 'Prompt copied!');
+                await clip(SKILL_PREFIX + ' ', 'Prompt copied!');
                 skillPromptCopy.classList.add('is-copied');
                 setTimeout(() => skillPromptCopy.classList.remove('is-copied'), 1200);
             });
@@ -591,10 +591,9 @@
             }
             requestAnimationFrame(draw);
 
-            /* Copy click */
+            /* Copy click — interrupts animation, shows Copied, resumes */
             demoCopy.addEventListener('click', async () => {
-                const full = demoText ? demoText.textContent : '';
-                await clip(full, 'Copied!');
+                await clip(SKILL_PREFIX + ' ', 'Copied!');
 
                 const btn = btnCenter();
                 bx = btn.x; by = btn.y;
@@ -605,6 +604,8 @@
                 setTimeout(() => { demoCopy.style.transform = 'scale(0.9)'; }, 120);
                 setTimeout(() => { demoCopy.style.transform = ''; }, 250);
                 setTimeout(() => demoCopy.classList.remove('is-copied'), 1400);
+
+                interruptDemo();
             });
         }
 
@@ -616,20 +617,53 @@
         const SLIDE_H = 22; /* matches slide height */
 
         const demos = [
-            { text: 'Read /skill.md and get me the BTC logo', logos: ['btc'] },
-            { text: 'Read /skill.md and get me ETH and SOL icons', logos: ['eth', 'sol'] },
-            { text: 'Read /skill.md and get me top DeFi logos', logos: ['aave', 'uni', 'link'] },
-            { text: 'Read /skill.md and get me L2 chain logos', logos: ['networks/arbitrum-one', 'networks/optimism', 'networks/polygon'] },
-            { text: 'Read /skill.md and get me top 5 crypto logos', logos: ['btc', 'eth', 'sol', 'usdt', 'xrp'] },
+            { text: 'Read https://www.cryptologos.xyz/skill.md and get me the BTC logo', logos: ['btc'] },
+            { text: 'Read https://www.cryptologos.xyz/skill.md and get me ETH and SOL icons', logos: ['eth', 'sol'] },
+            { text: 'Read https://www.cryptologos.xyz/skill.md and get me top DeFi logos', logos: ['aave', 'uni', 'link'] },
+            { text: 'Read https://www.cryptologos.xyz/skill.md and get me L2 chain logos', logos: ['networks/arbitrum-one', 'networks/optimism', 'networks/polygon'] },
+            { text: 'Read https://www.cryptologos.xyz/skill.md and get me top 5 crypto logos', logos: ['btc', 'eth', 'sol', 'usdt', 'xrp'] },
         ];
 
         let demoIdx = 0;
+        let activeInterval = null;
+        let activeTimeouts = [];
+        let isPaused = false;
+
+        function clearTimers() {
+            if (activeInterval) { clearInterval(activeInterval); activeInterval = null; }
+            activeTimeouts.forEach(t => clearTimeout(t));
+            activeTimeouts = [];
+        }
+
+        function later(fn, ms) {
+            const t = setTimeout(fn, ms);
+            activeTimeouts.push(t);
+            return t;
+        }
 
         function slideTo(step) {
             demoTrack.style.transform = `translateY(-${step * SLIDE_H}px)`;
         }
 
+        /* Called by copy button to interrupt */
+        function interruptDemo() {
+            clearTimers();
+            isPaused = true;
+            slideTo(0);
+            demoLogos.innerHTML = '';
+            const cursor = demoBox.querySelector('.skill-demo__cursor');
+            if (cursor) cursor.style.display = 'none';
+            if (demoText) demoText.textContent = 'Copied!';
+
+            later(() => {
+                isPaused = false;
+                if (cursor) cursor.style.display = '';
+                runDemo();
+            }, 1600);
+        }
+
         function runDemo() {
+            if (isPaused) return;
             const demo = demos[demoIdx % demos.length];
             demoIdx++;
             demoText.textContent = '';
@@ -638,30 +672,34 @@
 
             /* 1. Type */
             let i = 0;
-            const typeInterval = setInterval(() => {
+            activeInterval = setInterval(() => {
+                if (isPaused) { clearInterval(activeInterval); return; }
                 if (i < demo.text.length) {
                     demoText.textContent += demo.text[i];
                     i++;
                 } else {
-                    clearInterval(typeInterval);
+                    clearInterval(activeInterval);
+                    activeInterval = null;
 
                     /* 2. Slide up to loader */
-                    setTimeout(() => {
+                    later(() => {
+                        if (isPaused) return;
                         slideTo(1);
 
                         /* 3. Slide up to logos */
-                        setTimeout(() => {
+                        later(() => {
+                            if (isPaused) return;
                             demo.logos.forEach((id, j) => {
                                 const img = document.createElement('img');
                                 img.src = `data/svg/${id}.svg`;
                                 img.alt = id;
                                 demoLogos.appendChild(img);
-                                setTimeout(() => img.classList.add('is-visible'), j * 120);
+                                later(() => img.classList.add('is-visible'), j * 120);
                             });
                             slideTo(2);
 
                             /* 4. Reset → next */
-                            setTimeout(runDemo, 3200);
+                            later(runDemo, 3200);
                         }, 900);
                     }, 600);
                 }
